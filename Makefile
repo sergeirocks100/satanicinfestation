@@ -12,8 +12,8 @@ DEUTEX_ARGS=$(DEUTEX_BASIC_ARGS) -doom2 bootstrap/
 NODE_BUILDER=ZenNode
 NODE_BUILDER_LEVELS=c?m? dm?? map??
 
-FREEDOOM1=$(WADS)/freedoom1.wad
-FREEDOOM2=$(WADS)/freedoom2.wad
+FREEDOOM1=$(WADS)/satanic1.wad
+FREEDOOM2=$(WADS)/satanic2.wad
 FREEDM=$(WADS)/freedm.wad
 
 OBJS=$(FREEDM) $(FREEDOOM1) $(FREEDOOM2)
