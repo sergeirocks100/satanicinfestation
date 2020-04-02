@@ -505,32 +505,30 @@ C6TEXT = You're playing FreeDM, the Freedoom\n\
          https://freedoom.github.io/
 #else
 # After MAP06, before MAP07:
-C1TEXT = You've found your way to the\n\
-         complex's outer storage warehouse.\n\
-         Not even Earth was safe from the\n\
-         monsters. This AGM space terminal\n\
-         is a lost cause. Best to get out.\n\n\
-         You press the panel to call the lift.\n\
-         It slowly lowers, then speeds up.\n\
-         Growls come along with it.\n\
-         Looks like you're not alone here.\n\n\
-         Planted your feet.\n\n\
-         Checked your weapons.\n\n\
-         Time to go up.
+C1TEXT = After gunning down hordes of the damned\n\
+         You've now made it well into the infested\n\
+         starport. But those abominations disturbed\n\
+         it's technology, the satanic energy and humane\n\
+         technology are mixing together, it's not good,\n\
+         you see a outpost of them in the distance.\n\
+         Right at the control center of the starport,\n\
+         if you can kill them, you may be able to\n\
+         activate the ships, and set free all of\n\
+         the billions of prisoners trapped in this\n\
+         Satanic Infestation.
 # After MAP11, before MAP12:
-C2TEXT = The facility is gone, no doubt there.\n\
-         You didn't find anyone alive.\n\
-         But you don't want to keep fighting\n\
-         either. You are only human.\n\
-         There's a teleporter here, set for\n\
-         a city unknown to you. City means\n\
-         people, right?\n\n\
-         The bolts holding the platform\n\
-         fly off over the ledge. The place\n\
-         is falling apart. You quickly step on\n\
-         the platform and reappear at the city.\n\
-         It's been destroyed to the ground.\n\n\
-         You can't go back either.
+C2TEXT =You turn on the switch, and you can hear\n\
+         the ships evacuating the Earth. Humanity\n\
+         is saved, and now it's just you and those\n\
+         abominations, you sit down, ready to die,\n\
+         when you get a response from central command\n\
+         telling you the have found the location of\n\
+         the invasion, your heart sinks when you find\n\
+         out where it is. It's your own home town,\n\
+         you grab your gun, wipe the sweat off of\n\
+         your forehead, and take off on your journey\n\
+         to yet another fight with the products of this\n\
+         Satanic Infestation.
 # After MAP20, before MAP21:
 C3TEXT = There is no AGM here. No humans.\n\
          Just monsters and monsters.\n\
