@@ -530,31 +530,22 @@ C2TEXT =You turn on the switch, and you can hear\n\
          to yet another fight with the products of this\n\
          Satanic Infestation.
 # After MAP20, before MAP21:
-C3TEXT = There is no AGM here. No humans.\n\
-         Just monsters and monsters.\n\
-         And you.\n\
-         This could be the beginning of\n\
-         your freedom.\n\
-         The finale of this endless fighting\n\
-         against the monsters.\n\
-         No man has ever survived in this\n\
-         wasteland.\n\n\
-         Other than you, that is.\n\
-         Maybe AGM saw this place.\n\
-         But never got through here.\n\
-         Either way, it doesn't matter.\n\n\
-         You're stuck here once again.
+C3TEXT = You've made it to the hive in the center,\n\
+         demons are coming out of the portal on the\n\
+         other side faster than they can be killed.\n\
+         Gripping your gun tight, you trudge into Hell,\n\
+         praying that you have the strength to close\n\
+         the blaspemous portal that's the source of the\n\
+         Satanic Infestation.
 # After MAP30 (endgame text):
-C4TEXT = The evil thing becomes unstable.\n\n\
-         Its final roars echo throughout the\n\
-         room until it crumples into scrap metal.\n\
-         A portal opens up, and in it, you see a\n\
-         small town. You jump in quickly.\n\
-         AGM learned its lesson this time.\n\n\
-         Hopefully.\n\n\
-         No one will know who saved them.\n\n\
-         No one will know what happened here.\n\n\
-         No one will ever find you again.
+C4TEXT = With one final shot, Satan's Avatar yells\n\
+         a horrid, demonic screech as it's unholy figure\n\
+         explodes into pieces, the arena covered with \n\
+         it's debris, with a smile on your face, you\n\
+         make your way back home, eager to help the human\n\
+         race clean up the corpses and destruction the\n\
+         demons left, thanks to you, humanity's saved from the\n\
+         Satanic Infestation
 # Before MAP31 (secret level #1):
 C5TEXT = You step onto the machine and\n\
          after a strange flash you find\n\
