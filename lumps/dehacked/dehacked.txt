@@ -581,7 +581,7 @@ BGFLAT15 = AQF004
 BGFLAT31 = AQF021
 # Obituary texts, for ZDoom-based ports.
 OB_STEALTHBABY=%o thought %g saw a technospider.
-OB_STEALTHVILE=%o thought %g saw a necromancer.
+OB_STEALTHVILE=%o thought %g saw a fallen angel.
 OB_STEALTHBARON=%o thought %g saw a hell prince.
 OB_STEALTHCACO=%o thought %g saw a eye of satan.
 OB_STEALTHCHAINGUY=%o thought %g saw a dead chaingunner.
@@ -601,7 +601,7 @@ OB_BARONHIT=%o was torn open by a hell prince.
 OB_KNIGHTHIT=%o was gutted by a hell count.
 OB_ZOMBIE=%o was killed by a posessed corpse.
 OB_SHOTGUY=%o was gunned down by a dead sergeant.
-OB_VILE=%o was incinerated by a necromancer.
+OB_VILE=%o was incinerated by a fallen angel.
 OB_UNDEAD=%o couldn't evade the hollow man's rocket.
 OB_FATSO=%o was blasted by a abomination.
 OB_CHAINGUY=%o was perforated by a dead chaingunner.
