@@ -11,7 +11,7 @@ maps
 		resources
 		{
 		}
-		defaultfloortexture = "FWATER1";
+		defaultfloortexture = "FLAT5_4";
 		defaultceiltexture = "FLOOR0_5";
 		defaulttoptexture = "BROWNGRN";
 		defaultwalltexture = "BROWNGRN";
@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -435.4787f;
-		viewpositiony = 388.9379f;
-		viewscale = 0.3846145f;
+		viewpositionx = 171.4859f;
+		viewpositiony = 1402.081f;
+		viewscale = 0.5118567f;
 		
 		grid
 		{
@@ -41,7 +41,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 16f;
+			gridsize = 32f;
 			gridrotate = 0f;
 			gridoriginx = 0f;
 			gridoriginy = 0f;
