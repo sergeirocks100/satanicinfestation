@@ -1,0 +1,16 @@
+here are some rules for contributing assets:
+generally, they should bear at least somewhat of a resemblance to their Doom equivalents, whether it be
+enemies, weapons, textures, music, sounds, levels, they should all give off a Doom vibe to them
+enemies must look at least somewhat like their Doom counterparts, they don't have to be
+exactly the same, in fact, i discourage it, but they should at least look somewhat similar, you can
+look at my concept art in the /concept art folder to see what i mean
+all maps must be 100% vanilla compatible, and use no textures that aren't in the Doom or Doom 2 IWADs,
+they should also try to maintain somewhat of a resemblance to their Doom equivalents, they shouldn't
+look exactly the same, but they should have roughly the same areas in roughly the same places
+as the Doom equivalent maps, although you don't have to use the same textures, you can use any
+textures you want
+MIDIs of all genres are accepted, although a hiphop/horrorcore style is preferred
+when it comes to textures, don't try to censor out any Satanic or Nazi imagery, and use IAC instead of
+UAC or AGM, templates for the IAC logo can be found in the /patches folder
+it's heavily encouraged that all contributed assets are under the Unlicense, although any permissive
+free license can be used, such as Creative Commons or the BSD license
