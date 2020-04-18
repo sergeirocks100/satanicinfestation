@@ -5,10 +5,9 @@ enemies must look at least somewhat like their Doom counterparts, they don't hav
 exactly the same, in fact, i discourage it, but they should at least look somewhat similar, you can
 look at my concept art in the /concept art folder to see what i mean
 all maps must be 100% vanilla compatible, and use no textures that aren't in the Doom or Doom 2 IWADs,
-they should also try to maintain somewhat of a resemblance to their Doom equivalents, they shouldn't
-look exactly the same, but they should have roughly the same areas in roughly the same places
-as the Doom equivalent maps, although you don't have to use the same textures, you can use any
-textures you want
+it's encouraged that they should also try to maintain somewhat of a resemblance to their Doom equivalents, 
+they shouldn't look exactly the same, but they should have roughly the same areas in roughly the same places
+as the Doom equivalent maps, it's not required, but it's encouraged
 MIDIs of all genres are accepted, although a hiphop/horrorcore style is preferred
 when it comes to textures, don't try to censor out any Satanic or Nazi imagery, and use IAC instead of
 UAC or AGM, templates for the IAC logo can be found in the /patches folder
