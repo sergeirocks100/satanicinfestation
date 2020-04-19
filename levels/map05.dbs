@@ -11,11 +11,11 @@ maps
 		resources
 		{
 		}
-		defaultfloortexture = "FLAT5_4";
-		defaultceiltexture = "FLOOR0_6";
-		defaulttoptexture = "BIGBRIK2";
-		defaultwalltexture = "BIGBRIK2";
-		defaultbottomtexture = "BIGBRIK2";
+		defaultfloortexture = "FLOOR0_5";
+		defaultceiltexture = "FLAT5_4";
+		defaulttoptexture = "BROWN1";
+		defaultwalltexture = "BROWN1";
+		defaultbottomtexture = "BROWN1";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -29,9 +29,10 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = 962.8112f;
-		viewpositiony = 360.4305f;
-		viewscale = 0.2802096f;
+		viewpositionx = -82.63568f;
+		viewpositiony = 1634.913f;
+		viewscale = 0.4735596f;
+		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
 		{
