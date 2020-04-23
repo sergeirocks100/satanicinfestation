@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -777.9601f;
-		viewpositiony = 1899.078f;
-		viewscale = 40.96494f;
+		viewpositionx = -703.0969f;
+		viewpositiony = 1005.41f;
+		viewscale = 0.6156274f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -46,6 +46,18 @@ maps
 			gridrotate = 0f;
 			gridoriginx = 0f;
 			gridoriginy = 0f;
+		}
+		
+		plugins
+		{
+			
+			stairsectorbuilder
+			{
+				
+				prefabs
+				{
+				}
+			}
 		}
 	}
 }
