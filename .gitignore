@@ -3,7 +3,6 @@
 # File patterns to ignore. This applies recursively to all subdirectories.
 *.6
 *.bak
-*.html
 *.ini
 *.orig
 *.pdf
@@ -72,5 +71,3 @@ doom.gpl
 /lumps/textures/phase1/
 
 /lumps/textures/phase2/
-
-/wads/
