@@ -20,5 +20,6 @@ don't use copyrighted assets, i intend for this project to be
 for audio contributions, i encourage that you provide a lossless version of the audio alongside the lossy version, 
 i do plan on using 44khz audio for the eventual GZDoom version of the project, and having lossless versions of 
 the audio already would be great 
-it's heavily encouraged that all contributed assets are under the Unlicense, although any permissive
-free license can be used, such as Creative Commons or the BSD license
+all contributions must have a license attached to them, the exact license doesn't matter, if it's a permissive free 
+license that allows for commercial use, like the 3 clause BSD license, the Unlicense, or Creative Commons, i can use 
+it in the project, although use of the Unlicense is strongly encouraged

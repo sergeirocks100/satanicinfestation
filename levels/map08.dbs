@@ -11,11 +11,11 @@ maps
 		resources
 		{
 		}
-		defaultfloortexture = "FLAT3";
-		defaultceiltexture = "FLAT19";
-		defaulttoptexture = "GRAY1";
-		defaultwalltexture = "GRAY1";
-		defaultbottomtexture = "GRAY1";
+		defaultfloortexture = "CEIL5_1";
+		defaultceiltexture = "F_SKY1";
+		defaulttoptexture = "METAL2";
+		defaultwalltexture = "METAL2";
+		defaultbottomtexture = "METAL2";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -527.5439f;
-		viewpositiony = -161.854f;
-		viewscale = 0.6156275f;
+		viewpositionx = 437.135f;
+		viewpositiony = 791.7031f;
+		viewscale = 0.8003157f;
 		
 		grid
 		{
@@ -41,7 +41,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 16f;
+			gridsize = 32f;
 			gridrotate = 0f;
 			gridoriginx = 0f;
 			gridoriginy = 0f;
