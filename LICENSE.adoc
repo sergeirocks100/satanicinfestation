@@ -57,6 +57,6 @@ CREDITS.
 acceptable licenses for contributions:
 permissive free licenses that allow for commercial use, like the 3-cluse BSD license, the Unlicense, or Creative Commons
 unacceptable licenses for contributions:
-copyleft licenses, like the GPL or Sleepycat license
+copyleft licenses, like the GPL or AGPL
 non-commercial licenses, like Ken Silverman's Build License or the DSL
 proprietary licenses
