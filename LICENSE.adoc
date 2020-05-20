@@ -24,7 +24,9 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
+
 license of freedoom project assets:
+
 Copyright © 2001-2020
 Contributors to the Freedoom project.  All rights reserved.
 
