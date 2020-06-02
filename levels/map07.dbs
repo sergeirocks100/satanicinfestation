@@ -1,50 +1,50 @@
 type = "Doom Builder Map Settings Configuration";
-gameconfig = "Boom_Doom2Doom.cfg";
+gameconfig = "Doom_Doom2Doom.cfg";
 strictpatches = 0;
 
 maps
 {
 	
-	MAP01
+	MAP07
 	{
-		defaultceiltexture = "MFLR8_1";
-		overridefloorheight = false;
-		customfloorheight = 0;
-		uselongtexturenames = false;
 		
 		resources
 		{
 		}
-		overrideceiltexture = false;
-		viewpositionx = -27.86767f;
-		defaulttoptexture = "STONE2";
-		overrideceilheight = false;
-		useresourcesinreadonlymode = false;
-		overridebrightness = false;
+		defaultfloortexture = "FLOOR4_5";
+		defaultceiltexture = "FLAT1";
+		defaulttoptexture = "ICKWALL3";
+		defaultwalltexture = "ICKWALL3";
+		defaultbottomtexture = "ICKWALL3";
+		custombrightness = 196;
+		customfloorheight = 0;
+		customceilheight = 128;
 		overridefloortexture = false;
+		overrideceiltexture = false;
+		overridetoptexture = false;
+		overridemiddletexture = false;
+		overridebottomtexture = false;
+		overridefloorheight = false;
+		overrideceilheight = false;
+		overridebrightness = false;
+		uselongtexturenames = false;
+		useresourcesinreadonlymode = false;
+		viewpositionx = -88.14447f;
+		viewpositiony = 53.02141f;
+		viewscale = 0.4735602f;
 		
 		grid
 		{
-			backoffsetx = 0;
-			backsource = 0;
-			gridoriginy = 0f;
-			backscaley = 100;
-			gridrotate = 0f;
-			backscalex = 100;
-			gridoriginx = 0f;
-			gridsize = 32f;
 			background = "";
+			backsource = 0;
+			backoffsetx = 0;
 			backoffsety = 0;
+			backscalex = 100;
+			backscaley = 100;
+			gridsize = 32f;
+			gridrotate = 0f;
+			gridoriginx = 0f;
+			gridoriginy = 0f;
 		}
-		overridebottomtexture = false;
-		defaultbottomtexture = "STONE2";
-		defaultfloortexture = "FLOOR5_3";
-		viewpositiony = 509.3242f;
-		defaultwalltexture = "STONE2";
-		overridetoptexture = false;
-		customceilheight = 128;
-		overridemiddletexture = false;
-		custombrightness = 196;
-		viewscale = 0.4274159f;
 	}
 }
