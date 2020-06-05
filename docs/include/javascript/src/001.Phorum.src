@@ -1,0 +1,59 @@
+/**
+ * @class Phorum
+ * @extends Object
+ *
+ * The Phorum singleton acts as the top level namespace for all Phorum
+ * JavaScript code. Methods, objects and classes are stored in this
+ * object. This takes away the risk of running into name space collissions
+ * with other JavaScript code.
+ *
+ * @singleton
+ */
+var Phorum = {
+
+    /**
+     * @property library_version
+     *
+     * <p>
+     *   The version of this library.
+     * </p>
+     * <p>
+     *   This can be used by other code to check if the correct version of
+     *   the library is loaded. The library_version object contains
+     *   two properties:
+     *   <div class="mdetail-params"><ul>
+     *     <li><b>major:</b> major version, incremented when
+     *         backward compatibility is broken</li>
+     *     <li><b>minor:</b> minor version, incremented when
+     *         new functionality is implemented</li>
+     *   </ul></div>
+     * </p>
+     *
+     * @var Object
+     */
+    library_version: {
+        major: 1,
+        minor: 1
+    },
+
+    /**
+     * @property debuglevel
+     *
+     * Configures the debug level for {@link #debug Phorum.debug()}.
+     * Set this variable to a higher number for more debugging information.
+     * A value of 0 (zero) will suppress all debug output.
+     *
+     * @var Integer
+     */
+    debuglevel: 0,
+
+    /**
+     * @property http_path
+     *
+     * The base URL for the forum. JavaScript code can use this URL to build
+     * URLs for this forum.
+     *
+     * @var String
+     */
+    http_path: '<?php print phorum_api_url_base() ?>'
+};

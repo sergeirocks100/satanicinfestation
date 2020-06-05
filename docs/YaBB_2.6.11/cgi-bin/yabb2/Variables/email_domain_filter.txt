@@ -1,3 +1,0 @@
-$adomains = "";
-$bdomains = "netzero.com,cashdeals.com";
-1;

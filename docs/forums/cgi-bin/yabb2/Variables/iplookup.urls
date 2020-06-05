@@ -1,5 +1,0 @@
-AfriNIC|www.afrinic.net/cgi-bin/whois?searchtext={ip}
-APNIC|wq.apnic.net/apnic-bin/whois.pl?searchtext={ip}  
-ARIN|whois.arin.net/rest/nets;q={ip}?showDetails=true&showARIN=false&ext=netref2  
-LACNIC|lacnic.net/cgi-bin/lacnic/whois?query={ip}  
-RIPE NCC|https://apps.db.ripe.net/search/query.html?searchtext={ip} 

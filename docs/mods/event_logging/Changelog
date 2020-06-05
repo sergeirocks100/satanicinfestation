@@ -1,0 +1,93 @@
+Changelog:
+----------
+
+2015-09-10 v1.1.4 Oliver Riesen (oliver@riesen.org)
+
+    - Fixed multiple conversion of HTML special characters in logviewer link (see
+      http://www.phorum.org/phorum5/read.php?62,133303,155073#msg-155073)
+
+    - Database column "ip" extended to 45 characters for ipv6 addresses.
+
+2009-08-01 v1.1.3
+
+    - Added a new logged event: User sends a private message.
+      The fact that a PM was sent and the number of recipients are logged.
+
+2009-06-27 v1.1.2
+
+    - Fixed bug #865: Don't log errors if the silence operator @ is used.
+      Thanks to Markus for both the bug report and the patch that fixes
+      the issue.
+
+    - Fixed bug #862: the event logs could not be downloaded if the
+      maximum number of stored log lines was set to 0 ("no limit").
+      Thanks to Markus Fischer for the bug report.
+
+    - Added a new logged event: User requests a new password.
+      Thanks to CBiLL for the idea. This feature requires a new hook
+      that is only available in Phorum 5.2.13 and up.
+
+    - Passwords that are logged in log messages are now masked with "XXXX".
+      If an admin wants to have the passwords logged to the database
+      (not recommended for security reasons), then the module configuration
+      option "Hide passwords in log messages" can be disabled.
+
+    - Modified the failed login event: if the username that was used is
+      known to Phorum, then the user_id is set for the event. This way,
+      failed login events can be filtered by the username as long as an
+      existing username was used. Thanks to CBiLL for the idea.
+
+    - Fixed a bug: with event logging programmatically suspended,
+      not all hooks returned the correct data. This feature is not
+      widely used (if at all), so there is no real user impact.
+
+2009-05-19 v1.1.1
+
+    - An option was added to download the event logs as HTML or TXT.
+      Thanks to Joe Curia (a.k.a. Azumandias) for providing us with
+      the patch for this feature.
+
+    - Implemented automatic cleanup of old event logs. Previously,
+      the event log was only cleaned up when the admin opened the
+      log viewer in the admin interface. Because admins sometimes
+      enable the module and don't look at it for a long while, the
+      log table can grow pretty large.
+
+      This could have some user impact, because cleaning up the
+      logs has to be done within a user's page load. Under normal
+      circumstances however, the user should not be aware of any
+      delay due to this change. If admins do experience issues with
+      this change, then please let us know. We will then extend the
+      automatic cleanup (e.g. by only doing automatic cleanups in
+      the page load of an administrator or moderator user).
+
+2008-10-27 v1.1.0 (new version numbering for Phorum 5.3)
+
+    - added display_name where applicable to show both username and
+      display_name
+
+2008-03-08 v1.0.4
+
+    - Made the JOIN queries work in all MySQL server versions by fully
+      qualifying the fields that are used in the queries.
+
+2007-08-17 v1.0.3
+
+    - Made the module settings screen behave in case the module is
+      not activated.
+
+2007-07-25 v1.0.2
+
+    - Added an option to ignore logging of PHP notices for the admin
+      interface. Because the whole admin interface was deliberately
+      programming with disabled warnings, a lot of notices are
+      triggered from that code. Those cluttered the event log too much.
+
+2007-05-02 v1.0.1
+
+    - Updated for 5.2 compatibility. The module now uses the new database
+      layer API that was introduced for Phorum 5.2.
+
+2007-04-21 v1.0.0
+
+    - Initial release.

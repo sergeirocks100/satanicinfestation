@@ -1,4 +1,0 @@
-general|general||This is the board for General Discussions.<br /><i>The board description can now hold multiple lines and can use HTML!</i>|admin|||||0||||1||||1||0|||0|||1
-general|test||Test the forum out here.  Posts made in this board will not add to your post count.|admin|||||1||||1||||1||0|||0|||0
-staff|announcements||Topics you place in this board will display as a "Global Announcement" on the top of all other boards.  Use this for things such as forum rules, top news articles, or important statements.|admin||Administrator|Topic Starter|Administrator|0||1||||||1||0|||0|||0
-staff|recycle||If the Recycle Bin is turned on, removed topics will be moved to this board. This will allow you to recover them if it is necessary.  You should purge messages in this board frequently to keep it clean.||||||1|||1|||||1||0|||0|||0

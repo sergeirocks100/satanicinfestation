@@ -1,0 +1,116 @@
+Changelog:
+----------
+
+2010-10-09 v2.0.10
+
+   - Improved the color picker code to make the placement of the picker
+     work correctly in complex layouts.
+
+   - Added left/right alignment tags.
+
+2008-10-06 v2.0.9
+
+   - Fixed #806: possible XSS leak plugged. This was reported as a
+     security vulnerability, however we were never able to produce
+     anything more than broken HTML code. Since broken HTML code is
+     not good and because we are rather safe than sorry, this fix
+     was implemented.
+
+2008-09-01 v2.0.8
+
+   - Fixed #787: BBcode module: end of message end tags for some
+     bbcode tags were not processed correctly. The tag and the text
+     that came before the tag were duplicated at the end of the
+     rendered message.
+
+   - Fixed #795: BBcode module needs to explicitly include api.php
+     to define the constants that are used in the settings page.
+
+   - Fixed #796: Undefined index "mod_bbcode_tags" in BBcode module.
+
+   - Fixed #797: Undefined offset: 0 in api.php in case the message
+     started with a stale BBcode close tag.
+
+     Thanks to Alexey Torkhov for the heads up on these last three
+     module issues.
+
+2008-07-01 v2.0.7
+
+   - Fixed a compatibility problem for PHP versions prior to 5.1.0.
+     The PHP function htmlspecialchars_decode() is not available for
+     those versions of PHP. Thanks to Adam for noticing!
+
+   - Fixed a few cases of undefined index warnings. Thanks to Oliver
+     Riesen for noticing!
+
+2008-06-03 v2.0.6
+
+   - Fixed a bug in handling stale close tags that directly follow
+     another open or close tag. Thanks to CBiLL for the problem report.
+
+2008-05-27 v2.0.5
+
+   - Improved handling of stale close tags in the text and fixed
+     a PHP undefined index warning along with it. Thanks to
+     CBiLL for the problem report.
+
+2008-05-15 v2.0.4
+
+   - Made the tag and argument name parsing case insensitive, to match
+     the old BBcode module behavior.
+
+   - Fixed a little JavaScript problem. I was using the reserved word
+     'char' as a variable name, which is bad practice and got rejected
+     by Yahoo's Javascript YUI Compressor.
+
+2008-05-08 v2.0.3
+
+   - Fixes for making upgrades and fresh installations work smoother
+     (without having to save the module settings before things start
+     to work).
+
+2008-04-16 v2.0.2
+
+   - A help text for [list] was added to the BBcode help page.
+     Translations will be needed for the available languages.
+     For now, the english help was added to all help files for all
+     languages.
+
+   - Added back the templates directory which holds the template for
+     the "disable BBcode" option in the posting editor.
+
+2008-04-16 v2.0.1
+
+   - Implemented a new tag configuration option BBCODE_INFO_STRIPBREAK.
+     If eneabled for a tag, a <phorum break> that comes after the close
+     tag is stripped. This is useful for tags that translate to an HTML
+     tag that does not need the additional break for spacing.
+     This option is enabled for the [list] bbcode tag.
+
+   - Fixed turning bare URLs and email addresses into clickable links.
+
+2008-04-15 v2.0.0
+
+   - Rewrite for implementing a new tokenizer that allows for more advanced
+     bbcode features. The new tokenizer also allows for automatic fixing of
+     broken BBcode formatting (wrongly nested tags or tags that are not closed.
+     It also allows for quoted tag arguments, which makes tags like
+     [quote="[SomeClan] Gam3r \"666\" d00d"] possible.
+
+   - The [email] tag now supports a new tag argument "subject". The editor
+     tool button asks for the subject to use. This needs a new language
+     string "enter subject" in the module's language file. If you have a
+     language string for this, please let me know so I can include it in
+     the module package.
+
+   - A new tag [list] is implemented. For this tag, some new language
+     strings are required. These are "list", "enter new list item" and
+     all the list descriptions that are formatted as "list type X".
+     If you have language strings for these, please let me know so I can
+     include them in the module package.
+
+   - The [img] tag now supports a "size" argument, to change the displaying
+     size of the image (in pixels). For example [img size="50x50"]...[/img]
+     or [img size="50"]...[/img].
+
+

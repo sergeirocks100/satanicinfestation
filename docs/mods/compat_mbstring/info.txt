@@ -1,0 +1,8 @@
+title: Compatibility: mbstring extension
+desc: This module implements a fallback for PHP's mb_substr() function, in case the "mbstring" PHP extension is not enabled.
+category: compatibility
+version: 1.0.0
+author: Phorum Dev Team
+url: http://www.phorum.org/
+
+compat:mbstring|mb_substr

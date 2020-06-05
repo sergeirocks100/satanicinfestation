@@ -1,0 +1,68 @@
+#editor-tools {
+    padding: 3px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* padding is arranged in editor_tools.js, so do not define it here. */
+#editor-tools .editor-tools-button {
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    vertical-align: bottom;
+}
+
+#editor-tools .editor-tools-button:hover {
+    border: 1px solid #777;
+}
+
+.editor-tools-popup {
+    text-align: left;
+    position:absolute;
+    padding: 5px 10px;
+    background-color:#eee;
+    border:1px solid #777;
+    font-family: arial, helvetica, sans-serif;
+    z-index: 1000;
+}
+
+.editor-tools-popup a,
+.editor-tools-popup a:active,
+.editor-tools-popup a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.editor-tools-popup a:hover {
+    text-decoration: underline;
+}
+
+#editor-tools-smiley-picker img,
+#editor-tools-subjectsmiley-picker img {
+    border: none;
+    margin: 3px;
+}
+
+#editor-tools-a-help {
+    float: right;
+}
+
+/* Override fixes for color picker within XHTML transitional */
+
+* html .colorPickerTab_inactive span,
+* html .colorPickerTab_active span{
+    position:/**/relative;
+}
+
+* html .colorPickerTab_inactive img,
+* html .colorPickerTab_active img{
+    position:relative;
+    left:-3px;
+}
+
+* html #dhtmlgoodies_colorPicker .colorPicker_topRow{
+    height:20px;
+}
+
