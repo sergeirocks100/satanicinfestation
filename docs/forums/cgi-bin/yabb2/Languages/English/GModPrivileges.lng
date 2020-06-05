@@ -1,0 +1,74 @@
+###############################################################################
+# GModPrivileges.lng (Global Mod Access Privileges text definitions)          #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$gmodprivilegeslngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%gmod_settings=(
+'1' => 'Global Mod Access Privileges',
+'2' => 'Allow Global Moderators Access to the Admin Center?',
+'3' => 'Allow Global Moderators Access to edit User Profiles?',
+'3a' => 'Allow Global Moderators Access to Admin Edits for User Profiles?',
+'4' => 'Select which actions <i>(action= in URLs)</i> Global Moderators are allowed to access',
+);
+
+%gmodprivexpl_txt = (
+'ext_admin' => 'Allow to edit Extended Profiles',
+'main' => 'Allow to edit Forum Preferences and Settings',
+'advanced' => 'Allow to edit Advanced Settings',
+'editbots' => 'Allow to edit Search Engine Identifiers',
+'news' => 'Allow to edit Forum News',
+'smilies' => 'Allow to add More Smilies',
+'setcensor' => 'Allow to set Censored Words',
+'modagreement' => 'Allow to edit Registration Agreement',
+'eventcal_set' => 'Allow to edit Event Calendar',
+'bookmarks' => 'Allow to edit Social Bookmarks', 
+'referer_control' => 'Allow to edit Referrer Security',
+'security' => 'Allow to edit Security Settings',
+'setup_guardian' => 'Allow to edit Guardian Settings',
+'antispam' => 'Allow to edit Anti-spam Settings',
+'spam_questions' => 'Allow to edit Anti-spam Questions',
+'honeypot' => 'Allow to edit Honeypot', 
+'managecats' => 'Allow to manage Categories',
+'manageboards' => 'Allow to manage Boards',
+'helpadmin' => 'Allow to edit Help Center Entries',
+'editemailtemplates' => 'Allow to edit e-mail Messages',
+'addmember' => 'Allow to View and Add Members',
+'viewmembers' => 'Allow to View Members',
+'deletemultimembers' => 'Allow to View and Delete Members',
+'modmemgr' => 'Allow to edit Member Groups',
+'mailing' => 'Allow to e-mail Your Members/Membergroups',
+'ipban' => 'Allow to edit Ban List',
+'setreserve' => 'Allow to set Reserved Names',
+'modskin' => 'Allow to edit Template Configuration',
+'modcss' => 'Allow to edit Style Sheet',
+'modtemp' => 'Allow to edit Templates',
+'clean_log' => 'Allow to Clean Users Online Log',
+'boardrecount' => 'Allow to Recount Board Totals',
+'rebuildmesindex' => 'Allow to Rebuild Message Index',
+'membershiprecount' => 'Allow to Recount Membership',
+'rebuildmemhist' => 'Allow to Rebuild Members History',
+'rebuildmemlist' => 'Allow to Rebuild Members List',
+'rebuildnotifications' => 'Allow to Rebuild Notifications Files',
+'deleteoldthreads' => 'Allow to Remove Old Threads',
+'manageattachments' => 'Allow to administrate File Attachments',
+'detailedversion' => 'Allow to View Detailed Version Check',
+'stats' => 'Allow to View Forum Statistics',
+'showclicks' => 'Allow to View forum access log',
+'errorlog' => 'Allow to View Error Log',
+'view_reglog' => 'Allow to View Registration Log, approve or reject preregistered Members',
+'modlist' => 'Allow to View All Installed Mods',
+'backupsettings' => 'Allow access to the Backup Center',
+);
+
+1;

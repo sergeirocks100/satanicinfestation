@@ -1,0 +1,10 @@
+10|del.icio.us|delicious.png|http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url={url}&amp;title={title}|1298959562
+20|Digg|digg.png|http://digg.com/submit?phase=2&amp;url={url}&amp;title={title}|1298959262
+30|Facebook|facebook.png|http://www.facebook.com/sharer/sharer.php?u={url}&amp;t={title}|1298955803
+40|Google|google.png|http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk={url}&amp;title={title}|1298955918
+50|Google+|google+.png|https://plus.google.com/share?url={url}|1375144273
+60|Linked in|linkedin.png|http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title={title}&amp;ro=false|1298959786
+70|reddit|reddit.png|http://reddit.com/submit?url={url}&amp;title={title}|1298959598
+80|StumbleUpon|stumbleupon.png|http://www.stumbleupon.com/submit?url={url}&amp;title={title}|1299003650
+90|Twitter|twitter.png|http://twitter.com/home?status={title}%20-%20{url}|1298959653
+100|Yahoo|yahoo.png|http://myweb2.search.yahoo.com/myresults/bookmarklet?u={url}&amp;title={title}|1299003740

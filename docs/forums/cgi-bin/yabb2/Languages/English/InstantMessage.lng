@@ -1,0 +1,188 @@
+###############################################################################
+# InstantMessage.lng (InstantMessage text definitions)                        #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$instantmessagelngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%inmes_txt = (
+'21' => 'Posts',
+'30' => 'on',
+'remove' => 'Remove',
+'70' => 'Subject',
+'118' => 'Topic',
+'143' => 'PM Messages Index',
+'144' => 'Personal Message',
+'145' => 'Quote',
+'146' => 'Reply',
+'147' => 'Forward',
+'sendmess' => 'Send Message',
+'sendbroadmess' => 'Send Broadcast Message',
+'151' => 'No messages...',
+'190' => 'All',
+'inbox' => 'Inbox',
+'outbox' => 'Sent box',
+'draft' => 'Drafts',
+'storage' => 'Storage',
+'folder' => 'folder',
+'317' => 'Date',
+'318' => 'Sender',
+'320' => 'Do not store a copy of this Message in the Sent box after sending.',
+'321' => 'Note that attachments are deleted along with messages in your Sent box, so if you are attaching files the above option does not apply.',
+'datesave' => 'Date saved',
+'forward' => 'Forward message',
+'replymess' => 'Reply to message',
+'error' => 'Error',
+'selectrecent' => 'select or add from recent PMs:<br />double-click to copy to &#39;to&#39;',
+'selectgroups' => 'select or add from member groups:<br />double-click to copy to &#39;to&#39;',
+'allmembers' => 'all members',
+'324' => 'To',
+'325' => 'CC',
+'326' => 'BCC',
+'327' => 'Group',
+'bmallmembers' => 'All forum members',
+'bmadmins' => 'Administrators',
+'bmgmods' => 'Global moderators',
+'bmymods' => 'Forum moderators',
+'bmmods' => 'All board moderators / mod groups',
+'470' => 'N/A',
+'500' => 'Marking all Messages as read', # inside JavaScript!
+'500a' => 'Complete', # inside JavaScript!
+'507' => 'Preview',
+'511' => 'IP Logged',
+'preview' => 'Preview text',
+'savedraft' => 'Save as Draft',
+'536' => 'Your post was too long by',
+'537' => 'characters. Please shorten your message',
+'737' => 'Check all',
+'739' => 'Are you sure you want to delete this post?',
+'761' => 'The user ',
+'762' => 'doesn&#39;t accept PMs',
+'763' => 'and',
+'764' => 'Mark new messages as read',
+'765' => 'PM Preferences',
+'766' => 'User does not exist',
+'767' => '(No Subject)',
+'770' => 'Are you sure you want to delete this PM?',
+'770a' => '\n\nNote that any files you have attached to this message will also be deleted.',
+'770b' => '\n\nNote that any files you have attached to the selected messages will also be deleted.',
+'delmultipms' => 'Are you sure you want to delete these PMs?',
+'773' => 'Sent',
+'774' => 'Store',
+'775' => 'New Message',
+'775a' => 'New Broadcast Message',
+'storeor' => 'or',
+'storein' => 'in',
+'777' => 'REMOVE message(s)', #do not remove or translate any CAPITAL text
+'status' => 'Message status',
+'addfolder' => 'Add',
+'foldererror' => 'field,',
+'messages' => 'My personal messages',
+'center' => 'My center',
+'profile' => 'My profile',
+'favs' => 'My favorites',
+'notify' => 'My notifications',
+'viewprofile' => 'View my Profile',
+'viewnotify' => 'View my Notifications',
+'viewfavs' => 'View my Favorites',
+'viewrecentposts' => 'View my last',
+'viewrecentposts2' => 'Posts',
+'goviewrecent' => 'GO!',
+'broadcast' => 'Broadcast messages',
+'alert' => 'Alert messages',
+'new' => 'new',
+'delete' => 'Delete',
+'clickto1' => 'Click here to select',
+'clickto2' => '', # used for other languages
+'torecepients' => 'recipient(s)',
+'togroups' => 'group(s)',
+'usercp' => 'User CP', 
+'attach_1' => 'This message contains',
+'attach_2' => 'attachments',
+'attach_3' => 'attachment',
+);
+
+%inmes_imtxt = (
+'01' => 'out of',
+'07' => 'This is a new Message.',
+'08' => 'You&#39;ve answered this message.',
+'09' => 'This Message was read.',
+'13' => 'You have',
+'19' => 'messages in your',
+'status' => 'Status',
+'39' => 'No PM',
+'40' => 'Previous PM',
+'41' => 'Next PM',
+'42' => 'Show all PMs to and from',
+'49' => 'Send to MemberGroups:',
+'store' => 'Store',
+'60' => 'Online',
+'61' => 'Offline',
+'67' => 'Usage',
+'69' => 'Quote Ripped out',
+'73' => 'Do you really want to remove that message from the receiver(s) PMs?',
+'83' => 'Call Back',
+'84' => 'Code Ripped out',
+'callallback' => 'Call all back',
+'outread' => 'This message has been opened by the recipient,',
+'callback' => 'This message was called back and therefore not seen by the recipient.',
+'outmulticallback' => 'This message was called back and therefore not seen by the recipients.',
+'outsomemulticallback' => 'This message was called back from some recipients, therefore it was seen by some and by others not.',
+'outnotread' => 'This message has not been opened by the recipient yet.',
+'inread' => 'You have opened this message',
+'innotread' => 'You have not opened this message yet ',
+'outmultinotread' => 'This message has not been opened by any recipient yet.',
+'outmultiread' => 'This message has been opened by recipients.',
+'outmultisomeread' => 'This message has been opened by one or more recipients.',
+'multicallback' => 'Open message to Call Back',
+'newstorefolder' => 'Add new store folder',
+);
+
+## message status
+%im_message_status = (
+'confidential' => 'Confidential',
+'urgent' => 'Urgent!',
+'standard' => 'Standard',
+'alertmod' => 'Alert Moderator.',
+'guestpm' => 'PM from Guest',
+'guestpmreply' => 'Reply to PM from Guest',
+);
+
+##  names for default storage folders
+%im_folders_txt	= (
+'in' => 'In',
+'out' => 'Out',
+);
+
+## sorted views
+%im_sorted = (
+'latest' => 'Latest messages',
+'oneweek' => 'Last week',
+'twoweeks' => 'Two weeks ago',
+'threeweeks' => 'Three weeks ago',
+'fourweeks' => 'Four weeks ago',
+'older' => 'More than a month ago',
+'important' => 'Important messages',
+'standart' => 'Messages',
+);
+
+%guest_reply = (
+'guesttext' => 'This function will allow you to reply to the Guest&#39;s message. It will be sent to his/her e-mail address. Please do not use smilies or BB code, as they will not be processed.',
+'origmess' => '----- Original Message -----',
+'from' => 'From',
+'to' => 'To',
+'sent' => 'Sent',
+'subject' => 'Subject',
+);
+
+1;
+

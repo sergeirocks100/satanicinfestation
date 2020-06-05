@@ -1,0 +1,57 @@
+###############################################################################
+# Notify.lng (Notify text definitions)                                        #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$notifylngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%notify_txt = (
+'118' => 'Topic Notification',
+'119' => 'There are no topics with Notification marked.',
+'120' => 'by',
+'121' => 'Reset',
+'122' => 'You are notified on replies in the following topics.',
+'123' => 'Activate checkbox to <b><i>deactivate</i></b> Notification on the Topic.',
+'124' => 'Update Notifications',
+'125' => 'Notify',
+'126' => 'Receive Notification on replies to this board.',
+'127' => 'Topic reply',
+'132' => 'New Topics Only',
+'133' => 'All New Posts',
+'134' => 'Remove',
+'135' => 'Board',
+'136' => 'Board Notification',
+'137' => 'Change or remove notification for this board.',
+'138' => 'Change',
+'139' => 'There are no boards with Notification marked.',
+'140' => 'Topic',
+'144' => 'Check all',
+'145' => 'New personal message from',
+'200' => 'You have',
+'201' => 'new',
+'202' => 'and',
+'203' => 'Do you want to view your Notifications?',
+'205' => 'Board Notifications',
+'206' => 'Topic Notifications',
+'333' => 'New Posts',
+'334' => 'No New Posts',
+'335' => 'New',
+'lastpost' => 'last post',
+'lft' => "&lsaquo;",
+'rgt' => "&rsaquo;",
+'75' => 'This is your Notification Board selection.',
+'76' => 'It now holds',
+'77' => 'of',
+'78' => 'maximum allowed Notification Boards.',
+);
+
+1;

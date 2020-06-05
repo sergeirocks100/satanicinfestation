@@ -1,0 +1,89 @@
+$SectionName = "Security";
+
+### Section 1
+#############################################
+$SectionSub1 = "Security_Intro";
+$SectionBody1 = qq~<p>YaBB is very secure against all types of attackers. The many built-in features of YaBB provide safety for your forum against attacks. Realize, however, many of these security features are selectable, thus if you don't enable them, it can pose risks. Examples of this would be not using at least one of the Validation measures for registrations, or allowing Guests to post without a Validation Image or Validation Question check.</p>
+~;
+#############################################
+
+### Section 2
+#############################################
+$SectionSub2 = "Sessions";
+$SectionBody2 = qq~<p><b>Sessions</b> are a YaBB feature designed to protect administrative functions. If sessions are enabled in the Admin Center, staff will be required to re-validate their session whenever their network connection changes IP address.</p>
+<p>To re-validate your session, simply click &#8220;Update Session&#8221; on the YaBB main menu at the top of the forum. If this link isn't present, then your session doesn't need to be updated.</p>
+<p>By default, it asks you for your Password to re-validate. That can be changed in your Profile, under the &#8220;Edit Profile&#8221; section, near the bottom of the list of settings.</p>
+<p>To check if sessions are enabled, go into the Admin Center&#47;Security Center&#47;Security Settings and look under the &#8220;General&#8221; tab. Sessions are enabled if the checkbox to the right of &#8220;Activate Session IDs&#8221; is checked.</p>
+~;
+#############################################
+
+### Section 3
+#############################################
+$SectionSub3 = "Stealth_Mode";
+$SectionBody3 = qq~<p><b>Stealth Mode</b> is a YaBB feature designed to allow Forum Administrators, Global Moderators, or both the ability to discretely monitor the forum's activity without being &#8220;seen&#8221;. When this option is selected, Forum Administrators and Global Moderators &#8220;Online&#8221; status is concealed from all other Member Groups and Guests.</p>
+<p>This option is enabled by checking the box in the &#8220;Staff&#8221; tab found in the Admin Center&#47;Forum Configuration&#47;Forum Settings.</p>
+~;
+#############################################
+
+### Section 4
+#############################################
+$SectionSub4 = "Encrypt_User_IDs";
+$SectionBody4 = qq~<p>This feature is designed to enhance security by allowing Forum Administrators the option to conceal the User's <span class="underline">log in</span> name in the link to their Profile. This is the link that appears wherever the mouse cursor is placed over a Member's <span class="underline">Displayed</span> Name.</p>
+<ul>
+    <li><span class="underline"><b>Option disabled:</b></span> When this option is disabled, the link will end with &#8220;username=(user's login ID)&#8221;</li>
+    <li><span class="underline"><b>Option enabled:</b></span> When this option is enable, the link will end with &#8220;username=(encrypted number)&#8221;</li>
+</ul>
+<p>This option is enabled by default. It may be disabled by unchecking the &#8220;Encrypt User IDs&#8221; box in the Admin Center&#47;Security Center&#47;Security Settings section under the &#8220;General&#8221; tab.</p>
+~;
+#############################################
+
+### Section 5
+#############################################
+$SectionSub5 = "Administrative_Functions";
+$SectionBody5 = qq~<p>The Forum Administrator may select what administrative functions the Global Moderators may control. The Forum Administrator may restrict access to the Admin Center completely, or may choose to allow Global Moderators to control a selected list of these functions. These include items such as editing user Profiles, adding Members, deleting Members, editing the Forum News, altering forum Security Settings, and many more.</p>
+<p>The best way to know for sure what options you have control over is to discuss them with the Forum Administrator.</p>
+<p>If your Forum Administrator has given you access to the Admin Center, the various menus on the left will show you the functions you have <i>at least some</i> control over.</p>
+<p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> Access to some screens in the Admin Center display options that <i>you may not have access to</i>. For example, the Forum Administrator may allow you to <b>add</b> and <b>view</b> members, but <span class="underline">not</span> <b>delete</b> members. The screen you view them on, however, contains checkboxes and buttons for the <b>delete</b> function. If you attempt to use these without having permission, it will result in you receiving an error message. This is <i>not</i> a bug - you do not have permission - and the program's proper response is to give you that error message.</p>
+~;
+#############################################
+
+### Section 6
+#############################################
+$SectionSub6 = "Activate_Referral_Security_Checking";
+$SectionBody6 = qq~<p>This feature is designed to enhance security by allowing Forum Administrators the option to select what actions are allowed in a URL outside the forum's domain name. When enabled, this allows the Administrator to select allowed actions individually in the list found in the Admin Center&#47;Security Center&#47;Referrer Security section.</p>
+<p>This option is enabled by checking the &#8220;Activate Referral Security Checking&#8221; box in the &#8220;General&#8221; tab found in the Admin Center&#47;Security Center&#47;Security Settings.</p>
+~;
+#############################################
+
+### Section 7
+#############################################
+$SectionSub7 = "Show_IP_in_Board_Index";
+$SectionBody7 = qq~<p>This feature allows Forum Administrators the option to view the IP number of anyone logged in or visiting the forum. This option displays a Guest's or User's IP address at the bottom right of each post and also gives access to the IP Lookup facility if it has been activated.</p>
+<p>This option may be enabled for Forum Administrators, Global Moderators, Forum Moderators or all three.</p>
+<p>This option is enabled by checking the appropriate boxes in the &#8220;General&#8221; tab found in the Admin Center&#47;Security Center&#47;Security Settings.</p>
+<h4>Enable IPLookup</h4>
+<p>This activates IP Lookup, allowing those able to view IPs the ability to also look up the particulars of an IP address through one of the WhoIs servers.</p>
+<h4>IP Lookup WhoIs Servers</h4>
+<p>Here you can add or remove WhoIs servers used by the IP Lookup utility. Use \{ip\} in the URL to substitute the actual IP address, and separate the title and URL with a pipe symbol '|'. Example: <i>MyLookupSite|mylookupsite.com?ip=\{ip\}</i></p>
+~;
+#############################################
+
+### Section 8
+#############################################
+$SectionSub8 = "Spam_Protect_-_Enter_Percent";
+$SectionBody8 = qq~<p>This feature is designed to limit spam by setting a limit on how many other Members a User may send a Personal Message to at one time. The number you enter represents <b>the maximum <span class="underline">percent</span> of total Members</b> a User may send PMs to at one time. </p>
+<p>This option is enabled by entering a desired percent in the appropriate box found in the &#8220;Personal Messages&#8221; tab found in the Admin Center&#47;Forum Configuration&#47;Forum Settings section.</p>
+~;
+#############################################
+
+### Section 9
+#############################################
+$SectionSub9 = "Other_Anti-spam_Measures";
+$SectionBody9 = qq~YaBB 2.6.0 has additional features for helping you combat spam registrations. Two such features are the Honeypot and SpamFruits both of which can be turned on or off from the Admin Center&#47;Security Center&#47;Anti-Spam Settings. Honeypot is a 'passive' spambot catcher that catches spambots when they fill in a registration field that can be seen by spambots but not by people using a browser. SpamFruits works by requiring a mouse move to choose the proper picture. Another effective anti-spam utility is Anti-Spam Question found in the Admin Center&#47;Security Center&#47;Anti-Spam Question.
+<p>This option must be turned on and it is highly recommended that you use questions that reflect your forum's unique niche. Try not to use questions whose answers are too easily searchable on Google.</p>
+<p><b>Validation Image</b> also has new features: You can now specify characters that will appear before and/or after the randomly generated Validation Image. These characters look like part of the Validation Image but users are instructed to ignore them when putting filling out the Validation Image text box.</p>
+~;
+#############################################
+
+
+1;

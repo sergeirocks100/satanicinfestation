@@ -1,0 +1,111 @@
+###############################################################################
+# BoardIndex.lng (BoardIndex text definitions)                                #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$boardindexlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%boardindex_txt = (
+'18' => 'Index',
+'20' => 'Forum Name',
+'21' => 'Posts',
+'21l' => 'posts',
+'22' => 'Last Post',
+'34' => 'Login',
+'63' => 'Moderators',
+'63a' => 'Moderator Groups',
+'64'  => 'Sub-Boards',
+'65'  => 'Sub-Boards in',
+'66'  => 'Sub-Board',
+'67'  => 'This board contains new posts.',
+'68'  => 'This board has no new posts.',
+'69'  => 'of the',
+'70'  => 'sub-boards contain new posts.',
+'71'  => 'sub-board contains new posts.',
+'72'  => 'sub-board has no new posts.',
+'141' => 'Guests',
+'142' => 'Members',
+'bviews' => 'Viewing',
+'143' => 'Search Engines',
+'158' => 'Users Online',
+'200' => 'Forum Statistics',
+'201' => 'The newest member is',
+'235' => 'Last Post',
+'236' => 'The most recent post is',
+'298' => 'Moderator',
+'298a' => 'Moderator Group',
+'315' => 'Forgot password?',
+'316' => 'Inbox',
+'320' => 'Sent Box',
+'330' => 'Topics',
+'330l' => 'topics',
+'333' => 'New Posts',
+'334' => 'No New Posts',
+'470' => 'N/A',
+'470a' => '<i>Ex-Member</i>',
+'487' => 'There are a total of',
+'488' => 'registered members',
+'489' => 'The forum contains a total of',
+'490' => 'within',
+'500' => 'Marking all Posts as read', # inside JavaScript!
+'500a' => 'Complete', # inside JavaScript!
+'500b' => 'Marking all Topics as Read', # inside JavaScript!
+'524' => 'In',
+'525' => 'By',
+'526' => 'Redirected Hits',
+'643' => 'Up',
+'685' => 'Info Center',
+'791' => 'View the',
+'792' => 'most recent posts',
+'792a' => 'most recent topics',
+'793' => 'on the forum.',
+'795' => 'You have',
+'796' => 'Personal Messages',
+'797' => 'View',
+'800' => 'The most users ever online was',
+'801' => 'The most members ever online was',
+'802' => 'The most guests ever online was',
+'803' => 'The most search engines ever online was',
+'no_ip' => 'No IP Logged',
+'guest_ip' => 'Guest IPs',
+'recenttopic' => '10 most recent topics',
+);
+
+%boardindex_imtxt = (
+'11' => 'You had',
+'12' => 'messages in your PM',
+'14' => 'New messages:',
+'15' => '.\nWould you like to view your PM Inbox',
+'16' => 'which exceeded the storage limit of',
+'18' => 'messages',
+'19' => 'The oldest',
+'20' => 'messages were automatically deleted.\n\nDo you want to view your PM',
+'21' => 'now?',
+'24' => 'of which',
+'25' => 'is new',
+'26' => 'are new',
+'46' => 'Storage',
+'47' => 'them',
+'48' => 'the message',
+'50' => 'New Broadcast Personal Messages.',
+'51' => '\nWould you like to view the Broadcast PM box',
+'50a' => 'New Alert Messages:',
+);
+
+%boardindex_exptxt = (
+'1' => 'Expand',
+'2' => 'Collapse',
+'5' => 'This category contains <b>new</b> posts.',
+'6' => 'This category contains no new posts.',
+);
+
+1;

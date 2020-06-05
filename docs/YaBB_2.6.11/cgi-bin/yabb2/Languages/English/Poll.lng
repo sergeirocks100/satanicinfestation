@@ -1,0 +1,67 @@
+###############################################################################
+# Poll.lng (Poll text definitions)                                            #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by: The YaBB Development Team                                      #
+#              with assistance from the YaBB community.                       #
+###############################################################################
+
+$polllngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%polltxt = (
+'4' => 'Poll Question',
+'6' => 'Question',
+'7' => 'Option',
+'15' => 'Poll',
+'16' => 'Question',
+'17' => 'Total votes',
+'18' => 'Submit Vote',
+'19' => 'View Results',
+'20' => 'Open',
+'21' => 'Close',
+'22' => '*** This poll has now closed ***',
+'23' => 'Details for Poll:',
+'24' => 'Votes',
+'25' => 'Nobody voted for this option.',
+'26' => 'Hide results:',
+'27' => 'Remove',
+'30' => 'IP Address',
+'31' => 'Date Voted',
+'32' => 'Enable Guest Voting:',
+'33' => 'View Votes',
+'35' => 'Name',
+'39' => 'Modify',
+'40' => 'The poll question',
+'41' => 'There was an illegal character in your poll question. Please try again.',
+'42' => 'Poll Details',
+'43' => 'Remove Vote',
+'44' => 'Are you sure you want to delete this poll?',
+'45' => 'Created by',
+'45a' => 'Last Modified by',
+'46' => 'on',
+'47' => 'Thank you for voting in this poll.',
+'48' => 'The results however will remain hidden until all the votes have been counted.',
+'49' => 'Remove Votes',
+'53' => '*** No-one else can see these results until the poll is closed ***',
+'54' => 'Check this if you want guests to be able to vote in this poll.',
+'55' => 'Check this if you do not want the results of this poll shown until voting has been closed.',
+'56' => 'Check this if you want to allow users to vote for more than one option.',
+'57' => 'The poll comment',
+'58' => 'Multiple Choice',
+'59' => 'Poll Comment',
+'64' => 'Your vote was on',
+'65' => 'Your vote choice was',
+'66' => 'Your vote choices were',
+'showcased' => 'Currently Being Showcased',
+'setshowcased' => 'Set Poll Showcased?',
+'showcaserem' => 'Remove Poll from Showcase?',
+'confirm' => 'Are you sure you want to Showcase this Poll?\\nAnother Poll is already Showcased.', # Test before changing! It's inside a javascript. Do not use " or ' inside parentheses.
+);
+
+1;

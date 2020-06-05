@@ -1,0 +1,36 @@
+###############################################################################
+# LivePreview.lng                                                             #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+# Mod created by Carsten Dalgaard                                             #
+#                and added to YaBB core in Version 2.5.4                      #
+# Released: May 11, 2013, Copyright 2013 Carsten Dalgaard                     # 
+###############################################################################
+
+$livepreviewlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%livepreview_txt = (
+'info_missing' => 'Missing or Incorrect Information:',
+'name_empty' => 'The Name field is not filled out.',
+'long_name' => 'Please shorten your name. It is too long',
+'mail_empty' => 'The E-mail field is not filled out.',
+'valid_mail' => 'Please enter a valid E-mail address.',
+'veri_code' => 'The Verification field is not filled out.',
+'veri_quest' => 'The Verification Question field is not filled out.',
+'subj_empty' => 'The Subject field is not filled out.',
+'mess_empty' => 'The Message field is empty.',
+'subj_allcaps' => 'It appears that you are trying to write using ALL CAPS in the Subject field. This is against forum rules.',
+'mess_allcaps' => 'It appears that you are trying to write using ALL CAPS in the Message field. This is against forum rules.',
+'pm_recipient' => 'You must fill in the recipient field.',
+'no_links'     => "You are not allowed to include links until you have created $minlinkpost posts.",
+);
+
+1;

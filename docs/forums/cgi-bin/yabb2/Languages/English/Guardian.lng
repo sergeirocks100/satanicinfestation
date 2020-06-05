@@ -1,0 +1,74 @@
+###############################################################################
+# Guardian.lng (Guardian text definitions)                                    #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$guardianlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%guardian_txt = (
+'main' => 'The Guardian&trade;',
+'admin' => 'The Guardian&trade; Administrator',
+'setup' => 'The Guardian&trade; Setup',
+'title' => 'Welcome to "The Guardian&trade;", Your Gatekeeper against intruders.',
+'description' => 'With "The Guardian&trade;" you can block intruders on various levels, resulting in a better security and less chance of hacking.',
+'notify' => 'Do you want an e-mail notification on any detected attempts?',
+'general' => 'Global and Server Settings',
+'use_guardian' => 'Use The Guardian&trade; to protect your board?',
+'use_htaccess' => 'Activate .htaccess to add IP blocks on server level?',
+'use_htaccess_support' => '<span class="small"><i>(Only works if your server supports /.htaccess files.)</i></span>',
+'htaccess_support' => '<span class="small"><i>(Only works if your server supports it and "Activate .htaccess to add IP blocks on server level?" from first item above is enabled.)</i></span>',
+'htaccess_add' => 'Auto add abusing IP addresses to .htaccess?',
+'htaccess_added' => 'Auto added abusing IP address to .htaccess file. (You can remove it from the list manually from the Guardian Admin)',
+'proxy' => 'Proxy Blocking',
+'referer' => 'Referrer Blocking',
+'harvester' => 'Harvester Blocking',
+'request' => 'Request Method Blocking',
+'string' => 'Environment String Blocking',
+'clike' => 'CLIKE Blocking',
+'union' => 'UNION Blocking',
+'script' => 'Scripting Blocking',
+'proxy_on' => 'Deny access through proxy servers?',
+'referer_on' => 'Activate referrer blocking?',
+'harvester_on' => 'Activate harvester blocking?',
+'request_on' => 'Activate Request Method blocking?',
+'string_on' => 'Activate &#39;bad words&#39; in url environment blocking?',
+'clike_on' => 'Activate CLIKE blocking (only MySQL)?',
+'union_on' => 'Activate UNION blocking (only MySQL)?',
+'script_on' => 'Activate scripting blocking?',
+'proxy_abuse' => 'Proxy Access',
+'referer_abuse' => 'Referrer',
+'harvester_abuse' => 'Harvester',
+'request_abuse' => 'Request Method',
+'string_abuse' => 'Url Bad String',
+'clike_abuse' => 'CLIKE',
+'union_abuse' => 'UNION',
+'script_abuse' => 'Scripting',
+'abuse' => 'Abuse Detected',
+'abuse_user' => 'Abusing user ID',
+'abuse_ip' => 'Abuse detected from IP',
+'abuse_referer' => 'Blocked referrer',
+'abuse_string' => 'Blocked word',
+'abuse_environment' => 'Environment string',
+'abuse_form_environment' => 'Blocked script in form data',
+'abuse_url_environment' => 'Blocked script in url data',
+'abuse_harvester' => 'Blocked Harvester',
+'abuse_request' => 'Blocked Request Method',
+'white_list' => 'Enter IP&#39;s, user id or proxy identifier strings you want to pass through (whitelist)?<br /><i>(whole or partial, one per line)</i>',
+'referer_list' => 'Enter referrer url&#39;s you want blocked?<br /><i>(whole or partial url, one per line)</i>',
+'harvester_list' => 'Enter harvester agent strings you want blocked?<br /><i>(whole or partial agent string, one per line)</i>',
+'request_list' => 'Enter Request Methods you want blocked?<br /><i>(whole or partial method string, one per line)</i><br /><br /><b><u>ATTENTION!</u><br />NEVER BLOCK POST and GET!<br />It will render your board useless.</b>',
+'string_list' => 'Enter &#39;bad words&#39; you want blocked?<br /><i>(whole or partial string, one per line)</i>',
+'htaccess_list' => 'Enter IP addresses or (partial) domain names you want blocked on server level?<br /><span class="small"><i>(* wild-cards allowed, one per line)</i></span>',
+'save' => 'Save Guardian Changes',
+);
+
+1;

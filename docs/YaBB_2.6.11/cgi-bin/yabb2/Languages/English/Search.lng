@@ -1,0 +1,88 @@
+###############################################################################
+# Search.lng (Search text definitions)                                        #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$searchlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%search_txt = (
+'1' => 'This post was made in the last...',
+'2' => 'week',
+'3' => 'month',
+'4' => 'three months',
+'5' => 'year',
+'6' => '(all posts)',
+'30' => 'on',
+'70' => 'Subject',
+'72' => 'Message',
+'73' => 'IP Address',
+'105' => 'Post',
+'107' => 'at',
+'109' => 'Started by',
+'166' => 'Search Results',
+'167' => 'End of results',
+'170' => 'Sorry, no matches were found',
+'171' => 'Go back to search here.',
+'182' => 'Search',
+'183' => 'Set Search Parameters',
+'186' => 'Search for topics started by someone',
+'187' => 'Search for topics posted in by someone',
+'189' => 'Choose the board(s) to search in',
+'190' => 'Press and hold down the &#39;Control&#39; key or<br />&#39;Apple&#39; key to select more than one.',
+'191' => 'Display how many results?',
+'191a' => 'Display only one result per thread?',
+'191b' => "Maximum allowed: $maxsearchdisplay",
+'191x' => "You are allowed to set max. $maxsearchdisplay results to be displayed. Please change your value.",
+'236' => 'Return',
+'237' => 'to the board index.',
+'343' => 'Match all words',
+'344' => 'Match any words',
+'345' => 'Match as phrase',
+'345a' => 'Match partial words',
+'346' => 'Search -All- Members only',
+'525' => 'by',
+'572' => 'Search -All- Guests only',
+'573' => 'Fields to Search',
+'574' => 'Age since last post',
+'575' => 'Min',
+'576' => 'Max',
+'577' => 'Any poster',
+'578' => 'hours',
+'579' => 'days',
+'582' => 'Search for',
+'583' => 'By Member name',
+'737' => 'Check all',
+'pmfrom' => 'From', ## new
+'pmto' => 'To',
+'pmcc' => 'CC',
+'pmbcc' => 'BCC',
+'pmgroup' => 'Group',
+'searchme' => 'Search own posts',
+'casesensitiv' => 'Case-Sensitive',
+'searchyabbtags' => 'Search also inside YaBBCode-tags <span class="small">(brackets like this [...]. Takes much more time.)</span>',
+);
+
+%pmboxes_txt = (
+'in' => 'In',
+'inbox' => 'Inbox',
+'out' => 'Out',
+'outbox' => 'Sent box',
+'store' => 'Store in folder',
+);
+
+%searchselector_txt = (
+'select' => 'Select',
+'remove' => 'Remove',
+'removeconfirm' => 'Are you sure you want to remove member name?',
+);
+
+1;

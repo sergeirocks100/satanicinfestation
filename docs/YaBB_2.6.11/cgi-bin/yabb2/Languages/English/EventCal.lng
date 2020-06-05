@@ -1,0 +1,185 @@
+###############################################################################
+# EventCal.lng                                                                #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+# Mod created by XTC: http://www.yabbserver.com                               #
+#                and added to YaBB core in Version 2.5.4 /Version 3.0         #
+###############################################################################
+
+$eventcallngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+### Event Calendar ###
+
+%var_cal = (
+'calgo' => 'Go',
+'calname' => 'Name',
+'calmon_01' => 'January',
+'calmon_02' => 'February',
+'calmon_03' => 'March',
+'calmon_04' => 'April',
+'calmon_05' => 'May',
+'calmon_06' => 'June',
+'calmon_07' => 'July',
+'calmon_08' => 'August',
+'calmon_09' => 'September',
+'calmon_10' => 'October',
+'calmon_11' => 'November',
+'calmon_12' => 'December',
+'calday_1' => 'Mon',
+'calday_2' => 'Tue',
+'calday_3' => 'Wed',
+'calday_4' => 'Thu',
+'calday_5' => 'Fri',
+'calday_6' => 'Sat',
+'calday_7' => 'Sun',
+'calday' => 'Day',
+'calmonth' => 'Month',
+'calyear' => 'Year',
+'caltitle' => qq~<a href="$scripturl?action=eventcal;calshow=1">Event Calendar</a>~,
+'yytitle' => 'Event Calendar',
+'calsubtitle' => 'Event(s)',
+'calevent' => 'New event:',
+'calbirthday' => 'Birthday',
+'calbirthday1' => 'No Birthday(s)',
+'calbirthdays' => 'Birthday List',
+'calbirthdayinfo' => 'The birthday list shows a list of member birthdays (if entered in their profiles)<br />You can sort displayed birthdays by <i>Name</i>, <i>Age</i>, <i>Star sign</i> (if shown), or <i>Birthday date</i>.',
+'calbirthdaytoday' => 'Members celebrating their birthday today',
+'calnobdlist' => 'The birthday list was deactivated by the administrator.',
+'calbdaylist' => 'Show member birthdays',
+'calstarsign' => 'Zodiac sign',
+'calage' => 'Age',
+'calbddate' => 'Birthday Date',
+'Pisces' => qq~<img src="$imagesdir/pisces.png" alt="Pisces" class="zodiac" />~,
+'Virgo' => qq~<img src="$imagesdir/virgo.png" alt="Virgo" class="zodiac" />~,
+'Cancerian' => qq~<img src="$imagesdir/cancer.png" alt="Moonchild" class="zodiac" />~,
+'Leo' => qq~<img src="$imagesdir/leo.png" alt="Leo" class="zodiac" />~,
+'Sagittarius' => qq~<img src="$imagesdir/sagittarius.png" alt="Sagittarius" class="zodiac" />~,
+'Scorpio' => qq~<img src="$imagesdir/scorpio.png" alt="Scorpio" class="zodiac" />~,
+'Capricorn' => qq~<img src="$imagesdir/capricorn.png" alt="Capricorn" class="zodiac" />~,
+'Taurus' => qq~<img src="$imagesdir/taurus.png" alt="Taurus" class="zodiac" />~,
+'Libra' => qq~<img src="$imagesdir/libra.png" alt="Libra" class="zodiac" />~,
+'Aquarius' => qq~<img src="$imagesdir/aquarius.png" alt="Aquarius" class="zodiac" />~,
+'Aries' => qq~<img src="$imagesdir/aries.png" alt="Aries" class="zodiac" />~,
+'Gemini' => qq~<img src="$imagesdir/gemini.png" alt="Gemini" class="zodiac" />~,
+'calnoevent' => 'There are no events scheduled.',
+'calsubmit' => 'Go to:',
+'calview' => 'View',
+'calprivate' => 'Private',
+'calmembers' => 'Only Members',
+'calpublic' => 'Public',
+'calclickinfo' => '(Show event by clicking on date)',
+'caldel' => 'Delete',
+'caldelalert' => 'Are you sure you want to remove this event?', # Inside JavaScript!
+'caledit' => 'Edit Event',
+'calsave' => 'Save Event',
+'calshowmini' => 'Show event(s) of this day',
+'calshowevent' => 'Show event',
+'calmore' => 'READ MORE',
+'calnoname' => 'Disable member name-link',
+'caltoday' => 'Today&#39;s one',
+'calcoming' => 'Upcoming',
+'caldays' => 'Days',
+'calis' => 'is',
+'calold' => 'years old today!',
+'date' => 'Date',
+'onlyone' => 'Unique Event',
+'weekly' => 'weekly',
+'monthly' => 'monthly',
+'yearly' => 'yearly',
+'event_icon' => 'Event Icon',
+'eventinfo' => 'Event',
+'eventholiday' => 'Holiday',
+'eventannounce' => 'Announcement',
+'eventnote' => 'Exclamation',
+'eventparty' => 'Party',
+'eventcelebration' => 'Celebration',
+'eventsport' => 'Sport',
+'eventmedia' => 'Media (TV)',
+'eventmeeting' => 'Meeting',
+'hidden' => '<i>Hidden</i>',
+'verification_question_desc' => 'Please answer the above verification question.',
+'verification_question_case' => 'Answers are case-sensitive.',
+'bdayhide' => 'has a birthday today.',
+'other' => '123 (Other)',
+'guest' => 'Guest',
+'exmem' => 'Ex-member',
+'by' => 'By:',
+'getaddevent' => 'Add a new Event'
+);
+
+### Event Calendar YaBBC ###
+
+%var_calpost = (
+'getaddevent' => 'Add a new Event',
+'event_send' => 'Add Event',
+);
+
+### Event Calendar Settings ###
+
+%event_cal = (
+'1' => 'Event Calendar Settings',
+'3' => 'Show Event Calendar to:',
+'4' => 'Show &#39;Event Calendar&#39; Button on YaBB menu to:',
+'5' => 'Show Birthdays in Calendar/Events to:',
+'6' => 'Determine length of characters from each event(s)?',
+'7' => 'Shows a &#39;READ MORE&#39; link to posted event<br />(0 = deactivated)',
+'8' => 'Emphasize current date with this color in the mini calendar',
+'9' => 'Enable &#39;Event-Scroll&#39; function',
+'10' => 'Very useful if you have many events.',
+'11' => 'Off',
+'12' => 'Auto-Scroll',
+'13' => 'Manual-Scroll',
+'14' => 'Select which member groups are allowed to add/edit events:',
+'15' => "Making NO selection allows all Groups, Users and Guests to add/edit events.<br /><br />$admin_txt{'14'}",
+'16' => 'Allow these members to add Events',
+'17' => 'List multiple members as &#39;username1,username2&#39;.',
+'18' => 'Allow members to add &#39;Private Events&#39;?',
+'19' => 'If unchecked only Global Moderators and Administrators can add &#39;Private Events&#39;',
+'20' => 'Enable show &#39;Events&#39; (Event-Scroll) on BoardIndex?',
+'21' => 'Standard Settings',
+'22' => 'Event Settings',
+'23' => 'Access Settings',
+'24' => 'Show "Disable username-link" checkbox to:',
+'26' => 'Calendar Event-Icon Settings',
+'27' => 'Select Image', 
+'28' => 'Description',
+'29' => 'Image',
+'30' => 'Add new Calendar Event-Icons here',
+'31' => 'Save Event Calendar Settings',
+'32' => 'Save Event-Icon Settings',
+'33' => 'This section allows you to customize your Calendar Events by using your own Event Icons.<br />Images look best being no larger than 25x25px.<br />Allowed file types: png jpg jpeg gif<br />Max. file size: 100KB',
+'34' => 'List upcoming events for __ days next to the Event Calendar',
+'35' => '(0 = All events for current month)',
+'36' => 'First day of week (mini calendar)?',
+'37' => '(unchecked = Monday / checked = Sunday)',
+'42' => 'Show Member Birthdays List to:',
+'42a' => 'Show Zodiac Signs in Birthday List?',
+'43' => 'Don&#39;t show &#39;Event-Icons&#39; in mini calendar?',
+'44' => 'Apply group colors when displaying member links?',
+'45' => 'Checking this option will use more forum resources.',
+'48' => 'Show &#39;Birthday List&#39; Button on the YaBB menu to:',
+'49' => 'Birthday List Settings',
+'50' => 'Show dates of birth to:',
+'52' => 'Delete old events<br /><span class="small">Check to remove events older than the current date when new event is added.</span>',
+'54' => 'Rebuild Birthday list',
+'56' => 'Marquee',
+'57' => 'XHTML',
+'58' => 'Disable YaBBC Tags in the sneak-preview Text?',
+'59' => 'Add Event Icon',
+'60' => 'Remove Event Icon',
+'error_image' => 'Please select an image for the Event Icon.',
+'error_desc' => 'Please enter a description for the Event Icon.',
+'del' => 'Delete old events',
+'showtoday' => 'Use "Today", "Yesterday", and "Tomorrow" in event and birthday displays.',
+);
+
+1;
+

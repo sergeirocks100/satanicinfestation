@@ -1,0 +1,327 @@
+$SectionName = "Manage_Boards";
+
+### Section 1
+#############################################
+$SectionSub1 = "Accessing_the_Board_Functions";
+$SectionBody1 = qq~<p>Now that you have created your Categories, you can use YaBB's amazing Board-creation utilities to manage the post-able sections of your community. YaBB allows you to create an unlimited<b>*</b> number of boards in every category. In order to access these functions, you must be logged in as an Administrator or Global Moderator with proper access rights. Once you are, look at the main menu. You will notice a link titled &#8220;Admin Center&#8221;. Clicking this will bring you to a large control panel. On the left hand menu, search for the section titled &#8220;Forum Controls&#8221; and click on the second link titled &#8220;Boards&#8221;.</p>
+<p><i><b>*</b> YaBB is only limited by the space allocated to you on your web hosting server.</i></p>
+~;
+#############################################
+
+### Section 2
+#############################################
+$SectionSub2 = "Adding_New_Boards";
+$SectionBody2 = qq~<p>YaBB gives Forum Administrators the ability to add multiple Boards from a single screen. To do this, access the forum's Board Management functions as explained above. Once there, scroll to the bottom of the list of existing boards &#40;if any&#41; and find the function titled &#8220;Add Boards&#8221;. Enter the number of new Boards you would like to create in the text box then press the button titled &#8220;Add&#8221;.</p>
+<p>On this Edit Boards page, you will be given a large set of options for each of the new Boards you are trying to add:</p>
+<ul>
+    <li><b><span class="underline">Board ID</span></b>
+        <ul>
+            <li>This is only used for internal YaBB functions, and it is used in the URL used to view a board. You may enter any alphanumeric name you wish with no spaces.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Name</span></b>
+        <ul>
+            <li>This is what your users will see as the name of the Board. You may enter anything you wish here.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Description</span></b>
+        <ul>
+            <li>Describe this board so your users will know what the subject/topic will be.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Board Moderators</span></b>
+        <ul>
+            <li>Click on the link under the word &#8220;Moderators&#8221; to add the members you wish to give Moderator access for <i>this board</i>.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Member Group Moderators</span></b>
+        <ul>
+            <li>If you choose to have all the members of one or more particular Member Groups act as Moderators for <i>this board</i>, select the Member Group&#40;s&#41; here.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> If you set up a particular Member Group and assign it as the Member Group Moderator group in a Board, it is easy to add a new Moderator to that Board - just add them to that Member Group.</p>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> You can also assign Moderators and Moderator Groups to a specific board by going to that board and clicking on the 'Add/Delete Moderators' link near the top or by going to the Admin Edit section of a member's Profile and choosing the board or boards you would like them to Moderate.</p>
+    </li>
+    <li><b><span class="underline">Category</span></b>
+        <ul>
+            <li>Choose which Category you would like this board to be a part of.</li>
+        </ul>
+    </li>
+   <li><b><span class="underline">Parent Board</span></b>
+        <ul>
+            <li>Choose which board you would like this board to be a subboard of, if any.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Can Post?</span></b>
+        <ul>
+            <li>Choose whether or not topics within this board can be viewed.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> If this is a new/empty board no topics can be posted to it. Posts can only be made to the subboards within it. If this board has threads, making it a 'No Post' board means the threads will become inaccessible even to the admin.</p>
+    </li>
+    <li><b><span class="underline">Board Picture</span></b>
+        <ul>
+            <li>Here you can assign a small image to represent this board. Choose which template the board picture will apply to. (You can assign different board graphics for each template you have.) Then type the complete URL to the image into the URL box using the standard format: http://www.domain.com/folder/imagename.jpg. You can also upload board pictures. These will be stored in the 'Boards' folder in the template graphics folder. You can set the size of the board graphic by going to Admin Center&#47;Forum Configuration&#47;Advanced Settings &#8220;Images&#8221; tab. 50 by 50 is generally a good size for board picture. Allowed image formats are .gif, .jpg, and .png.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">RSS</span></b>
+        <ul>
+            <li>Here you can turn on or off the RSS (Really Simple Syndication) feed for this board. RSS allows users to keep up to date on the newest information on a board without having stay on the forum site.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Zero Post Count Board?</span></b>
+        <ul>
+            <li>Check this box if you would like to prevent any Posts made in this Board from increasing users' Post Counts.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Show to All?</span></b>
+        <ul>
+            <li>Checking this option will ensure the Board Name and Board description are shown to all who are able to view the Category this Board is in, even if they are not allowed access to view the contents of the Board itself.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> This is a good way to show your Guests that there is more content available to them if they register and become Members.</p>
+    </li>
+    <li><b><span class="underline">Allow Attachments</span></b>
+        <ul>
+            <li>Checking this option will enable users to attach files to their posts in this board provided the &#8220;Allow File Attaching in Posts?&#8221; option is checked in the Admin Center&#47;Forum Configuration&#47;Advanced Settings under the &#8220;File Attachments&#8221; tab.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Global Announcements</span></b>
+        <ul>
+            <li>Checking this option will ensure that the messages in this board are shown as important on top of every board. No matter how the Board permissions are set, only Forum Administrators and Global Moderators can start new topics or reply. <b><span class="underline">Note:</span> YaBB only allows a single board to have this label.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Recycle Bin</span></b>
+        <ul>
+            <li>Checking this option make this board a recycle bin for messages deleted by moderators. It can also be used as a recycle bin for Forum Administrators by unchecking the box found in the Admin Center&#47;Configuration&#47;Forum Settings under the &#8220;Staff&#8221; tab. <b><span class="underline">Note:</span> YaBB only allows a single board to have this label.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Enable Board Rules</span></b>
+        <ul>
+            <li>Check this box if you would like to enable Board Rules for this board. In this section you can post rules for a particular board that may be different than the rules you have generally for your forum.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allow Collapse?</span></b>
+        <ul>
+            <li>Check this box if you would like users to be able to collapse the Board Rules.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Rules Title</span></b>
+        <ul>
+            <li>Title for the rules for this board.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Board Rules</span></b>
+        <ul>
+            <li>Rules for this board. You may use html tags in the rules.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Minimum Age to Access</span></b>
+        <ul>
+            <li>Restrict access by minimum age.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Maximum Age to Access</span></b>
+        <ul>
+            <li>Restrict access by maximum age.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Gender Allowed Access</span></b>
+        <ul>
+            <li>Restrict access by gender.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> The Age&#47;Gender restrictions are based on the information users enter in their Profile for birthday and gender selection. If a user does not enter an age or select a gender, YaBB has no way to know their age or gender, thus <i>they will not be allowed access to any board that uses these restrictions.</i></p>
+    </li>
+    <li><b><span class="underline">Board Password</span></b>
+        <ul>
+            <li>If checked and if a password has been filled in, members will need to use the password to access this board. Note that adding a password to an 'External Link' board does nothing.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allowed to Start Topics</span></b>
+        <ul>
+            <li>Limit which Member Groups can start a new topic.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allowed to Reply to Topics</span></b>
+        <ul>
+            <li>Limit which Member Groups are allowed to reply to topics.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allowed to View Topics</span></b>
+        <ul>
+            <li>Limit which Member Groups are allowed to view topics.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allowed to Create Polls</span></b>
+        <ul>
+            <li>Limit which Member Groups are allowed to create polls.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> To allow Guests to do <span class="underline">any</span> of the above four functions, <i><b>do not select any member groups</b></i> in that option box.</p>
+    </li>
+</ul>
+<p>Once you have filled out all the information for your new Boards, scroll down to the bottom of the list and click on the button titled &#8220;Save&#8221;. Your new Boards will be created and opened for posting!</p>
+~;
+#############################################
+
+### Section 3
+#############################################
+$SectionSub3 = "Editing_a_Board";
+$SectionBody3 = qq~<p>If you need to make changes to any of the boards you have created, simply follow the directions above to access your board management section. In the list of boards, you will notice a check box that corresponds to each title. Check this box for each and every board you wish to edit. Once selected, scroll to the bottom of the board listings and locate the set of radio buttons titled &#8220;With selected&#8221;. Click on the radio labeled &#8220;Edit&#8221; then press the button to the right titled &#8220;Go&#8221;.</p>
+<p>On this Edit Boards page, you will be given a large set of options for each of the new Boards you are trying to edit:</p>
+<ul>
+    <li><b><span class="underline">Board ID</span></b>
+        <ul>
+            <li>This is only used for internal YaBB functions, and it is used in the URL used to view a board. This Board ID is <i>not editable</i> and is displayed for information only.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Name</span></b>
+        <ul>
+            <li>This is what your users will see as the name of the Board. You may enter anything you wish here.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Description</span></b>
+        <ul>
+            <li>Describe this board so your users will know what the subject/topic will be.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Moderators</span></b>
+        <ul>
+            <li>Click on the link under the word &#8220;Moderators&#8221; to add the members you wish to give Moderator access for <i>this board</i>.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Member Group Moderators</span></b>
+        <ul>
+            <li>If you choose to have all the members of one or more particular Member Groups act as Moderators for <i>this board</i>, select the Member Group&#40;s&#41; here.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> If you set up a particular Member Group and assign it as the Member Group Moderator group in a Board, it is easy to add a new Moderator to that Board - just add them to that Member Group.</p>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> You can also assign Moderators and Moderator Groups to a specific board by going to that board and clicking on the 'Add/Delete Moderators' link near the top or by going to the Admin Edit section of a member's Profile and choosing the board or boards you would like them to Moderate.</p>
+    </li>
+    <li><b><span class="underline">Category</span></b>
+        <ul>
+            <li>Choose which Category you would like this board to be a part of.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Parent Board</span></b>
+        <ul>
+            <li>Choose which board you would like this board to be a subboard of.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Child Boards</span></b>
+        <ul>
+            <li>Tells you what boards are already subboards within this board.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Can Post?</span></b>
+        <ul>
+            <li>Choose whether or not topics within this board can be viewed.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> If this is a new/empty board no topics can be posted to it. Posts can only be made to the subboards within it. If this board has threads, making it a 'No Post' board means the threads will become inaccessible even to the admin.</p>
+    </li>
+    <li><b><span class="underline">Board Picture</span></b>
+        <ul>
+            <li>Here you can assign a small image to represent this board. Type the complete URL to the image in this box using the standard format: http:www.domain.com/folder/imagename.jpg. Allowed image formats are .gif, .jpg, .png, and .bmp.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">RSS</span></b>
+        <ul>
+            <li>Here you can turn on or off the RSS (Really Simple Syndication) feed for this board. RSS allows users to keep up to date on the newest information on a board without having stay on the forum site.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Zero Post Count Board?</span></b>
+        <ul>
+            <li>Check this box if you would like to prevent any Posts made in this Board from increasing users' Post Counts.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Show to All?</span></b>
+        <ul>
+            <li>Checking this option will ensure the Board Name and Board description are shown to all who are able to view the Category this Board is in, even if they are not allowed access to view the contents of the Board itself.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> This is a good way to show your Guests that there is more content available to them if they register and become Members.</p>
+    </li>
+    <li><b><span class="underline">Allow Attachments</span></b>
+        <ul>
+            <li>Checking this option will enable users to attach files to their posts in this board provided the &#8220;Allow File Attaching in Posts?&#8221; option is checked in the Admin Center&#47;Forum Configuration&#47;Advanced Settings under the &#8220;File Attachments&#8221; tab.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Global Announcements</span></b>
+        <ul>
+            <li>Checking this option will ensure that the messages in this board are shown as important on top of every board. No matter how the Board permissions are set, only Forum Administrators and Global Moderators can start new topics or reply. <b><span class="underline">Note:</span> YaBB only allows a single board to have this label.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Recycle Bin</span></b>
+        <ul>
+            <li>Checking this option make this board a recycle bin for messages deleted by moderators. It can also be used as a recycle bin for Forum Administrators by unchecking the box found in the Admin Center&#47;Configuration&#47;Forum Settings under the &#8220;Staff&#8221; tab. <b><span class="underline">Note:</span> YaBB only allows a single board to have this label.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Enable Board Rules</span></b>
+        <ul>
+            <li>Check this box if you would like to enable Board Rules for this board.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allow Collapse?</span></b>
+        <ul>
+            <li>Check this box if you would like users to be able to collapse the Board Rules.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Rules Title</span></b>
+        <ul>
+            <li>Title for the rules for this board.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Board Rules</span></b>
+        <ul>
+            <li>Rules for this board. You may use html tags in the rules.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Minimum Age to Access</span></b>
+        <ul>
+            <li>Restrict access by minimum age.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Maximum Age to Access</span></b>
+        <ul>
+            <li>Restrict access by maximum age.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Gender Allowed Access</span></b>
+        <ul>
+            <li>Restrict access by gender.</li></ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> The Age&#47;Gender restrictions are based on the information users enter in their Profile for birthday and gender selection. If a user does not enter an age or select a gender, YaBB has no way to know their age or gender, thus <i>they will not be allowed access to any board that uses these restrictions.</i></p></li>
+    <li><b><span class="underline">Allowed to Start Topics</span></b>
+        <ul>
+            <li>Limit which Member Groups can start a new topic.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allowed to Reply to Topics</span></b>
+        <ul>
+            <li>Limit which Member Groups are allowed to reply to topics.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allowed to View Topics</span></b>
+        <ul>
+            <li>Limit which Member Groups are allowed to view topics.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allowed to Create Polls</span></b>
+        <ul>
+            <li>Limit which Member Groups are allowed to create polls.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> To allow Guests to do <span class="underline">any</span> of the above four functions, <i><b>do not select any member groups</b></i> in that option box.</p>
+    </li>
+</ul>
+<p>Once you have edited all the information for your Boards, scroll down to the bottom of the list and click on the button titled &#8220;Save&#8221;. Your changes to the Boards will be seen immediately.</p>
+ ~;
+#############################################
+
+### Section 4
+#############################################
+$SectionSub4 = "Deleting_a_Board";
+$SectionBody4 = qq~<p>If you would like to remove a Board, follow the directions in the Accessing the Board Functions section above to access your Board management page.</p>
+<h4>Deleting a Board</h4>
+<ul>
+    <li>In the list of Boards, you will notice a check box that corresponds to each title. Check this box for each and every Board you wish to remove.</li>
+    <li>Once selected, scroll to the bottom of the Board listings and locate the set of radio buttons titled &#8220;With selected&#8221;.</li>
+    <li>Click on the radio labeled &#8220;Remove&#8221; then press the button to the right titled &#8220;Go&#8221;.</li>
+    <li>A small pop-up will ask you to confirm that you want to remove these Boards. Click &#8220;OK&#8221; to remove them or &#8220;Cancel&#8221; to keep them</li>
+</ul>
+~;
+#############################################
+
+1;

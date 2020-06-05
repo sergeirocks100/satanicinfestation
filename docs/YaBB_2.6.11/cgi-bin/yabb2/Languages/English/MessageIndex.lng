@@ -1,0 +1,111 @@
+###############################################################################
+# MessageIndex.lng (MessageIndex text definitions)                            #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$messageindexlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%messageindex_txt = (
+'2' => 'Admin',
+'3' => 'This topic contains',
+'4' => 'attachments',
+'5' => 'attachment',
+'10' => 'Permalink for this article',
+'15' => 'Poll',
+'18' => 'Index',
+'19' => 'Page Index Toggle',
+'22' => 'Last Post',
+'31' => 'Remove',
+'54' => 'Remove',
+'63' => 'Moderators',
+'63a' => 'Moderator Groups',
+'70' => 'Subject',
+'71' => 'Message icon',
+'75' => 'This is your Favorites thread selection.',
+'76' => 'It now holds',
+'77' => 'of',
+'78' => 'maximum allowed Favorite threads.',
+'104' => 'Lock/Unlock',
+'109' => 'Started By',
+'110' => 'Replies',
+'132' => 'Move',
+'133' => 'Move to',
+'139' => 'Pages',
+'162' => 'Are you sure you want to remove this topic?',
+'199' => 'Double click this checkbox for more info about its function.', # don't use " inside!
+'200' => 'Check this box to include a New Post at the end of the Topic being Moved. This Post will show the info from where the Thread came and who moved it. Uncheck it to Move without a New Post included.', # inside JavaScript!
+'251' => 'Forum Jump',
+'298' => 'Moderator',
+'298a' => 'Moderator Group',
+'301' => 'Views',
+'302' => 'New',
+'303' => 'Go to first unread post',
+'454' => 'Hot Topic (More than',
+'454a' => 'Replies)',
+'455' => 'Very Hot Topic (More than',
+'456' => 'Locked Topic',
+'457' => 'Normal Topic',
+'458' => 'Hidden Topic',
+'459' => 'Hidden Sticky Topic',
+'460' => 'Hidden Locked Topic',
+'461' => 'Hidden Sticky Locked Topic',
+'462' => 'GO!',
+'470' => 'N/A',
+'470a' => '<i>Ex Member</i>',
+'500' => 'Marking all Topics as Read', # inside JavaScript!
+'500a' => 'Complete', # inside JavaScript!
+'525' => 'By',
+'526' => 'by',
+'527' => 'Started',
+'737' => 'Check all',
+'779' => 'Sticky Topic',
+'779a' => 'Global Announcement',
+'779b' => 'Locked Global Announcement',
+'780' => 'Sticky Locked Topic',
+'781' => 'Sticky',
+'837' => 'Forum Permissions',
+'840' => 'No Favorites Found',
+'841' => 'No Messages Found',
+'842' => 'Remove Selected Favorites',
+'843' => 'RSS feed for this board',
+'844' => 'Hide',
+'845' => 'Moved Topic',
+'903' => 'Close Window',
+'collruletext' => 'Board Rules Collapsed',
+'nopost' => 'This board cannot be posted in and no posts can be moved into it.',
+'move_up' => 'Move Up',
+'move_down' => 'Move Down', 
+);
+
+%messageindex_sort = (
+'sort_az' => "Sort (A-Z)",
+'sort_za' => "Sort (Z-A)",
+'sort_min' => "Sort (min answer)",
+'sort_max' => "Sort (max answer)",
+'sort_last' => "Sort (new answer)",
+'sort_first' => "Sort (old answer)",
+);
+
+%messageindex_stickygrp = (
+'1' => 'Important Topics',
+'2' => 'Board Topics',
+);
+
+%messageindex_tp = (
+'enabletp' => 'Enable Topic Preview',
+'disabletp' => 'Disable Topic Preview',
+'code_tp' => 'CODE',
+'image_tp' => 'IMAGE',
+'media_tp' => 'MEDIA',
+);
+
+1;

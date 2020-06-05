@@ -1,0 +1,420 @@
+###############################################################################
+# default.Register.template                                                   #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+$registertemver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+$myreg_req = q~ <span style="color:#ff0000; font-weight:700">*</span> ~;
+
+if ( $FORM{'reglanguage'} ) {
+    $language = $FORM{'reglanguage'};
+    LoadLanguage('Register');
+}
+
+##agreement before registration form
+$myregister_fullagree = qq~
+<form action="$scripturl?action=register" method="post">
+<table class="tabtitle">
+    <tr>
+      <td style="padding-left:1%"><img src="$imagesdir/xx.gif" alt="" /> $register_txt{'764a'}</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td class="windowbg" style="padding: 8px">
+          {yabb fullagree}
+        </td>
+    </tr><tr>
+        <td class="catbg center" style="padding: 8px;">
+            <input type="submit" value="$register_txt{'585'}" name="regagree" class="button" />&nbsp;&nbsp;<input type="submit" value="$register_txt{'586'}" name="regnoagree" class="button" />
+        </td>
+    </tr>
+</table>
+</form>~;
+
+## agreement in registration form
+$myregister_regagree = qq~<tr>
+        <td class="catbg" colspan="2">
+            <img src="$imagesdir/xx.gif" alt="$register_txt{'764a'}" title="$register_txt{'764a'}" /> <b>$register_txt{'764a'}</b>
+        </td>
+    </tr><tr>
+        <td class="windowbg" colspan="2">
+            <label for="regagree"><span style="float: left; padding: 5px;">{yabb fullagree}</span></label>
+        </td>
+    </tr><tr>
+        <td class="windowbg2 center" colspan="2">
+            <label for="regagree"><b>$register_txt{'585'}</b></label> <input type="radio" name="regagree" id="regagree" value="yes" />$myreg_req&nbsp;&nbsp; <label for="regnoagree"><b>$register_txt{'586'}</b></label> <input type="radio" name="regagree" id="regnoagree" value="no" />
+        </td>
+    </tr>~;
+
+$myaedomains_a =
+qq~<table>
+    <tr>
+        <td><input type="text" maxlength="100" name="email" id="email" value="{yabb tmpregemail}" size="15" /></td>
+        <td><select name="domain" id="domain">~;
+
+$myaedomains_b = q~</select>
+        </td>
+    </tr>
+</table>~;
+
+$myregister_regfill_a = qq~
+<table class="tabtitle">
+    <tr>
+        <td style="padding-left:1%; height:30px">
+            <img src="$imagesdir/register.gif" alt="$register_txt{'97'}" title="$register_txt{'97'}" /> $register_txt{'517'}
+        </td>
+    </tr>
+</table>
+<table class="cs_thin pad_4px">
+    <colgroup>
+        <col style="width:45%" />
+        <col style="width:55%" />
+    </colgroup>
+    <tr>
+        <td class="windowbg center" colspan="2">
+            $register_txt{'97a'}$myreg_req $register_txt{'97b'}
+        </td>
+    </tr>~;
+
+$myregister_morelang = qq~<tr>
+        <td class="windowbg right vtop">
+            <label for="reglanguage"><b>$register_txt{'101'}</b></label>
+        </td>
+        <td class="windowbg2 vtop">
+            <select name="reglanguage" id="reglanguage" onchange="document.creator.action='$scripturl?action=register'; document.creator.submit();">
+            {yabb langopt}
+            </select>
+        </td>
+    </tr>~;
+
+$myregister_regfill_b = qq~
+<!--user name section-->
+    <tr>
+        <td class="windowbg right vtop">
+            <label for="regusername"><b>$register_txt{'98'}:</b><br />
+            <span class="small">$register_txt{'520'}$register_txt{'241ea'}</span></label>
+        </td>
+        <td class="windowbg2 vtop">
+            <input type="text" name="regusername" id="regusername" onchange="checkAvail('$scripturl',this.value,'user')" size="30" value="{yabb tmpregname}" maxlength="18"{yabb regstyle} />$myreg_req
+            <div id="useravailability"></div>
+            <input type="hidden" name="language" id="language" value="{yabb language}" />
+        </td>
+    </tr><tr>
+        <td class="windowbg right vtop">
+            <label for="regrealname"><b>$register_txt{'98a'}:</b>~;
+
+$myregister_avail = qq~</label>
+        </td>
+        <td class="windowbg2 vtop">
+            <input type="text" name="regrealname" id="regrealname" onchange="checkAvail('$scripturl',this.value,'display')" size="30" value="{yabb tmprealname}" maxlength="30" />$myreg_req
+            <div id="displayavailability"></div>
+        </td>
+    </tr><tr>
+        <td class="windowbg right vtop"><label for="email"><b>$register_txt{'69'}:</b>
+            <br /><span class="small">$register_txt{'679'}</span></label>
+        </td>
+        <td class="windowbg2 vtop">
+            {yabb aedomains}$myreg_req
+            <div id="emailavailability"></div>
+            {yabb email2}~;
+
+$myregister_endrow = q~
+        </td>
+    </tr>~;
+
+$myregister_endtable = q~
+        </td>
+    </tr>
+</table>~;
+
+$myregister_bdonreg = qq~<tr>
+        <td class="windowbg right vtop">
+            <label for="birth_month"><b>$register_txt{'birthday'}:</b>{yabb editAgeTxt}</label>
+        </td>
+        <td class="windowbg2 vtop"><input type="text" name="birth_month" id="birth_month" size="2" value="{yabb birthdate1}" maxlength="2" onkeypress="jumpatnext('document.creator.birth_month','document.creator.birth_day',2)" /> <input type="text" name="birth_day" id="birth_day" size="2" value="{yabb birthdate0}" maxlength="2" onkeypress="jumpatnext('document.creator.birth_day','document.creator.birth_year',2)" /> <input type="text" name="birth_year" id="birth_year" size="4" value="{yabb birthdate2}" maxlength="4" />~;
+
+$myregister_bdonreg_2 = qq~<tr>
+        <td class="windowbg right vtop">
+            <label for="birth_day"><b>$register_txt{'birthday'}:</b>{yabb editAgeTxt}</label>
+        </td>
+        <td class="windowbg2 vtop"><input type="text" name="birth_day" id="birth_day" size="2" value="{yabb birthdate0}" maxlength="2" onkeypress="jumpatnext('document.creator.birth_day','document.creator.birth_month',2)" /> <input type="text" name="birth_month" id="birth_month" size="2" value="{yabb birthdate1}" maxlength="2" onkeypress="jumpatnext('document.creator.birth_month','document.creator.birth_year',2)" /> <input type="text" name="birth_year" id="birth_year" size="4" value="{yabb birthdate2}" maxlength="4" />~;
+
+$myregister_gender = qq~<tr>
+            <td class="windowbg right vtop">
+                <label for="gender"><b>$register_txt{'gender'}: </b>{yabb editGenderTxt}</label>
+            </td>
+            <td class="windowbg2 vtop">
+                <select name="gender" id="gender" size="1">
+                    <option value=""></option>
+                    <option value="Male">$register_txt{'gender_male'}</option>
+                    <option value="Female">$register_txt{'gender_female'}</option>
+                </select>{yabb nongen_opt}
+            </td>
+        </tr>~;
+
+$myregister_addmem = qq~<tr>
+        <td class="windowbg right vtop">
+            <label for="joinmemgroup"><b>$register_txt{'765'}:</b>
+            <br /><span class="small">{yabb additional_explain}</span></label>
+        </td>
+        <td class="windowbg2 vtop">
+            <select name="joinmemgroup" id="joinmemgroup" size="{yabb selsize}" multiple="multiple">
+            {yabb addmemgroup}
+            </select>
+        </td>
+    </tr>~;
+
+$myregister_regreason_a = qq~<tr>
+        <td class="windowbg right vtop">
+            <label for="reason"><b>$prereg_txt{'regreason'}:</b><br />
+            <span class="small">$prereg_txt{'reason_exp'}</span></label><br /><br />
+        </td>
+        <td class="windowbg2 vtop">~;
+
+$myregister_regreason_c = qq~$myreg_req<br />
+            <span class="small">$prereg_txt{'16'}</span><input value="{yabb RegReasonSymbols}" size="~;
+
+$myregister_regreason_b = qq~" name="msgCL" class="windowbg small" style="border: 0; padding: 1px; font-size: 11px;" readonly="readonly" />
+<script type="text/javascript">
+            var supportsKeys = false;
+            function tick() {
+                calcCharLeft(document.forms[0]);
+                if (!supportsKeys) { timerID = setTimeout("tick()",{yabb RegReasonSymbols}); }
+            }
+            function calcCharLeft(sig) {
+                clipped = false;
+                maxLength = $RegReasonSymbols;
+                if (document.creator.reason.value.length > maxLength) {
+                    document.creator.reason.value = document.creator.reason.value.substring(0,maxLength);
+                    charleft = 0;
+                    clipped = true;
+                } else {
+                    charleft = maxLength - document.creator.reason.value.length;
+                }
+                document.creator.msgCL.value = charleft;
+                return clipped;
+            }
+            tick();
+            </script>
+        </td>
+    </tr>~;
+
+$myregister_regcheck = qq~<tr>
+        <td class="windowbg right vtop">
+            <label for="verification"><b>$floodtxt{'1'}:</b><br />
+            <span class="small">{yabb flood_text}</span></label>
+        </td>
+        <td class="windowbg2 vtop">
+            {yabb showcheck}
+        </td>
+    </tr><tr>
+        <td class="windowbg right vtop">
+            <label for="verification"><b>$floodtxt{'3'}:</b></label>
+        </td>
+        <td class="windowbg2 vtop">
+            <input type="text" name="verification" id="verification" size="30" maxlength="50" />$myreg_req
+        </td>
+    </tr>~;
+
+$myregister_spamquest = qq~<tr>
+        <td class="windowbg right vtop">
+            <label for="verification_question"><b>{yabb spam_question}</b><br />
+            <span class="small">$register_txt{'verification_question_desc'} {yabb verification_question_desc}</span></label>
+        </td>
+        <td class="windowbg2 vtop">
+            <input type="text" name="verification_question" id="verification_question" size="30" maxlength="50" />$myreg_req
+            <input type="hidden" name="verification_question_id" value="{yabb spam_question_id}" />{yabb spam_question_image}
+        </td>
+    </tr>~;
+
+$myregister_honey = qq~<tr class="green">
+            <td class="green right vtop">
+                <label for="add_field0" class="green"><b>{yabb newfieldb}</b></label>
+            </td>
+            <td class="green vtop">
+                <input type="text" name="add_field0" id="add_field0" size="30" value="{yabb newfield}" maxlength="18" autocomplete="off" class="green" />$myreg_req
+            </td>
+        </tr>~;
+
+$myregister_fruits = qq~<tr>
+            <td class="windowbg right vtop">
+                <b>$fruittxt{'1'} {yabb fruit}:</b>
+            </td>
+            <td class="windowbg2 vtop">
+                <input type="hidden" name="xcord" id="xcord" value="0" />
+                <input type="hidden" name="ycord" id="ycord" value="0" />
+                <input type="hidden" name="thefruit" id="thefruit" value="{yabb fruit}" />
+                <iframe id="fruits" name="fruits" width="290" height="87" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>~;
+
+$myregister_email2 = qq~<tr>
+        <td class="windowbg right vtop"><label for="email2"><b>{yabb email2}:</b></label></td>
+        <td class="windowbg2"><input type="text" maxlength="100" name="email2" id="email2" size="45" />$myreg_req</td>
+    </tr>~;
+
+$myregister_endform = qq~<tr>
+        <td class="catbg center" style="padding: 8px;" colspan="2">
+            <div style="margin-bottom: .5em;"><label for="submitbutton">$register_txt{'95'}</label></div>
+            <input type="submit" id="submitbutton" value="$register_txt{'97'}" class="button" />
+        </td>
+    </tr>
+</table>
+</form>~;
+
+$ext_template1 = qq~<tr>
+    <td class="windowbg right vtop">
+        <label for=""><b>{yabb fieldname}: </b>
+        <br /><span class="small">{yabb fieldcomment}</span></label>
+    </td><td class="windowbg2 vtop">~;
+
+$ext_pre_output = q~<tr>
+        <td class="windowbg2 vtop">~;
+
+$ext_msgCL = q~ class="windowbg" style="border: 0; width: 40px; padding: 1px;" ~;
+
+$ext_output_a = q~
+        </td>
+    </tr><tr>~;
+
+$ext_output_c = qq~
+        <td class="catbg">
+            <img src="$imagesdir/profile.gif" alt="" />&nbsp;
+            <b>$field{'comment'}</b>
+        </td>
+    </tr><tr>
+        <td class="windowbg2 vtop">~;
+
+$ext_output_b .= q~
+        <td class="windowbg2 vtop">~;
+
+$ext_endrow = $myregister_endrow;
+
+$ext_spacer = qq~<tr><td class="catbg" colspan="2">{yabb fieldcomment}&nbsp;</td></tr>\n~;
+
+
+$myregister_pending = qq~
+            <div class="bordercolor" style="width: 650px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">
+                <table class="tabtitle">
+                    <tr>
+                        <td style="padding-left:1%; height:25px"><img src="$imagesdir/register.gif" alt="$prereg_txt{'1a'}" title="$prereg_txt{'1a'}" /><b>$prereg_txt{'1a'}</b></td>
+                    </tr>
+                </table>
+                <table class="pad_4px cs_thin">
+                    <tr>
+                        <td class="windowbg">$prereg_txt{'1'}</td>
+                    </tr>
+                </table>
+            </div>~;
+
+$myregister_password = qq~
+    <div class="bordercolor" style="width: 650px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">
+        <table class="tabtitle">
+            <tr>
+                <td style="padding-left:1%; height:25px"><b>$register_txt{'97'}</b></td>
+            </tr>
+        </table>
+        <table class="pad_4px cs_thin">
+            <tr>
+                <td class="windowbg">$register_txt{'703'}</td>
+            </tr><tr>
+                <td class="windowbg2">$register_txt{'704'}</td>
+            </tr>
+        </table>
+    </div>~;
+
+$myregister_welcome = qq~
+            <form action="$scripturl?action=login2" method="post">
+            <div class="bordercolor" style="width: 400px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">
+                <table class="tabtitle">
+                <tr>
+                    <td style="padding-left:1%; height:25px">
+                        <img src="$imagesdir/register.gif" alt="$register_txt{'97'}" title="$register_txt{'97'}" /> <b>$register_txt{'97'}</b>
+                    </td>
+               </tr>
+            </table>
+            <table class="pad_4px cs_thin">
+                <tr>
+                    <td class="windowbg center">
+                        <br />$register_txt{'431'}<br /><br />
+                        <input type="hidden" name="username" value="{yabb regusername}" />
+                        <input type="hidden" name="passwrd" value="{yabb passwrd1}" />
+                        <input type="hidden" name="cookielength" value="{yabb Cookie_Length}" />
+                        <input type="submit" value="$register_txt{'34'}" class="button" />
+                    </td>
+                </tr>
+            </table>
+            </form>
+            <br /><br />
+            ~;
+
+$myregister_prereg1 = qq~
+                <div class="bordercolor" style="width: 650px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">
+                    <table class="tabtitle">
+                        <tr>
+                            <td style="padding-left:1%; height:25px"><img src="$imagesdir/register.gif" alt="$prereg_txt{'1a'}" title="$prereg_txt{'1a'}" /><b>$prereg_txt{'1a'}</b></td>
+                        </tr>
+                    </table>
+                    <table class="pad_4px cs_thin">
+                        <tr>
+                            <td class="windowbg">$prereg_txt{'13'}</td>
+                        </tr>
+                    </table>
+                </div>~;
+
+$myregister_prereg2 = qq~
+        <table class="tabtitle" style="width:650px">
+            <tr>
+                <td style="padding-left:1%; height:25px">
+                    <img src="$imagesdir/register.gif" alt="$prereg_txt{'1a'}" title="$prereg_txt{'1a'}" /> <b>$prereg_txt{'1a'}</b>
+                </td>
+            </tr>
+        </table>
+        <table class="pad_4px cs_thin" style="width:650px">
+            <tr>
+                <td class="windowbg center" colspan="2">
+                    <br />$prereg_txt{'5'}~;
+
+$myregister_div_a =
+q~<div class="bordercolor" style="width: 650px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">~;
+$myregister_div_b = q~</div>~;
+
+$myregister_table_a = q~<br /><table class="bordercolor cs_thin">~;
+$myregister_table_b = q~</table>~;
+
+## Passwordcheck ##
+$show_check = qq~<tr>
+        <td class="windowbg right vtop"><label for="passwrd1"><b>$register_txt{'81'}:</b></label></td>
+        <td class="windowbg2">
+            <div style="float:left;">
+                <input autocomplete="off" type="password" maxlength="30" name="passwrd1" id="passwrd1" value="{yabb tmpregpasswrd1}" size="30" onkeypress="capsLock(event,'cappasswrd1')" onkeyup="runPassword(this.value);" /> $myreg_req
+           </div>
+           <div class="pass_box">
+               <div id="password-strength-meter"></div>
+               <div class="pstrength-bar" id="passwrd1_bar"></div>
+               <div class="pstrength-info" id="passwrd1_text">&nbsp;</div>
+           </div>
+           <div id="cappasswrd1">$register_txt{'capslock'}</div>
+           <div id="cappasswrd1_char">$register_txt{'wrong_char'}: <span id="cappasswrd1_character">&nbsp;</span></div>
+       </td>
+    </tr><tr>
+        <td class="windowbg right vtop">
+            <label for="passwrd2"><b>$register_txt{'82'}:</b></label>
+        </td>
+        <td class="windowbg2 vtop">
+            <input autocomplete="off" type="password" maxlength="30" name="passwrd2" id="passwrd2" value="{yabb tmpregpasswrd2}" size="30" onkeypress="capsLock(event,'cappasswrd2')" /> $myreg_req
+            <div id="cappasswrd2">$register_txt{'capslock'}</div>
+            <div id="cappasswrd2_char">$register_txt{'wrong_char'}: <span id="cappasswrd2_character">&nbsp;</span></div>
+            {yabb check_js}
+        </td>
+    </tr>~;
+
+1;

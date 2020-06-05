@@ -13,9 +13,9 @@ maps
 		}
 		defaultfloortexture = "FLOOR7_1";
 		defaultceiltexture = "F_SKY1";
-		defaulttoptexture = "BROWN1";
-		defaultwalltexture = "BROWN1";
-		defaultbottomtexture = "BROWN1";
+		defaulttoptexture = "ICKWALL2";
+		defaultwalltexture = "ICKWALL2";
+		defaultbottomtexture = "ICKWALL2";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -1043.296f;
-		viewpositiony = 2305.949f;
-		viewscale = 0.2802129f;
+		viewpositionx = 360.2635f;
+		viewpositiony = 2376.563f;
+		viewscale = 0.3642766f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid

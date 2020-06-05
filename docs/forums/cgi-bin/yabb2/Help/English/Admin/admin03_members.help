@@ -1,0 +1,115 @@
+$SectionName = "Manage_Members";
+
+### Section 1
+#############################################
+$SectionSub1 = "Accessing_Member_Controls";
+$SectionBody1 = qq~<p>Since YaBB is built to encourage and facilitate an active community of users, it comes with several tools to assist Forum Administrators in the management of Members. To access these controls, ensure you are logged in as an Administrator and enter your &#8220;Admin Center&#8221;. Once inside, look for the section in the sidebar menu titled &#8220;Member Controls&#8221;.</p>
+~;
+#############################################
+
+### Section 2
+#############################################
+$SectionSub2 = "Manually_Add_Member";
+$SectionBody2 = qq~<p>It may become necessary from time to time for a Forum Administrator to manually create a new member account. For example, this can often be useful to help those with a disability become a Member.</p>
+<p>From your Member Controls section on the Admin Center sidebar, click on the link titled &#8220;Add Member&#8221;. This new page will give you a simple registration form that will allow you to add a Member without having to logout. Simply fill out this form with the new Member's User Name, Password and e-Mail.</p>
+~;
+#############################################
+
+
+### Section 3
+#############################################
+$SectionSub3 = "Banning_Members";
+$SectionBody3 = qq~<p>Unfortunately, users are not always filled with the great sense of community that YaBB provides. These users can become rude, break rules, harass other members, or even spam your forum. This is why YaBB gives you the ability to block these troublemakers from disturbing your forum. Individual members can be banned from their Profile Page and from the Ban Utilities section of the Admin Center. To begin banning a Member in this way, access your Admin Center and find &#8220;Member Controls&#8221; as described above. Find the link titled &#8220;Ban Utilities&#8221; and click on it. This new page will give you three methods for banning a Member:</p>
+<ol>
+    <li>by IP address</li>
+    <li>by e-Mail address</li>
+    <li>by User ID</li></ol>
+<h4>Banning a Member</h4>
+<p class="help_attn">Note that IP addresses, e-mail addresses, and User ID banned from the Ban Utilities page are flagged as being permanent bans.</p>
+<ul>
+    <li><b>IP Address</b>
+        <ul>
+            <li>Banning by IP address will prevent anyone from accessing your board if their IP address is listed here. While effective, this could prevent a legitimate user from logging on, such as two people sharing the same ISP connection. It may also fail if the user is behind a proxy or has a dynamic IP. To enter a specific IP address, enter all four octets of the users IP address &#40;example: 192.168.255.8&#41;.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> You may also block a range of IP addresses by only entering in the first few octets of the address. For example, entering the IP as: 192.168. would block every IP address from 192.168.0.0 through 192.168.255.255. Enter only 1 IP address per line.</p> </li>
+    <li><b>E-mail Address</b>
+        <ul>
+            <li>This second method allows you to prevent anyone using a specific e-mail address (example: bad&#64;user.com) from registering or logging in. Enter only 1 e-mail address per line.</li>
+        </ul>
+    </li>
+    <li><b>Username</b>
+        <ul>
+            <li>Finally, the simplest way to ban a user is by their User ID. Note that this is <i>not</i> their Screen Name. Enter only 1 User ID per line.</li>
+        </ul>
+    </li>
+</ul>
+~;
+#############################################
+
+### Section 4
+#############################################
+$SectionSub4 = "Member_Groups";
+$SectionBody4 = qq~<p>Member Groups give you the ability to assign a group or classification to a Member. These groups can then be used to grant special privileges and/or access to your forum or simply be used for the fun of it. If you would like to create a Member Group, enter your Admin Center and find the section titled &#8220;Member Controls&#8221; as described above then click on the link &#8220;Member Groups&#8221;.</p>
+<p>This new page will then show you the three Member Group types.</p>
+<ol>
+    <li>The first are System/Static Groups. These can be renamed by clicking on the &#8220;Edit&#8221; button for each entry, however, because of their importance, <i>they cannot be removed</i>.</li>
+    <li>The second are &#8220;Post Independent Member Groups&#8221; and are assigned to a Member <i>manually</i> by an Administrator or Global Moderator as they are not tied to a User's Post Count.</li>
+    <li>The third group, however, is based on how many Posts a Member has made. YaBB will <i>automatically</i> assign these when a Member reaches the listed minimum number of Posts.</li>
+</ol>
+<h4>Creating a New Member Group</h4>
+<p>To create a new Member Group, click on the link titled &#8220;Add Group&#8221; next to either &#8220;Post Independent&#8221; or &#8220;Post Dependent&#8221; Member Groups. This will bring up a new page with a form to add new groups.</p>
+<ul>
+    <li><b>Name:</b>
+        <ul>
+            <li>This is the Member Group name that will be shown to everyone.</li>
+        </ul>
+    </li>
+    <li><b># of Stars:</b>
+        <ul>
+            <li>How many stars should this Group have?</li>
+        </ul>
+    </li>
+    <li><b>Star Type:</b>
+        <ul>
+            <li>Choose a default star type from the drop down box, or enter the URL to a different image.
+                <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> If you've imported an older forum to 2.6.0/2.6.1, your old default stars will not appear as 2.6.0 uses different star graphics with different extensions. If you wish to use the old stars or had custom ones, make sure to copy them into the folder that holds your template graphics. This will most likely be 'yabbfiles/Templates/Forum/default'. Otherwise, simply choose new star graphics from the drop down list.</p></li>
+        </ul>
+    </li>
+    <li><b>Color:</b>
+        <ul>
+            <li>This gives the Group a special color treatment. Leave blank for no color, or choose a color by color name, by hex value (valid range is 000000 (6 zeros) to FFFFFF), or by using the Palette tool to choose a custom color.</li>
+        </ul>
+    </li>
+    <li><b>Post Independent Group:</b>
+        <ul>
+            <li>Check if you want this to be a Group <b>not</b> assigned based on Post Count.</li>
+        </ul>
+    </li>
+    <li><b>Public?</b>
+        <ul>
+            <li>Check this box if you want this Group's name to be displayed to all Members and to show a Group color bar in the User's Online section of the Board Index.</li>
+        </ul>
+    </li>
+    <li><b>Post Dependent Group</b>
+        <ul>
+            <li>Select this if you want users to be automatically assigned to this group based on Post Count. Then enter the minimum number of Posts required to become a Member of this Group.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> YaBB comes with a Post-Dependent Member Group called &#8220;New Members&#8221; that has a minimum Post Count of <b>-1</b>. This is in place to automatically assign new registering Members to a group. A new Member starts with a Post Count of -1, so if you <i>delete this Group</i> or <i>change the minimum Post Count</i>, your new Members will not be able to post or use PMs until you manually put them in a Group. You may edit the name of the Group, stars, or colors with no effects on new Members.</p>
+        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> A good way to customize your YaBB forum is to assign names to your Post Dependent groups that relate to your forum's niche.</p>
+    </li>
+</ul>
+~;
+#############################################
+
+### Section 5
+#############################################
+$SectionSub5 = "Global_Moderator_Privileges";
+$SectionBody5 = qq~<p>YaBB gives you the ability to select what administrative functions you wish to entrust to your Global Moderators. You may choose these access permissions in the Admin Center under General Controls in the Global Moderator Access section. Moving your mouse over each action option gives you a brief description of what each option allows. Your Global Moderators should have a clear understanding of what levels of access you are giving them, and nothing can communicate that better than you, the Administrator, discussing it with them.</p>
+<p>The most important options are listed as three selections at the top of the page. Note that access to the Admin Center does NOT necessarily mean your Global Moderators can control all the items you can see in the Admin Center. If you allow this access, you can customize the Global Moderator permissions in the list of actions below.</p>
+<p>Choosing Editing the Profile (but not the Admin Edits) will allow the Global Moderator to change passwords, e-mail addresses, and all other options in the User's Profile (except Admin Edits). <b>Note:</b> Global Moderators cannot edit or modify any Administrator Profile.</p>
+<p>Choosing the Admin Edits option will allow Global Moderators to change a user's Post Count, Position, and Member Group(s). <b>Note:</b> Global Moderators cannot edit or modify Administrator Admin Edits, nor can they &#8220;promote&#8221; other users to Global Moderators or Forum Administrators.</p>
+<p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> In most cases, actions you do NOT select for the Global Moderator will not even be visible to them in the Admin Center; however this is <i>not always the case</i>. For example, if you allow Global Moderators to VIEW members but not DELETE members, the screen they view members on also shows checkboxes and a button to delete members, but they will not work for them. If the Global Moderator attempts to delete members without permission, it will result in an error message. A Global Moderator may think that something isn't working right, that this is an error or bug, but it is not. The program is following the level of permissions you granted them.</p>
+~;
+#############################################
+
+1;

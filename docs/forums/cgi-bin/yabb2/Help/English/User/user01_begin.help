@@ -1,0 +1,57 @@
+$SectionName = "Getting_started";
+
+### Section 1
+#############################################
+$SectionSub1 = "Register_an_Account";
+$SectionBody1 = qq~<p>Since this forum is powered by YaBB, registering an account is so simple; you'll be chatting in no time!</p>
+<p><b>Step 1:</b> In the menu above, you will see items titled &#8220;Board Index&#8221;, &#8220;Help&#8221;, &#8220;Login&#8221;, &#8220;Register&#8221;, etc. Click on &#8220;Register&#8221;.</p>
+<p><b>Step 2:</b> On this new page, you will see a form where you can choose your user ID and screen name, password &#40;if the administrator allows&#41;, and enter your e-mail address.  Fill in the boxes with your information.</p>
+<p><b>Step 3:</b> If enabled by the Administrator, you may need to fill in the characters presented in the Verification Code &#40;CAPTCHA&#41; box according to the instructions on the screen.</p>
+<p><b>Step 4:</b> Check the box to agree to the User Agreement if the Administrator has enabled one.</p>
+<p><b>Step 5:</b> Click on the &#8220;Register&#8221; button at the bottom of the page.</p>
+<p>That's it! The administrator may require you to validate your account before you can post. If this is the case, an e-mail will be sent to you with either your password or a link to verify your registration. Some administrators also choose to approve or disapprove all registrations. In that event, you will receive an e-mail when your account is approved.</p>
+<p>Now you're ready to log in and post!</p>
+<p class="help_attn"><b><span class="underline">User Tip:</span></b> Some ISPs and e-mail handlers treat the link sent to you in such a way that it will not work if you click on it. If that happens, try copying and pasting the link from the e-mail into your browser's URL window and reaching the forum that way. Also, some e-mail clients treat e-mails from forums as spam. If you do not receive your password or link e-mail in a timely manner, check your spam folder.</p>
+<p class="help_attn"><b><span class="underline">User Tip:</span></b> Occasionally an administrator will not allow registrations from the registration form. If you are not a member and the &#8220;Register&#8221; button is not visible, the forum administrator is not permitting new registrations. Also, occasionally, technical difficulties arise and registration fails. In that event, try to contact the forum's administrator. Some administrators have the &#8220;Send message to Admin(s)&#8221; option available for you to use, so look for that in this forum's menu if it's there.</p>
+~;
+#############################################
+
+### Section 2
+#############################################
+$SectionSub2 = "Log_Into_Your_Account";
+$SectionBody2 = qq~<p>Now that you've registered an account, it's time to sign in.</p>
+<p><b>Step 1:</b> In the menu above, you will see items titled &#8220;Board Index&#8221;, &#8220;Help&#8221;, &#8220;Login&#8221;, &#8220;Register&#8221;, etc. Click on &#8220;Login&#8221;.</p>
+<p><b>Step 2:</b> On this new page (or in the form at the bottom of the page), you will see several options.</p>
+<ul>
+    <li><span class="underline">User ID or e-mail address</span> - Enter the user ID or the e-mail address you registered with.</li>
+    <li><span class="underline">Password</span> - Type in your password.</li>
+    <li><span class="underline">Keep Me Logged In</span> - Choose whether or not you remain logged in on the computer you are logging in from.</li>
+    <li><span class="underline">Forgot Password</span> - If you can't remember your password, click this link to have it reset. (Full directions below.)</li>
+</ul>
+<p><b>Step 3</b> Once you have everything filled out; click the button in the form titled &#8220;Login&#8221;.</p>
+<p>Congratulations! You are now ready to participate in this community!</p>
+<p class="help_attn"><b><span class="underline">User Tip:</span></b> If you do not see the &#8220;Login&#8221; button in the menu, you may already be logged in. This can happen on some boards set up for instant registration.</p>
+<p class="help_attn"><b><span class="underline">User Tip:</span></b> If you are logging in on a publicly accessible computer <i>do not</i> check the &#8220;Keep Me Logged In&#8221; check box.</p>
+~;
+#############################################
+
+### Section 3
+#############################################
+$SectionSub3 = "Log_Out_of_Your_Account";
+$SectionBody3 = qq~<p>When you are done posting, it is a good idea to log out of your account so others using your computer will not have access to your information. To do this, find the menu item titled &#8220;Logout&#8221;. Once you click this button, YaBB will log you out of the forum. You must log in again if you wish to post or access member-only functions.</p>
+~;
+#############################################
+
+### Section 4
+#############################################
+$SectionSub4 = "Forgotten_Password";
+$SectionBody4 = qq~<p>If you have forgotten your password, YaBB can allow you to reset it.</p>
+<p><b>Step 1</b> In the menu above, you will see items titled &#8220;Board Index&#8221;, &#8220;Login&#8221;, &#8220;Register&#8221;, etc. Click on &#8220;Login&#8221;.</p>
+<p><b>Step 2</b> On this new page, you will see a link titled &#8220;Forgot Password&#8221;. Click this link.</p>
+<p><b>Step 3</b> A new page will load with at least one box. In the box labeled &#8220;User ID or e-mail address&#8221; enter the user ID or the e-mail address you registered with. Other boxes (depending on which validation forms the Forum Administrator has chosen to activate) are to confirm that the form is not being used by a spambot or an automated system.</p>
+<p><b>Step 4</b> Click the button titled &#8220;Send&#8221;.</p>
+<p><b>Step 5</b> YaBB will send an e-mail to the registered e-mail address with a link to reset your password. Clicking on this link will take you to your Profile Page so you can reset your password. <b>Note:</b> you have ten minutes put in a new password after being taken to your Profile Page.</p>
+~;
+#############################################
+
+1;

@@ -1,0 +1,18 @@
+$SectionName = "Global_Moderator_Help_Center";
+
+### Section 1
+#############################################
+$SectionSub1 = "Your_Global_Moderator_Status";
+$SectionBody1 = qq~<p>A Global Moderator is an Administrator-like position. You have the ability to use Moderator functions across all Boards and, if the Administrator allows, you may be able to edit some core settings of this YaBB community. You have been entrusted with the care and governance to ensure this growing community thrives.</p>
+<p>For more information, please visit <a href="http://www.yabbforum.com/codex/" target="_blank"><b>The YaBB Codex</b></a>.
+<br />For support and troubleshooting, please visit <a href="http://www.yabbforum.com/community/" target="_blank"><b>YaBB's Support Community</b></a></p>
+<p>Please refer to the Glossary section in User Help if you need clarification on the different page views described in the sections below.</p>
+<p>The following images of the Moderator Menu are provided for reference.</p>
+<p>{yabb mymoding}</p>
+<p>You may use the menu on the left to quickly jump to any topic below.</p>
+<p>You may use this <img src="{top_img}" alt="Back to Top" title="Back to Top" class="cursor" /> button at the bottom right of each Help section to return to the top of the Global Moderator Help page</p>
+~;
+#############################################
+
+
+1;

@@ -1,0 +1,115 @@
+###############################################################################
+# Micon.lng (Image text/images definitions)                                   #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$miconlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+if (!$language){$language = $lang;}
+
+%img_txt_m =(
+'70' => 'My Favorites',
+);
+
+%img_polltxt_m = (
+'44' => 'Poll',
+'45' => 'New Poll',
+'46' => 'Poll closed',
+);
+
+%messageindex_txt_m = (
+'302' => 'New',
+'303' => 'Go to first unread post',
+'454' => 'Hot Topic (More than',
+'454a' => 'Replies)',
+'455' => 'Very Hot Topic (More than',
+'456' => 'Locked Topic',
+'457' => 'Normal Topic',
+'458' => 'Hidden Topic',
+'459' => 'Hidden Sticky Topic',
+'460' => 'Hidden Locked Topic',
+'461' => 'Hidden Sticky Locked Topic',
+'779' => 'Sticky Topic',
+'779a' => 'Global Announcement',
+'779b' => 'Locked Global Announcement',
+'780' => 'Sticky Locked Topic',
+'781' => 'Sticky',
+'845' => 'Moved Topic',
+);
+
+%messageindex_sort_m = (
+'sort_az' => "Sort (A-Z)",
+'sort_za' => "Sort (Z-A)",
+'sort_min' => "Sort (min answer)",
+'sort_max' => "Sort (max answer)",
+'sort_last' => "Sort (new answer)",
+'sort_first' => "Sort (old answer)",
+);
+
+%im_message_status_m = (
+'confidential' => 'Confidential',
+'urgent' => 'Urgent!',
+'standard' => 'Standard',
+'alertmod' => 'Alert Moderator.',
+'guestpm' => 'PM from Guest',
+'guestpmreply' => 'Reply to PM from Guest',
+);
+
+%tabmenu_txt_m = (
+'edittab' => 'Edit tabs',
+'tabdel' => 'Delete this tab',
+'savetab' => 'Save Text',
+'newtab' => 'Add a tab',
+);
+
+%maintxt_m = (
+'900pd' => 'Password Access Board',
+);
+
+%var_cal_m = (
+'calbirthday' => 'Birthday',
+'calprivate' => 'Private',
+'caldel' => 'Delete',
+'caledit' => 'Edit Event',
+'calsave' => 'Save Event',
+'getaddevent' => 'Add a new Event',
+'eventinfo' => 'Event',
+'eventannounce' => 'Announcement',
+'eventholiday' => 'Holiday',
+'eventnote' => 'Exclamation',
+'eventparty' => 'Party',
+'eventcelebration' => 'Celebration',
+'eventsport' => 'Sport',
+'eventmedia' => 'Media (TV)',
+'eventmeeting' => 'Meeting',
+);
+
+%mess_icon_txt = (
+'281' => 'Standard',
+'282' => 'Thumbs Up',
+'283' => 'Thumbs Down',
+'284' => 'Exclamation Point',
+'285' => 'Question Mark',
+'286' => 'Lamp',
+'287' => 'Smiley',
+'288' => 'Angry',
+'289' => 'Cheesy',
+'290' => 'Laugh',
+'291' => 'Sad',
+'292' => 'Wink',
+'293' => 'Grin',
+'294' => 'Shocked',
+'295' => 'Cool',
+'296' => 'Huh',
+);
+
+1;

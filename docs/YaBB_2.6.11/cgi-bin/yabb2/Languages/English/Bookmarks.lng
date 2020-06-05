@@ -1,0 +1,40 @@
+###############################################################################
+# Bookmarks.lng (Social Bookmarks text definitions)                           #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$bookmarkslngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%bookmark_txt = (
+'01' => 'Image',
+'02' => 'Title',
+'03' => 'Order',
+'05' => 'Are you sure you want to delete this Bookmark?',
+'08' => 'There are currently no Social Bookmarks.',
+'09' => 'Social Bookmark Settings',
+'10' => 'Enable Bookmarks?',
+'11' => 'Select the Boards which Bookmarks will be shown in:<br /><span class="small">- If no boards are selected then all boards will be enabled.<br />- Use Ctrl, Shift or Apple Key to select/deselect boards.</span>',
+'12' => 'Social Bookmarks',
+'13' => 'Add a New Bookmark',
+'14' => 'URL',
+'15' => 'Add Bookmark',
+'16' => 'Edit Bookmark',
+'17' => 'Cancel',
+'18' => '- This is the title of the bookmark site.',
+'19' => '- Allowed file types: png jpg jpeg gif<br />- Max. file size: 250KB',
+'20' => '- This is the link to the bookmark site.<br />- Use {url} for the page URL and {title} for the page title.',
+'21' => '- This is the order which bookmarks will be displayed in.<br />- Lower numbers will be displayed first.',
+'22' => 'Maximum characters in subject',
+);
+
+1;
+ 

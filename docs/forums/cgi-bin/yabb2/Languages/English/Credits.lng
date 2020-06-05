@@ -1,0 +1,28 @@
+###############################################################################
+# Credits.lng (YaBB General Credits)                                          #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$creditslngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%credits_txt = (
+'yabb2' => 'Ron Hartendorp, Andrew Aitken, Carsten Dalgaard, Ryan Farrington, Zoltan Kovacs, Tim Ceuppens, Shoeb Omar, Torsten Mrotz, Brian Schaefer, Juvenall Wilson, Corey Chapman, Christer Jenson, Adrian Kreher, Steve Brereton, Jeffrey Man, Boris Tjuvanov, Detlef Pilzecker, Calvin Goodman',
+'yabb252' => 'Jon Baker, Derek Barnstorm, Carsten Dalgaard, John G.D. McCabe, D.A. Rorabaugh.<br />Included Mods in YaBB 2.5.2 written by Derek Barnstorm, Carsten Dalgaard, and D.A. Rorabaugh.<br /><br />Dedicated to the memory of Ron Hartendorp, AKA Spikecity. He left us too soon.',
+'yabb260' => q~Jon Baker, Derek Barnstorm, Carsten Dalgaard, John G.D. McCabe, George Nakos, D.A. Rorabaugh.<br />Included Mods in YaBB 2.6 written by AstroPilot, Derek Barnstorm, Carsten Dalgaard, Ron Hartendorp, Thomas M&uuml;ller, and D.A. Rorabaugh with additional code and Mods from the YaBB 3.0 Development Team. We would be nowhere without the contributions of Mod-writers.<br />And let's not forget the bug hunters and mistake finders to point out where things don't work quite right. Thanks Monni and Pyragony and all the other bug hunters who reported their findings.~,
+'yabb' => 'Dave Baughman, Bjoern Berg, Corey Chapman, Peter Crouch, ejdmoo, Dave G, Christian Land, Jeff Lewis, Gunther Meyer, Darya Misse, Parham Mofidi, AstroPilot, Torsten Mrotz, Carey P, Popeye, Michael Prager, Matt Siegman, Jay Silverman, StarSaber, Marco van Veelen, Myhailo Danylenko',
+'Thanks' => 'Special thanks to',
+'yabbBeta' => 'and all of our beta testers.',
+'yabb2Credits' => 'the support team, our fearless founder: Zef Hemel and everyone who contributed to YaBB in the course of these last 12 years!',
+'noBytesHarmed' => 'No bits or bytes were harmed during the creation of YaBB!',
+);
+
+1;

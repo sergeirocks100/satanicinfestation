@@ -1,0 +1,494 @@
+$SectionName = "Posting";
+
+### Section 1
+#############################################
+$SectionSub1 = "Starting_a_Topic";
+$SectionBody1 = qq~After you have registered an account, you will have the ability to start new topics. To do so, navigate to a category you would like to begin a conversation in. Make sure that this is the correct category for the subject of your post. Once you're inside this category, search for a link or button titled &#8220;Start New Topic&#8221; and click it. The exact location of this button will vary depending on which template is being used, but it is often near the top of the list of topics.
+<p>This will present you with a new page where you can begin to type your post, or take you to a form at the bottom of the page. Below you will find a description of the items on this page.</p>
+<h4 class="help">Preview:</h4>
+<p>This gives you a view of what your message will look like once it's posted.</p>
+<h4 class="help">Subject:</h4>
+<p>This is the title of your topic and is what will be shown on the category page.</p>
+<h4 class="help">Message Icon:</h4>
+<p>If you would like to add a special icon to your post, you may choose one from this list.</p>
+<h4 class="help">Add YaBBC tags:</h4>
+<p>YaBBC tags give you the ability to format the text in your post. To add, simply click on the button of your choice. See <a href="#YaBBC_Reference">YaBBC Reference</a> for a complete reference.</p>
+<h4 class="help">Add Smilies:</h4>
+<p>Personalize your post by adding an emoticon, or smiley. Just click on the one you want and YaBB will automatically put it in your post.</p>
+<h4 class="help">Attach:</h4>
+<p>If the Administrator allows, you may be able to add a file to your post by clicking on the &#8220;Browse&#8221; button to find the file on your hard drive to upload. Pay attention to the allowed file types and maximum file size.</p>
+<h4 class="help">Post:</h4>
+<p>This button does exactly what you would expect. Press the &#8220;Post&#8221; button if you're ready for the community to view your message.</p>
+~;
+#############################################
+
+
+### Section 2
+#############################################
+$SectionSub2 = "Replying_to_a_Post";
+$SectionBody2 = qq~<p>In addition to posting new topics, you can also reply to existing posts or topics quickly and easily. When you find a topic you would like to comment on, look for the button or link titled &#8220;Reply&#8221; or &#8220;Quote&#8221;. Using &#8220;Reply&#8221; will take you to a post page much like the one described above. Quote does exactly the same thing, however, it will add what another user has said to your post in a special box like you see below.</p>
+[yabbc][quote]This is a quote[/quote][/yabbc]
+~;
+#############################################
+
+
+### Section 3
+#############################################
+$SectionSub3 = "Posting_a_Poll";
+$SectionBody3 = qq~<p>If you have a question you would like to ask this community, YaBB gives you the ability to create a poll along with your topic. This is a fantastic way to get a good idea of what this community feels about your question. To post a poll, find the button titled &#8220;Start New Poll&#8221; from the category view and click it. The exact location of this button will vary depending on which template is being used, but it is often near the top of the list of topics. On this special post page, type in your question and options in the respectively labeled box, then fill out your message as described above.</p>
+~;
+#############################################
+
+
+### Section 4
+#############################################
+$SectionSub4 = "YaBBC_Reference";
+$SectionBody4 = qq~<p>For security reasons standard HTML code cannot be used in posts. Instead YaBB allows the use of YaBBC (YaBB Code) for formatting. YaBBC is similar to HTML, but safe and standardized for bulletin board use. To use, you can either click on the YaBBC button of your choice on all post pages or manually type them in. Below is a listing of each tag and its function.</p>
+<h4 class="help">What is YaBBC?</h4>
+<p>YaBBC is a set of tags based on the HTML language. It allow you to add formatting to your messages in the same way as HTML does, but have a simpler syntax and will never break the layout of the pages you are viewing.
+Most YaBBC tags can be wrapped around text, by first <span class="highlight">highlighting</span> the text, and then clicking on the YaBBC button with the desired formatting.</p>
+<div class="yabbc center">
+<table>
+    <tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/url.png" alt="url"/></span> Insert URL, Link</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+            <br />Syntax:
+            <br />Result:
+        </td>
+        <td>[url]http://www.yabbforum.com[/url]
+            <br />[yabbc][url]http://www.yabbforum.com[/url][/yabbc]
+            <br />[url=http://www.yabbforum.com]YaBB Forum[/url]
+            <br />[yabbc][url=http://www.yabbforum.com]YaBB Forum[/url][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2">
+            <ul>
+                <li>Type URL and text: www.yabbforum.com YaBB Forum</li>
+                <li>Highlight all of it: <span class="highlight">www.yabbforum.com YaBB Forum</span></li>
+                <li>Click the button: [yabbc][url=www.yabbforum.com]YaBB Forum[/url][/yabbc]</li>
+            </ul>
+            The [link] YaBBC tags work in the same manner as the [url] tags, with the exception that the [link] tag (there is no insertion button for this tag) will open the clicked link in the present window, whereas the [url] tag opens the clicked link in a new window.
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/ftp.png" alt="FTP Button" /></span> Insert FTP</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[ftp]ftp://ftpdom[/ftp]
+            <br />[yabbc][ftp]ftp://ftpdom[/ftp][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/img.png" alt="Image Button" /></span> Insert Image</th>
+    </tr><tr>
+        <td>Syntax:
+                <br />
+                <br />Result:
+        </td>
+        <td>[img]$imagesdir/on.png[/img]
+                <br />
+                <br />[yabbc][img]$imagesdir/on.png[/img][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/email2.png" alt="Email Button" /></span> Insert Email</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+            <br />Syntax:
+            <br />Result:
+        </td>
+        <td>[email]myname\@domain.com[/email]
+            <br />[yabbc][email]myname\@domain.com[/email][/yabbc]
+            <br />[email=myname\@domain.com]Click to email me[/email]
+            <br />[yabbc][email=myname\@domain.com]Click to email me[/email][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2">
+            <ul>
+                <li>Type e-mail address and text: myname\@domain.com Click to email me</li>
+                <li>Highlight all of it: <span class="highlight">myname\@domain.com Click to email me</span></li>
+                <li>Click the button: [yabbc][email=myname\@domain.com]Click to email me[/email][/yabbc]</li>
+            </ul>
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/media.png" alt="Add media files" /></span> Insert multi media files</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Example:
+            <br />Result:
+        </td>
+        <td>[media]url to flash file[/media]
+            <br />[media]http://www.your-domain.com/yabbchelp.swf[/media]
+            <br />[yabbc][media]$imagesdir/yabbchelp.swf[/media][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/table.png" alt="Table Button" /></span> <span class="ubbcbutton ubbcbuttonback" style="margin:0 4px"><img src="$yyhtml_root/UBBCbuttons/td.png" alt="Table Data Button" /></span> <span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/tr.png" alt="Table Row Button" /></span> Insert Table - Column - Row</th>
+    </tr><tr>
+        <td>Syntax:</td>
+        <td>[table][tr][td]text example[/td][/tr][/table]</td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/hr.png" alt="Horizontal Rule Button" /></span> Insert Horizontal Rule</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[hr]
+            <br /><hr />
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/tele.png" alt="Teletype Button" /></span> Insert Teletype</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[tt]text example[/tt]
+            <br />[yabbc][tt]text example[/tt][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/code.png" alt="Code Button" /></span> Insert Code</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />
+            <br />
+            <br /><!-- This is the break matching the blank break below -->
+            <br />Result:
+        </td>
+        <td>[code]&lt;script language="javascript"&gt;
+            <br />&lt;!--
+            <br />alert("Hello YaBB 2!");
+            <br />//--&gt;
+            <br />&lt;/script&gt; [/code]
+            <br />
+            <br />[yabbc][code]<script language="javascript">
+            <!--
+            alert("Hello YaBB 2!");
+            //-->
+            </script>[/code][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/quote2.png" alt="Quote Button" /></span> Insert Quote</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[quote]Hello YaBB 2[/quote]
+            <br />[yabbc][quote]Hello YaBB 2[/quote][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/edit.png" alt="Edit Button" /></span> Insert Edit</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[edit]This was edited in YaBB 2[/edit]
+            <br />[yabbc][edit]This was edited in YaBB 2[/edit][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/sup.png" alt="Superscript Button" /></span> Insert Superscript</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />Result:
+        </td>
+        <td>text [sup]example[/sup]
+            <br />
+            <br />[yabbc]text [sup]example[/sup][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/sub.png" alt="Subscript Button" /></span> Insert Subscript</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />Result:
+        </td>
+        <td>text [sub]example[/sub]
+            <br />
+            <br />[yabbc]text [sub]example[/sub][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/list.png" alt="List Button" /></span> Insert List - List Item</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />
+            <br />Result:
+        </td>
+        <td>[list][*]item 1
+            <br />[*]item 2
+            <br />[*]item 3[/list]
+            <br />[yabbc][list][*]item 1
+            [*]item 2
+            [*]item 3[/list][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2">You can create ordered lists by including the letter "o" at the beginning of the list tag.</td>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />
+            <br />Result:
+        </td>
+        <td>[olist][*]item 1
+            <br />[*]item 2
+            <br />[*]item 3[/olist]
+            <br />[yabbc][olist][*]item 1
+            [*]item 2
+            [*]item 3[/olist][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2">You can create 2 or 3 level lists by including a list inside another list.</td>
+    </tr><tr>
+        <td>Example:
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />Result:
+        </td>
+        <td>[list][*]item 1
+            <br />[*]item 2
+            <br />[list][*]subitem 1
+            <br />[*]subitem 2[/list]
+            <br />[*]item 3[/list]
+            <br />[yabbc][list][*]item 1
+            [*]item 2
+            [list][*]subitem 1
+            [*]subitem 2[/list][*]item 3[/list][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/me.png" alt="/me Button" /></span> /me</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>/me loves YaBB 2
+            <br />[yabbc]/me loves YaBB 2[/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/move.png" alt="Move Button" /></span> Insert Marquee</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[move]text example[/move]
+            <br />[yabbc][move]text example[/move][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/timestamp.png" alt="Timestamp Button" /></span> Insert Timestamp</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[timestamp=1121602762]
+            <br />[yabbc][timestamp=1121602762][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/noparse.png" alt="No Parse Button" /></span> No Parse</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[noparse][table][tr][td]This table will not be parsed[/td][/tr][/table][/noparse]
+            <br />[yabbc][noparse][table][tr][td]This table will not be parsed[/td][/tr][/table][/noparse][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/bold.png" alt="Bold Button" /></span> Insert Bold Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[b]text example[/b]
+            <br />[yabbc][b]text example[/b][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/italicize.png" alt="Italic Button" /></span> Insert Italic Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[i]text example[/i]
+            <br />[yabbc][i]text example[/i][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/underline.png" alt="Underline Button" /></span> Insert Underline Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[u]text example[/u]
+            <br />[yabbc][u]text example[/u][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/strike.png" alt="Strikethrough Button" /></span> Insert Strikethrough Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[s]text example[/s]
+            <br />[yabbc][s]text example[/s][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/highlight.png" alt="Highlight Button" /></span> Insert Highlighted Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[highlight]text example[/highlight]
+            <br />[yabbc][highlight]text example[/highlight][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><img src="$imagesdir/face1.gif" alt="Font Face Selector" /> Change Font Face</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[font=Courier New]Courier New font[/font]
+            <br />[yabbc][font=Courier New]Courier New font[/font][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><img src="$imagesdir/size1.gif" alt="Size Selector" /> Change Font Size</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[size=14]14 point font[/size]
+            <br />[yabbc][size=14]14 point font[/size][/yabbc]</td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><img src="$imagesdir/palette_help.gif" alt="Color picker and the palette" /> Choose a text color</th>
+    </tr><tr>
+        <td colspan="2">You can either use the quick color picker to choose a text color from the palette containing 12 ready made color tags or open the palette to create a custom color tag.</td>
+    </tr><tr>
+        <td>Syntax:
+            <br />Result:
+        </td>
+        <td>[color=#ff0000]red colored text[/color]
+            <br />[yabbc][color=#ff0000]red colored text[/color][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/pre.png" alt="Preformatted Button" /></span> Insert Preformatted Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />Result:
+        </td>
+        <td>[pre] this  is
+preformatted text [/pre]
+            <br />
+            <br />[yabbc][pre] this  is
+preformatted text [/pre][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/left.png" alt="Left Align Button" /></span> Insert Left Aligned Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />Result:
+        </td>
+        <td>[left]text
+            <br />example[/left]
+            <br />
+            <br />[yabbc][left]text
+example[/left][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/center.png" alt="Center Align Button" /></span> Insert Center Aligned Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />Result:
+        </td>
+        <td>[center]text
+            <br />example[/center]
+            <br />
+            <br />[yabbc][center]text
+example[/center][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/right.png" alt="Right Align Button" /></span> Insert Right Aligned Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />Result:
+        </td>
+        <td>[right]text
+            <br />example[/right]
+            <br />
+            <br />[yabbc][right]text
+example[/right][/yabbc]
+        </td>
+    </tr>
+</table>
+</div>
+~;
+#############################################
+
+1;

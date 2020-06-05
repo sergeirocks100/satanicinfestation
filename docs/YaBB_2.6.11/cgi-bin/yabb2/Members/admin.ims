@@ -1,0 +1,6 @@
+$mnum = 0;
+$imnewcount = 0;
+$moutnum = 0;
+$storenum = 0;
+
+1;

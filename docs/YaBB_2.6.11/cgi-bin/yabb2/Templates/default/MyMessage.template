@@ -1,0 +1,286 @@
+###############################################################################
+# default.MyMessage.template                                                  #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+$mymessagetemver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+$cat_col = $newload{'brd_col'};
+$cat_exp = $newload{'brd_exp'};
+
+#User Select window size (imWin called from InstantMessage)
+$us_winwidth_to = 500;
+$us_winwidth_cc = 464;
+$us_winhight_cc = 370;
+$us_winhight_to = 345;
+
+## IM show - single post
+$myIM_show = qq~
+<table class="bordercolor cs_thin pad_1px" style="table-layout: fixed">
+    <tr>
+        <td class="windowbg vtop" colspan="2">
+            <div style="width: 99%; padding: 2px; margin: 2px;">
+            {yabb my_title}
+            </div>
+        </td>
+    </tr><tr>
+        <td class="windowbg2 vtop" colspan="2">
+            <div style="width: 99%; padding: 2px; margin: 2px;">
+                {yabb msimg} <span class="small" style="width: 99%;">
+                    <b>$inmes_txt{'70'}: {yabb msub}</b><br />
+                    <b>$inmes_txt{'317'}:</b> {yabb mydate}
+                </span>
+            </div>
+        </td>
+    </tr><tr>
+        <td class="windowbg2 vtop" colspan="2">
+            <div style="width: 99%; padding: 2px; margin: 2px;">
+                <span class="message" style="float: left; width: 99%; overflow: auto; padding-bottom: 10px; margin-bottom: 10px;">
+                {yabb message}
+                </span>
+            </div>
+        </td>
+    </tr>
+    {yabb my_sig} {yabb my_attach} {yabb my_showIP}
+    <tr>
+        <td class="windowbg2" colspan="2">
+            <div class="imcontact_left">
+                <span class="small">{yabb postMenuTemp}</span>
+            </div>
+            <div class="imcontact_right">
+                <span class="small">{yabb showIM_link}</span>
+            </div>
+        </td>
+    </tr><tr>
+        <td class="windowbg2 right" colspan="2">
+            <div style="float: left; text-align: left; padding: 2px; margin: 2px;">
+                <span class="small">{yabb my_notme}</span>
+            </div>
+            <div style="float: right; text-align: right; padding: 2px; margin: 2px;"><span class="small">{yabb PMnav}</span></div>
+        </td>
+    </tr>
+</table>
+~;
+
+$show_my_sig = qq~<tr>
+        <td class="windowbg2 right" colspan="2">
+            <div style="float: left; width: 99%; padding-top: 2px; margin-top: 2px; text-align: left;">
+                <span class="small">{yabb signature}</span>
+            </div>
+        </td>
+    </tr>~;
+
+$show_my_attach = qq~<tr>
+        <td class="windowbg2 right" colspan="2">
+            <div class="small" style="float: left; width: 99%; text-align: left;">
+                {yabb pmAttachment} {yabb pmShowAttach}
+            </div>
+        </td>
+    </tr>~;
+
+$my_showIP = qq~<tr>
+        <td class="windowbg right" colspan="2">
+            <div class="imcontact">
+                <span class="small"><img src="$micon_bg{'ip'}" alt="" /> {yabb imip}</span>
+            </div>
+        </td>
+    </tr>~;
+
+
+## IM preview ##
+$myIM_prevmain = qq~<tr>
+        <td class="windowbg">
+        {yabb prevmain}
+        </td>
+    </tr>~;
+
+$myIM_liveprev = qq~<tr>
+        <td class="vtop">
+            <div style="height:16px;">
+                <img id="prevwin" src="$defaultimagesdir/$cat_exp" alt="$npf_txt{'01'}" title="$npf_txt{'01'}" class="cursor" onclick="enabPrev();" /> <b>$npf_txt{'04'}</b>
+            </div>
+        </td>
+    </tr><tr>
+        <td class="windowbg vtop">
+            <div id="SaveInfo" style="float: left; text-align: left; width: 100%; padding: 0; margin: 0; overflow: hidden; display: none;">
+                <div id="saveframe" class="prevwin" style="float: left; text-align: left; width: 100%; padding: 0; margin: 0; overflow: hidden; display: none;"></div>
+            </div>
+        </td>
+    </tr>~;
+
+$myIM_replyguest = qq~<tr>
+        <td class="windowbg2">
+        {yabb guest_reply}
+        </td>
+    </tr>~;
+
+$my_tosend = q~<tr class="windowbg">
+                    <td>{yabb my_tosend_a} {yabb yyjavascripttoform}
+                    </td>
+                </tr>~;
+
+$my_imsend_IM = qq~{yabb my_gimsend} {yabb my_send}<tr>
+        <td class="windowbg" style="width:50%">
+            <table class="pad_2px" style="width:95%; margin-left:0">
+                <tr>
+                    <td class="vtop">{yabb imWinop}{yabb imsend_cc}</td>
+                    <td class="vtop" id="test">
+                        <label for="status"><b>$inmes_txt{'status'}:</b></label>
+                        <br />
+                        <select name="status" id="status" tabindex="2" size="3" onchange="showtpstatus();{yabb onchange_text2}">
+{yabb iconopts}
+                        </select>
+                        <img src="{yabb pmicon_img}" name="icons" style="margin:1em 10px 0 10px; vertical-align:top" alt="$im_message_status{'{yabb pmicon}'}" title="$im_message_status{'{yabb pmicon}'}" />
+                        <input type="hidden" id="iconholder" value="{yabb pmicon}" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>~;
+
+$my_imsend_Guest = qq~{yabb my_gimsend} {yabb my_send}<tr>
+        <td class="windowbg" style="width:50%">
+            <table class="pad_2px" style="width:95%; margin-left:0">
+                <tr>
+                    <td class="vtop">
+                        <b>$inmes_txt{'324'} {yabb toUsersTitle}:</b> <input type="text" name="toguest" id="toguest" value="{yabb guestName}" size="50" maxlength="25" style="width: 95%;" /><input type="hidden" name="toshow" id="toshow" value="{yabb guestName}" />
+                    </td>
+                    <td class="vtop">&nbsp;</td>
+                </tr><tr>
+                    <td class="vtop">
+                        <b>$post_txt{'69'}:</b> <input type="text" name="guestemail" id="guestemail" value="{yabb guestEmail}" size="50" maxlength="40" style="width: 95%;" />
+                        <input type="hidden" name="replyguest" id="replyguest" value="1" />
+                    </td>
+                    <td class="vtop">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>~;
+
+$my_imsend_jsin = qq~<tr>
+        <td class="windowbg2">
+            {yabb JSandInput}
+            <label for="subject"><b>$inmes_txt{'70'}:</b></label>
+            <br /><input type="text" name="subject" id="subject" value="{yabb subject}" size="50" maxlength="{yabb my_max}" tabindex="3" style="width: 460px;"{yabb onchangeText} />
+        </td>
+    </tr><tr>
+        <td class="windowbg2">
+    ~;
+
+$my_postbox = qq~{yabb postbox2} </div>
+        </div>
+{yabb postbox3}</td>
+    </tr>
+    ~;
+
+$my_postbox_notguest = q~<tr>
+        <td class="windowbg2">
+            <script type="text/javascript">
+        ~;
+
+$my_postbox_smilie = qq~
+        </td>
+    </tr>~;
+
+
+#PM attachmments
+$my_FA_attach = qq~{yabb my_show_FA} {yabb my_allow_FA}
+        </td>
+    </tr><tr>
+        <td class="windowbg"><span class="small">{yabb pmFileTypeInfo}<br />{yabb pmFileSizeInfo}</span></td>
+    </tr><tr>
+        <td class="windowbg">~;
+
+$my_FA_show = qq~<tr>
+        <td class="windowbg">
+            <span style="font-weight: bold;">$fatxt{'80'}</span>
+            <input type="hidden" name="oldattach" id="oldattach" value="{yabb cloakAttach}" />~;
+
+$my_FA_att = qq~{yabb my_att_FA}
+        </td>
+    </tr>~;
+
+$my_FA_browse = qq~<tr>{yabb my_ispreview}
+        <td class="windowbg">{yabb my_isreply}
+        </td>
+    </tr><tr>
+        <td class="catbg center" style="padding: 8px;">
+            {yabb hidestatus}
+            {yabb sendBMessFlag}
+            <input type="submit" name="{yabb post}" value="{yabb submittxt}" accesskey="s" tabindex="5" class="button" />{yabb my_spdpost}
+            {yabb my_draft} {yabb my_browser} {yabb my_savetable} {yabb my_chars}
+            </script> 
+        </td>
+    </tr>\n~;
+
+$myshow_ispreview = qq~<tr>
+        <td class="windowbg" style="color: #FF0000; font-weight: bold;">$fatxt{'7a'}</td>
+    </tr>~;
+
+## end IM posting/preview ##
+
+$my_savedraft = qq~<tr>
+        <td class="windowbg">
+            <table class="bordercolor cs_thin">
+                <tr>
+                    <td>
+                        <table class="windowbg pad_4px" style="table-layout:fixed">
+                            <tr>
+                                <td class="titlebg" colspan="2"><b>$inmes_txt{'70'}: {yabb msub}</b></td>
+                            </tr><tr>
+                                <td class="catbg"><span class="small">$inmes_txt{'318'}: {yabb musernameRealName}</span></td>
+                                <td class="catbg right"><span class="small">{yabb my_save_draft} {yabb tempdate}</span></td>
+                            </tr><tr>
+                                <td class="windowbg2" colspan="2">
+                                    <div class="message" style="float:left; width:100%;">{yabb message}</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>~;
+
+$myIM_liveprev_b = qq~<table class="bordercolor cs_thin pad_1px" style="table-layout: fixed">
+    <tr>
+        <td class="windowbg2 vtop" colspan="2">
+            <div style="width: 99%; padding: 2px; margin: 2px;">
+                {yabb msgimg}
+                <span class="small" style="width: 99%;">
+                    <b>$inmes_txt{'70'}: {yabb csubject}</b><br />
+                    <b>$inmes_txt{'317'}:</b> {yabb subjdate}
+                </span>
+            </div>
+        </td>
+    </tr><tr>
+        <td class="windowbg2 vtop" colspan="2">
+            <div style="width: 99%; padding: 2px; margin: 2px;">
+                <span class="message" style="float: left; width: 99%; overflow: auto; padding-bottom: 10px; margin-bottom: 10px;">
+                {yabb message}
+                </span>
+            </div>
+        </td>
+    </tr>
+    {yabb my_sig} {yabb my_attach}
+    <tr><td class="windowbg right" colspan="2">{yabb my_showIP}</td></tr>
+</table>
+~;
+
+#pagedrop (in javascript)
+$visel_0 = q~<table class="pad_0"><tr>~;
+$visel_1a = q~<td class="titlebg pages">~;
+$visel_1b = q~</td>~;
+$visel_2a = q~<td class="droppages pages">~;
+$visel_3a = q~<td class="small" style="height: 14px; padding-left: 4px;">~;
+$visel_4 = q~</tr></table>~;
+
+1;

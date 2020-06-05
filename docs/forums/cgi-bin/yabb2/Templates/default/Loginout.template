@@ -1,0 +1,161 @@
+###############################################################################
+# default.Loginout.template                                                   #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+$loginouttemver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+$myborder =
+q~<div class="bordercolor" style="width: 100%; margin-bottom: 8px; margin-left: auto; margin-right: auto;">~;
+$myborder_with_title =
+q~<div class="bordercolor" style="width: 700px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">~;
+$myborder_bottom = q~</div>~;
+
+$mysharedloga = qq~
+$myborder_with_title
+<table class="pad_4px cs_thin" style="margin-top:10px">
+    <tr>
+        <td class="tabtitle" style="height:25px; padding-left:1%"><b>{yabb sharedLogin_title}</b></td></tr>~;
+
+$mysharedlogb = qq~<tr>
+        <td class="windowbg" colspan="2">{yabb sharedLogin_text}</td>
+    </tr>~;
+
+$mysharedlogc = q~<tr>
+        <td class="windowbg2 center padd_10px">~;
+
+
+$mysharedlog_top = qq~
+$myborder
+<table class="tabtitle tabtitle-text" style="margin-top:10px">
+    <colgroup>
+        <col style="width:1%" />
+        <col style="width:99%" />
+    </colgroup>
+    <tr>
+        <td>&nbsp;</td>
+        <td>$loginout_txt{'34'}</td>
+    </tr>
+</table>
+<table class="bordercolor pad_4px cs_thin">
+    <colgroup>
+        <col style="width:6%" />
+        <col style="width:94%" />
+    </colgroup>
+    <tr>
+        <td class="windowbg center"><img src="$imagesdir/login.png" alt="" /></td>
+        <td class="windowbg2 center">~;
+
+    $mylogintxt = $loginout_txt{'35'};
+    if ( $screenlogin ) { $mylogintxt = $loginout_txt{'35b'}; }
+$mysharedlog_bodya = qq~
+                <div style="width: 600px;">
+                    <span style="float: left; text-align: left; margin-right:15px;">
+                        <label for="username">$mylogintxt</label>:<br />
+                        <input type="text" name="username" id="username" size="30" maxlength="100" style="width: 285px;" tabindex="1"{yabb regstyle} />
+                    </span>
+                    <span style="float: left; text-align: left; margin-right:15px;">
+                        <label for="passwrd">$loginout_txt{'36'}</label>:<br />
+                        <input type="password" name="passwrd" id="passwrd" size="15" maxlength="30" style="width: 110px;" tabindex="2" onkeypress="capsLock(event,'shared_login')" />
+                    </span>
+                    <span style="float: left; text-align: center;" class="small">
+                        &nbsp;<br />
+                        <input type="submit" value="$loginout_txt{'34'}" tabindex="4" accesskey="l" style="width: 100px;" class="button" />
+                    </span>
+                </div>
+                <div class="clear"></div>
+                <div style="width: 550px; line-height:16px">
+                    <span style="float: left; text-align: left;">
+                        <input type="checkbox" name="cookielength" id="cookielength"{yabb cookielength_sel} value="1" tabindex="3" />
+                    </span>
+                    <span style="float: left; text-align: left">
+                        <label for="cookielength">$loginout_txt{'keeps'}</label>
+                    </span>
+                    <span style="float: right; text-align: right; margin: 0 25px;">
+                        <a href="$scripturl?action=register"{yabb hide_reglink}>$maintxt{'97'}</a>
+                    </span>
+                    <span style="float: right; text-align: right; margin: 0 20px;">
+                        <a href="$scripturl?action=reminder"{yabb hide_passlink}>$loginout_txt{'315'}</a>
+                    </span>
+                    <br /><br />
+                </div>
+                <div style="width: 600px; text-align: left; color: red; font-weight: bold; display: none" id="shared_login">$loginout_txt{'capslock'}</div>
+                <div style="width: 600px; text-align: left; color: red; font-weight: bold; display: none" id="shared_login_char">$loginout_txt{'wrong_char'}: <span id="shared_login_character">&nbsp;</span></div>
+            </form>
+        </td>
+    </tr>
+</table>
+$myborder_bottom
+~;
+
+$myremindera = qq~<table class="tabtitle cs_thin pad_4px" style="width: 600px;">
+    <tr>
+        <td>{yabb mbname} $loginout_txt{'36'} $loginout_txt{'194'}</td>
+    </tr>
+</table>
+<table class="bordercolor pad_3px cs_thin" style="width: 600px;">
+    <tr>
+        <td class="windowbg">
+            <label for="user"><b>$mylogintxt:</b></label>
+            <input type="text" name="user" id="user" maxlength="100" {yabb regstyle} size="50" />
+        </td>
+    </tr>~;
+
+$myreminder_regcheck = qq~<tr>
+        <td class="windowbg">
+            <label for="verification"><b>$floodtxt{'1'}: </b>
+            {yabb showcheck}
+            <br /><span class="small">{yabb flood_text}</span></label>
+        </td>
+    </tr><tr>
+        <td class="windowbg">
+            <div style="float:left; width:30%"><label for="verification"><b>$floodtxt{'3'}: </b></label></div>
+            <div style="float:left; width:70%"><input type="text" name="verification" id="verification" size="20" maxlength="30" />{yabb spam_question_image}</div>
+            <div class="clear"></div>
+        </td>
+    </tr>~;
+
+$myreminder_vericheck = qq~<tr>
+        <td class="windowbg vtop">
+            <div style="float:left; width:30%"><label for="verification_question"><b>{yabb spam_question}</b>
+            <br /><span class="small">$loginout_txt{'verification_question_desc'} {yabb verification_question_desc}</span></label>
+            <input type="hidden" name="verification_question_id" value="{yabb spam_question_id}" />
+            <input type="hidden" name="spam_question" value="{yabb spam_question}" /></div>
+            <div style="float:left; width:70%"><input type="text" name="verification_question" id="verification_question" size="30" maxlength="50" />{yabb spam_question_image}</div>
+            <div class="clear"></div>
+        </td>
+    </tr>~;
+
+$myreminder_endform = qq~<tr>
+        <td class="catbg center" style="padding: 8px;">
+            <input type="submit" value="$loginout_txt{'339'}" class="button" />
+        </td>
+    </tr>
+</table>
+</form>~;
+
+$myreminder2 = qq~<br /><br />
+<table class="tabtitle cs_thin pad_4px" style="width: 600px;">
+    <tr>
+        <td>{yabb mbname} $loginout_txt{'36'} $loginout_txt{'194'}</td>
+    </tr>
+</table>
+<table class="bordercolor pad_3px cs_thin" style="width: 600px;">
+    <tr> 
+        <td class="windowbg center">
+            <b>$loginout_txt{'192'} {yabb forum_user}</b>
+        </td>
+    </tr>
+</table>
+<br />
+<p class="center"><a href="$scripturl">$maintxt{'go_to_board'}</a></p><br />~;
+
+1;

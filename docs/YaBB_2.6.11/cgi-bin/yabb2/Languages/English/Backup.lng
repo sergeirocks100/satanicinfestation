@@ -1,0 +1,193 @@
+###############################################################################
+# Backup.lng                                                                  #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$backuplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+$script_root = $ENV{'SCRIPT_FILENAME'};
+if( ! $script_root ) {
+    $script_root = $ENV{'PATH_TRANSLATED'};
+}
+($support_env_path = $script_root) =~ s~/\w+\.pl~~;
+
+%backup_txt = (
+'1' => 'YaBB Backup',
+'2' => 'You have not saved your backup settings yet. You must choose and save your settings before you can backup your forum.',
+'3' => 'Choose which directories to backup. Note: the backup routines use the directory paths from Forum Configuration -&gt; Path Settings; make sure these are correct.',
+'4' => 'Directories to Backup',
+'5' => 'Check/Uncheck All',
+'6' => 'If you select every directory, you will have a complete copy of your forum. This is the recommended setting for most forums.<br />However, for <i>very</i> large forums, a full backup may cause recovery problems (e.g. timeouts). For such large forums, it may be better to create one backup of only the "static" framework directories (which change very little) and separate backups for each of the Boards, Members and Messages directories.',
+'path1' => 'Path to Tar and Zip:',
+'path2' => 'Path to gzip and bzip2 (also sets path to gzip in Advanced Settings):',
+'path3' => 'Fill in the paths <b>only</b> if YaBB cannot automatically find Tar, Zip, gzip, and bzip2. Otherwise, leave the above spaces blank.',
+
+# Begin description of directories
+# We don't translate directory names like Boards/.
+'7' => '-- (contains category and board information and indexes)',
+'8' => '-- (contains all threads/topics and included posts)',
+'9' => '-- (contains member profiles, member logs, and personal messages)',
+'10' => 'and stylesheets', # This one comes right after "Templates/ "
+'10a' => '-- (contains all template files and images)',
+'11' => '-- (contains all localized text and support files used by YaBB)',
+'12' => '-- (contains the forum settings, preferences, and logs)',
+'and' => 'and', # Odd name, yes, but could be useful in more than one place
+'13' => 'plus all other source code -- (contains the complete YaBB source code)',
+'14' => '-- (contains the images and stylesheets for all templates, but <i>excludes</i> the Attachments and Avatars user-upload directories [see next line])',
+'14a' => '-- (contains user-uploaded files: attachments and avatars)',
+
+# Begin the backup method selection
+'15' => 'Backup and Compression Methods',
+
+# Don't translate command names (such as /bin/tar) or 'tar'.
+'16' => q~<i>Backup:</i> Tar (with compression) or Zip, using the standalone UNIX utilities, are the recommended choices. Archive::Tar (with compression) or Archive::Zip should be used only if Tar/Zip are unavailable, as the Perl modules are slower than the standalone utilities.<br /><br /><i>Compression:</i> If you use Tar, compression is strongly recommended to keep archive sizes small. (Zip is already compressed.)  Bzip2 makes smaller archives than Gzip or Zip, but takes longer; this may be an issue for slow servers with large forums.<br /><br /><span style="color: red;"><b>Note:</b></span> Some servers do not support large backup files. If you see an error message like "Internal server error" or even a blank page, try a different backup and/or compression method. If that still fails, try creating multiple smaller backups by separately backing up fewer directories (checked above). <br /><span style="color: red;"><b>Note:</b></span>: Tar may not save files in the 'root' of the yabb2 or yabbfiles folders. In that event, if you need to archive <i>all</i> files or need an archive/backup in preparation for moving your forum, use Zip or Archive::Tar instead.~,
+'17' => 'No Tar compression',
+'18' => '(for Tar compression)',
+'19' => 'Archive Destination Directory (to hold backup files)',
+'19a' => "Use the full path (e.g. $support_env_path/Backups), not a relative path (e.g. ./Backups)",
+'19b' => 'Backup Reminder',
+'19c' => 'Show an alert if no backup has been performed in',
+'19d' => 'days. Enter zero or leave blank to disable reminder.',
+'20' => 'Save Settings',
+
+# Begin run backup area
+'21' => 'Run Backup',
+'22' => 'Click the button below to run a backup. Backups are stored in the Archive Destination Directory (',
+'23' => '), set above.',
+'24' => '<span style="color: red;">During backup, your forum will automatically be put into Maintenance Mode.<br /><br /><b>Note:</b></span> For backups of very large forums, it may take a while until the page refreshes - be prepared to wait at least 5 minutes. If you experience a timeout or nothing happens after 5 minutes, consider the <span style="color:red;">NOTE</span> above in &#39;Backup Method&#39; regarding large backup files.<br /><br />After running at least one regular backup, you may select whether subsequent backups are full (all files in the directories checked above) or incremental (only those files which have changed since the last backup). If you change (and save) any of the settings above, the next backup <i>must</i> be a full backup. For incremental backups, the time interval for determining changed files is measured in <i>seconds</i> for Tar, Archive::Tar and Archive::Zip but in <i>days</i> for Zip.',
+'25' => 'Run Full Backup - all files in selected directories',
+'25a' => 'Run Incremental Backup - only files changed/created since',
+
+# Not used
+# '26' => '', Not used
+
+# Text used for the actual backup output
+'27' => 'Backed up',
+
+# Text used in the support subroutines
+'28' => 'Couldn&#39;t load the module',
+'29' => 'Unable to test backup method',
+'30' => 'Unable to find compression method',
+'31' => 'can&#39;t be used',
+'32' => 'Error code:',
+
+# Text used for timing the backup
+'33' => 'The backup took ',
+'34' => 'seconds',
+
+# Begin manage backups area
+'35' => 'Manage Backups',
+'36' => 'Backups available in',
+'37' => 'For each available backup, you can:<ul><li>DOWNLOAD the archive file</li><li>E-MAIL the archive file to',
+'37a' => '</li><li>Perform another (full) BACKUP with identical settings</li><li>Perform an INCREMENTAL backup with identical settings (only for files changed since the backup time)</li><li>RECOVER the backup to the live forum, if supported</li><li>DELETE the Backup</li></ul>',
+'38' => 'No backups found',
+
+'39' => 'The module',
+'40' => 'The command',
+'41' => 'is not available on this server.',
+'42' => 'Can&#39;t write to',
+'43' => 'Check your permissions and paths.',
+
+'44' => 'Couldn&#39;t change directories to',
+'45' => 'Invalid backup file.',
+'46' => 'Can&#39;t read from',
+'47' => 'Are you sure you want to delete',
+'48' => '? This action can&#39;t be reversed.',
+'49' => 'Yes, I&#39;m sure',
+'50' => 'No, don&#39;t delete it',
+'51' => 'Can&#39;t delete',
+'52' => 'E-MAIL',
+'53' => 'DELETE',
+'54' => 'Are you sure you want to send this e-mail',
+'55' => 'The size of the attachment will be',
+'56' => 'Yes, mail the attachment to',
+'57' => 'No, don&#39;t include the attachment, just mail the link.',
+'58' => 'No, don&#39;t send the mail. Download the archive instead.',
+'59' => 'No, don&#39;t send the mail. Return to YaBB Backup.',
+'60' => 'DOWNLOAD',
+'61' => 'BACKUP',
+'62' => 'INCREMENTAL',
+'62a' => 'INC',
+'63' => 'RECOVER',
+
+'70' => 'Save Date',
+'71' => 'Size',
+'72' => 'Backup Content (saved directories)',
+'73' => 'Type',
+'74' => 'Functions',
+
+# Loop stuff to prevent running into server time out
+'90' => q~<a href="javascript:stoptick();">Click here to STOP the backup</a>.~,
+'91' => 'Backing up - please wait.<br />If you want to stop, click on STOP before the red message appears again on the next page.',
+
+# Recover stuff
+'100' => 'Recover Backup',
+'101' => '<b>The automated recovery feature is recommended ONLY for the following directories:<br /><i>Boards</i>, <i>Members</i>, <i>Messages</i>, <i>Variables</i>, and <i>yabbfiles/Attachments and yabbfiles/avatars/UserAvatars</i>.<br /><br />Recovered files may not have proper ownership or permissions, and you may therefore experience file access problems. If this occurs, you should recover all other files by downloading the archive file from the previous page, then uploading the backed up files via FTP from your computer.</b><br /><br />Are you sure that you want to recover the following directory(s)?',
+'102' => 'from the archive file:',
+'103' => 'from',
+'104' => 'If yes, then',
+'105' => "If checked, files from the archive will be restored directly to their original (live) directories. This will overwrite the existing files in these directories and restore deleted files, if necessary. However, files created after the backup date (which are therefore not part of the archive) will not be deleted or modified. Directories that you want to recover must be set to CHMOD X[2|3|6|7]X before recovery, i.e. they must have at least 'group' write permission. Examples: CHMOD 775 or 765. If you have moved any directories from their previous locations since this backup archive was created, this method will probably fail - if this is the case, leave this box unchecked.<br />If unchecked, files recovered from the archive will be stored in a new \"recovered\" directory within your Archive Destination Directory, with the actual timestamp appended; for example:<br /><tt>$backupdir/recovered_$date</tt>  -- (the timestamp is merely an example).",
+'106' => 'You must set the permissions for the recovered files in the following directories. Depending on your server configuration, the recovered files may be owned by the server daemon user. If that is the case, you may not be able to change the permissions afterwards. To ensure that you can modify and/or delete your files after recovery, the "group" permissions must be 6 or 7; do not use a lower number. The owners permissions must also be 6 or 7.<br /><br />If you are uncertain about any of the above, do not use this automated recovery feature, and instead download the archive file manually (from the previous page) and restore the files via FTP from your computer.',
+'107' => 'Files and Directories',
+'108' => 'Permissions<br />(CHMOD)<br />Owner|Group|All',
+'110' => 'This permission can\\\'t be set below', # Used in JavaScript!
+'111' => 'This permission can\\\'t be set higher than 7.', # Used in JavaScript!
+'112' => 'Only numbers are allowed.', # Used in JavaScript!
+'114' => '(all files)',
+'115' => 'All',
+'116' => 'files',
+'120' => 'If new directories are created, set them to',
+'125' => 'No, return to the YaBB Backup page',
+'126' => 'Yes, I&#39;m ready - Recover Now.',
+'130' => '<b><u>Output:</u><br /><br />If the CHMOD was successful, the first character will be <i>1</i>; if it is <i>0</i>, the CHMOD failed.</b><br />If the CHMOD failed, the most common problem is that one or more directories were not set to <i>group</i> write permission.',
+'131' => '<b>Now check the CHMODs again with your FTP program, just to be sure &nbsp; ;-)</b>',
+'132' => 'Back to YaBB Backup main page',
+
+# Begin e-mail stuff.
+'mailsubject' => "YaBB 2 Backup from $mbname",
+'mailfrom' => qq~"YaBB 2 Backup Mailer" <$webmaster_email>~, # do NOT modify anything left and right from *YaBB 2 Backup Mailer*!
+'mailsuccess' => 'Sent e-mail successfully.',
+'mailfail' => 'Sending e-mail failed. See the error message in the info e-mail you will receive.',
+);
+
+# The actual messages are here.
+# Don't translate WORDS IN ALL CAPITALS from here to the end of the file
+$backup_txt{'mailmessage1'} = qq~Hi USERNAME!
+
+The backup FILENAME should be attached to this message.
+
+If not, you can visit LINK to download it manually.
+
+
+Thanks for using YaBB!~;
+
+$backup_txt{'mailmessage2'} = qq~Hi USERNAME!
+
+You can visit LINK to download the backup FILENAME.
+
+
+Thanks for using YaBB!~;
+
+$backup_txt{'mailmessage3'} = qq~Hi USERNAME!
+
+Sending the e-mail with the attached backup failed.
+
+But, you can visit LINK to manually download the backup FILENAME.
+
+The system provided the following info related to the sending error:
+"SYSTEMINFO"
+
+You must have MIME::Lite installed on your server to get backups by e-mail; you may also need other modules (see the info above). Ask your server administrator to install the module(s) on your server.  You can find further help on installing modules at: http://codex.yabbforum.com/YaBB.pl?num=1225217016
+
+Thanks for using YaBB!~;
+
+1;

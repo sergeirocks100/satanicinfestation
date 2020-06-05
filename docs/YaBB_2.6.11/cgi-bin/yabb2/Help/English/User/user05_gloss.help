@@ -1,0 +1,187 @@
+$SectionName = "YaBB_Terminology";
+
+### Section 1
+#############################################
+$SectionSub1 = "Glossary";
+$SectionBody1 = qq~YaBB has many descriptive terms that refer to its component parts, different page views, and visible items. This section is provided as a glossary to help users learn the correct terminology for their forums.
+
+<dl>
+    <dt class="help_dd"><b>A</b></dt>
+    <dt><b>Administrator</b></dt>
+    <dd>A user with complete control over all functions of the forum</dd>
+    <dt><b>Admin Center</b></dt>
+    <dd>The forum control panel that allows Administrators the ability to make system adjustments and choose what options will be set for the forum.</dd>
+    <dt><b>Admin Edits Screen</b></dt>
+    <dd>This is a screen in the user's Profile available only to Administrators and, if allowed, Global Moderators. This screen is where the user's post count and member group selections are made.</dd>
+    <dt><b>Alert Moderator</b></dt>
+    <dd>A type of Personal Message that can be enabled in Boards for Guests, Members, or both. Using this Alert sends a PM to the Board's Moderator&#40;s&#41; where the sender can describe the problem they are encountering.</dd>
+    <dt><b>Avatar</b></dt>
+    <dd>Avatars are images that appear under the user's name to the left of each post, and also appear in the user's Profile. Avatars can be selected by the user from a group of available avatar images. The Administrator may also enable users to link to an image on the web, or to upload their own avatar image.</dd>
+    <dt><b>Attachment</b></dt>
+    <dd>These are files a user may upload in connection with a Post. The Administrator may choose how many files may be attached to posts, maximum file size, and allowable file types.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>B</b></dt>
+    <dt><b>Ban or Banning</b></dt>
+    <dd>This is banishing a user from the entire forum. YaBB gives several choices of how to do this in the Admin Center.</dd>
+    <dt><b>Board</b></dt>
+    <dd>The second major subject grouping in your forum, a division of Categories. Boards are where a collection of Topics where users discuss specific subjects.</dd>
+    <dt><b>Board Index</b></dt>
+    <dd>This is the .template file that displays the listing of Categories and Boards on the forum's main or home page.</dd>
+    <dt><b>Board Moderator</b></dt>
+    <dd>This is a member who is given power to regulate posts one or more Boards. Board Moderators are assigned by editing each Board and assigning a member or group as that Board's Moderator.</dd>
+    <dt><b>Board Permissions</b></dt>
+    <dd>These are options available for each individual Board that lets the Administrator choose which users will be allowed access to the board itself or to functions in the board. An example would be a Board that set up so a member user can view it but not post in it.</dd>
+    <dt><b>Broadcast Message</b></dt>
+    <dd>A type of message that can be enabled for use by forum staff members.</dd>
+    <dt><b>Buddy List</b></dt>
+    <dd>This is a section of the user's Profile that gives you the ability to add other members that you're frequently contact to a list that will show in your User CP view. Your Buddy List will display each name, their Online/Offline status, and link options to send the user a PM, an e-Mail, or visit the link to their website.</dd>
+ </dl><dl>
+    <dt class="help_dd"><b>C</b></dt>
+    <dt><b>Categories</b></dt>
+    <dd>The first major subject grouping in your forum. Categories are a collection of Boards that represents a grouping of similar ideas or subjects.</dd>
+    <dt><b>CAPTCHA Image</b></dt>
+    <dd>See Validation Image.</dd>
+    <dt><b>Click Log</b></dt>
+    <dd>See Forum Log.</dd>
+</dl><dl>
+<dt class="help_dd"><b>D</b></dt>
+    <dt><b>Display Name</b></dt>
+    <dd>See '<b>Screen Name</b>'.</dd>
+    <dt><b>Download Counter</b></dt>
+    <dd>This is a feature associated with files attached to Posts, and is displayed to the right of the file name. This tells how many times the attached file has been downloaded. <span class="underline"><b>NOTE:</b></span> In the case of image files, a user may click on the file name and see the image displayed in their browser. This counts as a download, even though the user has not truly downloaded the file to their PC.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>E</b></dt>
+    <dt><b>Error Log</b></dt>
+    <dd>This is a log available to the Administrator that records all forum errors and information about when they occurred and who encountered them.</dd>
+</dl><dl>
+<dt class="help_dd"><b>F</b></dt>
+    <dt><b>Forum</b></dt>
+    <dd>This is your entire installation of YaBB.</dd>
+    <dt><b>Forum Log</b></dt>
+    <dd>This is a log available to the Administrator that records information about each "click" made in your forum. This gives the Administrator information on what browser types and versions are being used, users versus guests, referring pages, and more.</dd>
+    <dt><b>Forum logo</b></dt>
+    <dd>This is the image that displays on the top of your forum's pages. The standard logo that comes with the forum software has the YaBB logo with a version number. You can change the forum's logo with any image you choose &#40;see Admin Help - Help Topic Index - How Do I... for instructions&#41;.</dd>
+    <dt><b>Forum News</b></dt>
+    <dd>These are lines of text the Administrator may choose to display in the top section of the forum. They can be configured to change only with screen refreshes or can be made to cycle or fade within a selectable period.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>G</b></dt>
+    <dt><b>Gender Image</b></dt>
+    <dd>These are small icon graphics of a male or female symbol that appear if the user specifies a gender in their Profile and the Administrator has enabled the images to display. If enabled, they will appear below the user's Avatar picture to the left of their posts, and also in the user's Profile.</dd>
+    <dt><b>Global Announcement</b></dt>
+    <dd>An important subject Post entered in a special Global Announcements Board, which will copy the Post automatically to the TOP of <i>every</i> Board, in the Important Topics section.</dd>
+    <dt><b>Global Moderator</b></dt>
+    <dd>This is member who has Moderator privileges in the whole forum and may - depending on how the Administrator chooses settings - have many of the powers of an Administrator, including access to selected Admin Center functions.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>I</b></dt>
+    <dt><b>Ignore List</b></dt>
+    <dd>A function that allows you to ignore other members and prevents you from viewing any Personal Messages they send.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>M</b></dt>
+    <dt><b>Mark and Quote</b></dt>
+    <dd>This is a feature that lets you highlight a portion of a previous post and when the Mark and Quote button is pressed, it inserts the highlighted text into your reply within a quote box. You can add one or more of these to your reply, even from different previous posts.</dd>
+    <dt><b>Member</b></dt>
+    <dd>This is a user of your forum that has registered.</dd>
+    <dt><b>Member Group</b></dt>
+    <dd>These are groups that you can use to assign member to in order to establish different permission levels for users. There are two types of member groups:
+        <ul>
+            <li>Post Dependent Member Groups</li>
+            <li>Post Independent Member Groups</li>
+        </ul>
+    </dd>
+    <dt><b>Member List</b></dt>
+    <dd>This is a listing of all of your registered users that is sort-able by Screen Name, Position, Number of Posts, or Date Registered.</dd>
+    <dt><b>Message Index</b></dt>
+    <dd>This is the view where you see all the Topics in one Board listed. It is also the name of the .template file that provides this view.</dd>
+    <dt><b>MOD or Modification</b></dt>
+    <dd>A feature that is not included in the Basic YaBB Forum software installation. Modifications can include everything from a simple change in the program code up to a packaged MOD, which adds or changes features or the behavior of your forum. Modification can be done manually using a text editor or by using the BoardMOD program, which installs the changes within YaBB script files automatically for you. Please visit the <a href="http://www.boardmod.org" target = "_blank">BoardMOD homepage</a> and FAQ for more details.<br /><br />Please ask all support questions regarding MODs or the BoardMOD program on the <a href="http://www.boardmod.org" target = "_blank">BoardMOD Forum</a>.</dd>
+    <dt><b>Moderator</b></dt>
+    <dd>See 'Board Moderator'.</dd>
+    <dt><b>Moderator Group</b></dt>
+    <dd>This is one or more member groups that are assigned in the Edit Boards screen to be Board Moderators in one or more Boards. Instead of promoting a single user and having to add them as a Board Moderator in many different Boards, you can create a member group and assign that group to be the Board's Moderators. Then, should you need to add a new Board Moderator, all you have to do is add them to the member group chosen to moderate instead of editing multiple Boards.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>P</b></dt>
+    <dt><b>Personal Message Pop-Up</b></dt>
+    <dd>A user-selectable option that opens a small pop-up window telling you that you have received a new PM and an option link to view your new message now.</dd>
+    <dt><b>Poll</b></dt>
+    <dd>A type of survey that can be used in the forum, consisting of a question, list of selectable answers, and graphic display of the results.</dd>
+    <dt><b>Post</b></dt>
+    <dd>A singular message from one user that contains the actual text or content. A Post can be a New Topic post, or a Reply to an existing post.</dd>
+    <dt><b>Post Dependent Member Group</b></dt>
+    <dd>A member group where users can automatically advance up a hierarchy of member groups based only on the number of Posts they have made.</dd>
+    <dt><b>Post Independent Member Group</b></dt>
+    <dd>A member group where users must be placed or promoted manually by an Administrator or Global Moderator. These groups are used primarily for controlling access to specific Categories or Boards.</dd>
+    <dt><b>Post Window</b></dt>
+    <dd>This is the window used to make a Post. It has formatting buttons above it, and some of the commonly used Smilies below it.</dd>
+    <dt><b>Post View</b></dt>
+    <dd>This is the view you see when you are reading the posts in a Topic. This view uses the Display.template file to display the list of posts.</dd>
+    <dt><b>&#40;PM&#41; Personal Message or Private Message</b></dt>
+    <dd>An inner-forum communication similar to an email that is seen only by the sender and the recipient. PMs can be accessed in the User Control Panel.</dd>
+    <dt><b>Profile</b></dt>
+    <dd>This consists of the user's Profile Page and Profile Settings. It is sometimes used synonymously with Profile Page, as in "I see in your Profile &#40;page&#41; you have 1200 posts."</dd>
+    <dt><b>Profile Page</b></dt>
+    <dd>This is a page where a user's information is displayed, such as Screen Name, number of posts, date registered, link to their website, last posts made by user, etc. You can access a user's profile page by clicking on their Screen Name.</dd>
+    <dt><b>Profile Settings</b></dt>
+    <dd>These are all settings that are personal to the individual user. Examples are time zone, choice of template, avatar image, etc. These can be changed by the individual user or by Administrators and, if allowed, by Global Moderators.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>Q</b></dt>
+    <dt><b>Quote</b></dt>
+    <dd>This is a feature that allows a user replying to a post to quote the entire contents of the post directly below the Quote button you click on. This saves having to retype it in the reply. You can also manually highlight and copy text in one post, then paste it into your reply and with the text highlighted, press the Insert Quote button above the post window to place it in a Quote Box &#40;See also Mark and Quote&#41;.</dd>
+    <dt><b>Quote Box</b></dt>
+    <dd>This is a box placed around quoted text that sets the quoted text apart from the words of your reply post. You can enclose text in a Quote Box by highlighting the text with your mouse and clicking on the Insert Quote button above the Post Window.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>R</b></dt>
+    <dt><b>Registration</b></dt>
+    <dd>The process where a user becomes a member of your forum. There are four different modes of registration that the Administrator may choose from.</dd>
+    <dt><b>Reserved Names</b></dt>
+    <dd>These are names that the Administrator has chosen not to allow for use in User IDs or Screen Names.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>S</b></dt>
+    <dt><b>Screen Name</b></dt>
+    <dd>This is the user's "public" name, the name that displays above their avatar picture to the left of the Post Window and in the Member List. A user may change this name by editing the Screen Name in their Profile.</dd>
+    <dt><b>Search</b></dt>
+    <dd>This feature allows a user to search through the forum for information in posts or posts by users. Several options are listed on the Search page.</dd>
+    <dt class="help_dd"><b><span class="underline">User Tip:</span></b> For general searches, use the option "Any Poster" in the selection box at the bottom of the "By User" sections.</dt>
+    <dt><b>Signature</b></dt>
+    <dd>This is a section that shows up at the bottom of each user's post. A signature can contain an image, text, or a combination of both. Signatures can be created by each user in their Profile - Options page.</dd>
+    <dt><b>Smilies</b></dt>
+    <dd>Everyone knows what a Smiley is. [yabbc][img]$imagesdir/wink.gif[/img][/yabbc]<br /><br />Just click on the smiley to add it to your post.</dd>
+    <dt><b>Staff</b></dt>
+    <dd>A member of the Forum's administrative staff: Forum Administrator, Global Moderator, Forum Moderator, Board Moderator, or member of a Moderator Group. Staff privileges are set by the Forum Administrator.</dd>
+    <dt><b>Sticky Topic</b></dt>
+    <dd>A Topic that is placed by a Staff member above the normal list of Topics in a Board. Sticky Topics will remain above all other Topics in the list to give increased importance to a given subject.</dd>
+    <dt><b>Style Sheet</b></dt>
+    <dd>This is the .css file that controls the style elements for your forum. Template colors, text size and color, backgrounds, and some graphics all come from the style sheet.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>T</b></dt>
+    <dt><b>Template</b></dt>
+    <dd>This most commonly refers to the default.html file that forms the "look" of your forum. This file contains the forum logo, menu tabs, copyright, and all the items that will appear on each page of your forum.</dd>
+    <dd>This can also refer to the collection of .template files, .html file, .css file, and graphics that give your forum its appearance. This is not one actual <i>file</i>, but is <span class="underline">data</span> that is stored in the 'templateset' variable in the Settings.pm file in the Variables folder.</dd>
+    <dt><b>Template Configuration Screen</b></dt>
+    <dd>This is a section within the Admin Center that lets the Administrator configure a particular template to use a specific Style Sheet, .template files, or folder containing graphic images.</dd>
+    <dt><b>Topic</b></dt>
+    <dd>This contains all the posts in a particular topic of discussion. The subject of the topic is determined by the subject chosen in the first post in a topic. The collection of first post and all replies to it are sometimes called a "Thread."</dd>
+    <dt><b>Topic List</b></dt>
+    <dd>A list showing all the Topics in a Board on one or more pages, with Global Announcements and Sticky Topics at the top of the list.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>U</b></dt>
+    <dt><b>User</b></dt>
+    <dd>This is a normally a member of your forum. Guests may be considered a user if guests are allowed to view items or perform actions on your forum, though they will have no Profile and cannot be placed into any member group.</dd>
+    <dt><b>User Control Panel &#40;CP&#41;</b></dt>
+    <dd>This is a control panel for users to read their PMs and set their individual preferences for items such as time display, template choice, avatar picture, etc. It includes the user's PM section, user's Profile section, and user's Notifications section.</dd>
+    <dt><b>User Name</b></dt>
+    <dd>This is a member's non-visible name, and is the name that is used to track the user's posts and other statistics such as what posts have been viewed. This name cannot be changed without losing all the information associated with the previous user name. All previous posts will still show up with the old user name, which will then show as "Ex-Member".</dd>
+</dl><dl>
+    <dt class="help_dd"><b>V</b></dt>
+    <dt><b>Validation Image</b></dt>
+    <dd>This is a randomly generated series of letters and numbers used for Registration and certain instances where Guests are allowed access to some forum functions &#40;posting, voting in Polls, etc.&#41;.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>Y</b></dt>
+    <dt><b>YaBB Backup</b></dt>
+    <dd>This is a feature that lets the Administrator create a backup of all or parts of their forum.</dd>
+    <dt><b>YaBBC</b></dt>
+    <dd>This is similar to Bulletin Board Code &#40;BBC&#41; but is adapted specifically for use with YaBB forums. YaBBC codes are placed as tags within square brackets in posts. See <a href="#YaBBC_Reference">User Help - Posting - YaBBC Reference</a> for examples.  </dd>
+</dl>
+~;
+#############################################
+
+1;

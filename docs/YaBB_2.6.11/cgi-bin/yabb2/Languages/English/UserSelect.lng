@@ -1,0 +1,61 @@
+###############################################################################
+# UserSelect.lng (UserSelect text definitions)                                #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$userselectlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%usersel_txt = (
+'addselected' => 'Add Selected',
+'instruct' => 'Double click on a name or select one or more names in the list and click on the "Add Selected" button to add to the',
+'instruct0' => 'Type the first characters of the new moderator in the upper form field, then double click on the name or select one or more names in the list and click on the "Add Selected" button to add to the',
+'instruct1' => 'Double click on a name or select a name in the list and click on the "Add Selected" button to add to the',
+'instruct2' => 'Find member by Name or e-mail:',
+'instruct3' => 'In the search box at the top you can use a wild-card character (only one *) anywhere in your search string.',
+'instruct4' => 'Select Member Groups',
+'wildcardinfo' => 'Use * for wild-card',
+'searchresult' => 'Search Result:',
+'nofound' => 'Sorry - no matches found for',
+'pmpagetitle' => 'Select PM Recipients',
+'grouppagetitle' => 'Select BC Recipient Groups',
+'modpagetitle' => 'Select Moderators',
+'buddypagetitle' => 'Select your buddies',
+'ignorepagetitle' => 'Select members to Ignore',
+'searchpagetitle' => 'Select member to search for',
+'pageclose' => 'Close',
+'recentlist' => 'Recent List',
+'alllist' => 'Member List',
+'gobutton' => 'Go',
+'reciepientlist' => 'Recipient List',
+'moderatorlist' => 'Moderator List',
+'buddylist' => 'Buddy List',
+'groups' => 'Member Groups',
+'ignorelist' => 'PM Ignore List',
+'searchlist' => 'Search by User field',
+'pmto' => 'To',
+'pmcc' => 'Cc',
+'pmbcc' => 'Bcc',
+'allsearch' => 'All',
+'bmallmembers' => 'All forum members',
+'bmadmins' => 'Administrators',
+'bmgmods' => 'Global moderators',
+'bmfmods' => 'Forum moderators',
+'bmmods' => 'All board moderators / mod groups',
+'pages' => 'Pages',
+'of' => 'of',
+'noentries' => 'There are no entries available for this letter.',
+'other' => 'Other',
+'noresults' => 'No Results',
+'qsearch' => 'Search Members',
+);
+
+1;

@@ -1,0 +1,87 @@
+###############################################################################
+# Display.lng (Display text definitions)                                      #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$displaylngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%display_txt = (
+'10' => 'Permalink for this article',
+'19' => 'Page Index Toggle',
+'21' => 'Posts',
+'24' => '(No subject)',
+'28' => 'Guest',
+'29' => 'Author',
+'30' => 'on',
+'63' => 'Moderators',
+'63a' => 'Moderator Groups',
+'116' => 'Post Reply',
+'118' => 'Topic',
+'139' => 'Pages',
+'146' => 'Reply',
+'146n' => 'Paste Member Name in Quick Reply Box',
+'162' => 'Are you sure you want to remove this topic?',
+'rempost' => 'Are you sure you want to remove this post?',
+'211' => 'Last Edit',
+'211a' => 'Reason',
+'298' => 'Moderator',
+'298a' => 'Moderator Group',
+'470' => 'N/A',
+'470a' => '<i>Ex Member</i>',
+'511' => 'IP Logged',
+'525' => 'by',
+'526' => 'Adding Favorite',
+'527' => 'Removing Favorite',
+'528' => 'Complete',
+'529' => 'Adding Notification',
+'530' => 'Removing Notification',
+'641' => 'Read',
+'642' => 'times',
+'643' => 'Back to top',
+'644' => 'Members viewing this topic',
+'645' => 'replying',
+'646' => 'Members replying to this topic',
+'739' => 'Are you sure you want to delete this post?',
+'739a' => 'Delete this post',
+'766' => 'No Topic',
+'767' => 'Next Topic',
+'768' => 'Previous Topic',
+'769' => 'Flash Location',
+'888' => 'Browsing Topic',
+'999' => 'Board Announcement',
+'posttolocked' => 'Warning: You are about to post to a locked thread. Click [OK] to confirm this or [Cancel] to return to the thread.',
+'modifyinlocked' => 'Warning: You are about to modify a locked thread. Click [OK] to confirm this or [Cancel] to return to the thread.',
+'isbuddy' => 'In my Buddy List.',
+'split_confirm' => 'Are you sure you want to split this topic?',
+'alertmod_confirm' => 'Are you sure you want to alert moderator about this post?',
+'reverse' => 'Click here if you want to change the order topics are shown in.',
+'sendtopicemail' => 'Click [OK] if you want to send the e-mail through your e-mail program, otherwise the forums e-mail program will be used.',
+'location' => 'Location', 
+'age' => 'Age',
+'regdate' => 'Joined: ', 
+'mylastposts' => 'View my last 5 posts',
+'lastposts' => 'View the last 5 posts by ',
+'lft' => "&lsaquo;",
+'rgt' => "&rsaquo;",
+'upt' => '&#710;',
+'guest_message' => 'Guest Message', 
+'guest_message_block' => qq~Hi there Guest,<br><br>Sorry, but you have exceeded the amount of topics that you are allowed to view as a guest. To view as many topics as you like and to benefit from many more features, why don't you <a href="$scripturl?action=register" style="font-weight: bold;">register an account with us</a>. Registration is easy and will only take you a few minutes.<br><br>If you already have an account with us, then you can <a href="$scripturl?action=login" style="font-weight: bold;">login here</a> to stop seeing this message.<br><br>Thank you,<br><br>The $mbname Team~,
+'guest_message_warn' => qq~Hi there Guest,<br><br>It looks like you are enjoying reading our forum, so why don't you <a href="$scripturl?action=register" style="font-weight: bold;">register an account with us</a> to stop seeing this message and benefit from many more features. Registration is easy and will only take you a few minutes.<br><br>If you already have an account with us, then <a href="$scripturl?action=login" style="font-weight: bold;">click here to log in.</a><br><br>Thank you,<br><br>The $mbname Team~, 
+'bookmarks' => 'Bookmarks', # Social Bookmarks
+'google' => 'Google Hangout',
+);
+
+%zodiac_txt = (   #YaBB Zodiac
+'sign' => 'Zodiac sign',
+);
+
+1;

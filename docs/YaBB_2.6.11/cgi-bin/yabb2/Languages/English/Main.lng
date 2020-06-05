@@ -1,0 +1,289 @@
+###############################################################################
+# Main.lng (General text definitions)                                         #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$mainlngver = 'YaBB 2.6.11 $Revision: 1617 $';
+
+$abbr_lang = 'en-us';
+
+@days = ('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+@months = ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec');
+@months_m = ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'); #list for lower case months if needed.
+@days_short = ('Sun','Mon','Tue','Wed','Thu','Fri','Sat'); # for smtp
+
+%maintxt = (
+'w3c_lngcode' => 'en-us',
+'error_description' => 'System Information',
+'error_location' => '<b>Script</b>',
+'error_line' => '<b>Line</b>',
+'error_subroutine' => '<b>Subroutine</b>',
+'error_verbose' => '<b>Verbose</b>',
+'board' => 'Board',
+'cat' => 'Category',
+'0' => 'Send PM to',
+'1' => 'Send E-mail to',
+'2' => 'View',
+'3' => '&#39;s Profile',
+'4' => 'Add',
+'5' => 'to Buddylist',
+'6' => 'View my Profile',
+'10' => 'Last online',
+'11' => 'days and',
+'12' => 'hours ago',
+'13' => 'Has not logged in since registering',
+'22' => 'Last post',
+'23' => 'Unable to open',
+'27' => 'View Profile',
+'28' => 'Guest',
+'30' => 'on',
+'30a' => 'wrote on',
+'30b' => q{}, #placeholder for non-English strings needed in that spot
+'31' => 'Quote',
+'32' => 'Go',
+'34' => 'Login',
+'35' => 'You can login at the bottom of this page.',
+'40a' => 'Multimedia File Viewing is not available on RSS Feeds.',
+'41' => '(You need to',
+'42' => 'or',
+'42a' => 'to view media files and links)',
+'60' => 'Online',
+'61' => 'Offline',
+'62' => 'Topic Tools',
+'63' => 'Post Tools',
+'64' => 'There are no actions to perform.',
+'away' => 'Away',
+'70' => 'Subject',
+'97' => 'Register',
+'102' => 'News',
+'107' => 'at',
+'109' => 'Started by',
+'114' => 'Administration Login',
+'125' => 'Notify',
+'126' => 'Do you want a Notification if someone replies to this Topic?',
+'132' => 'Move',
+'133' => 'Move to',
+'155' => 'Maintenance Mode',
+'156' => 'Our Forum is currently in Maintenance Mode.',
+'157' => 'Our Forum is currently in Maintenance Mode. Please try again later. Thank you.',
+'160' => 'This',
+'160a' => 'Topic',
+'160b' => 'has been moved to',
+'160c' => 'The contents of this Topic have been moved to',
+'160d' => 'this Topic',
+'160e' => 'Off-Topic replies have been moved to',
+'160f' => '.',
+'161' => 'This Topic was moved here from',
+'161a' => 'The last',
+'161b' => 'Posts were moved here from',
+'163' => 'Yes',
+'164' => 'No',
+'170' => 'Sorry, no matches were found',
+'171' => 'No image found in 30 seconds. Given up.', # Inside JavaScript!
+'193' => 'Back',
+'195' => 'Message started by',
+'196' => 'Title',
+'197' => 'Post by',
+'199' => 'Post not found',
+'213' => 'Users Last Posts',
+'214' => 'Recent Posts',
+'214b' => 'most Recent Topics',
+'215' => 'Recent Topics',
+'236' => 'Return',
+'237' => 'to the Board Index.',
+'247m' => 'Good Morning',
+'247a' => 'Good Afternoon',
+'247e' => 'Good Evening',
+'247bday' => 'Happy Birthday',
+'248' => 'Welcome,',
+'249' => 'Please',
+'316' => 'Inbox',
+'317' => 'Date',
+'318' => 'From',
+'320' => 'Sent box',
+'324' => 'To',
+'377' => 'or',
+'409' => 'The last POST request from your IP was less than',
+'410' => 'seconds ago, and was blocked to prevent overloading the forum. Please try later.',
+'418' => 'Notification',
+'470' => 'N/A',
+'470a' => '<i>Ex Member</i>',
+'525' => 'by',
+'609' => q~For purposes of security, YaBB asks that you please always use absolute paths. The '../' (parent directory) symbol is illegal. Please run Setup.pl again and modify the setting to use absolute paths instead of the '../' symbol.~,
+'633' => 'Warning.',
+'634' => 'Only Registered Members are allowed to access this forum.',
+'635' => 'Please login below or click',
+'636' => '-here-',
+'637' => "to register an account with $mbname.",
+'668' => 'Print Page',
+'668a' => 'Print Post',
+'669a' => 'Hide Images',
+'669b' => 'Show Images',
+'758' => 'Moved',
+'769' => 'Today',
+'769a'=> 'Yesterday',
+'769al'=> 'yesterday',
+'769b'=> 'Tomorrow',
+'773' => 'Would you like to print this page now?',
+'900b' => 'Back',
+'900s' => 'Submit',
+'900pw' => 'Enter Password for',
+'900pd' => 'Password Access Board',
+'900pe' => 'Please enter a password.',
+'900pg' => qq~Password Access Boards are for Members only. Please <a href="$scripturl?action=register" style="font-weight: bold;">register an account with us</a> or <a href="$scripturl?action=login" style="font-weight: bold;">login</a>.~,
+'900pr' => 'Private',
+'dst' => '<sup>*</sup>',
+'rssfeed' => 'RSS Feed',
+'freeuserspace' => 'Free Host space available:',
+'freediskspace' => 'Free Disk space available:',
+'redirect' => 'Redirect',
+'redirecttext' => 'If you see this message, it means that the redirection didn&#39;t work.',
+'redirectlink' => 'Click here',
+'noscript' => 'You must enable JavaScript to get full functionality for this forum.',
+'go_to_board' => 'Go to the Board Index',
+'searchimg' => 'Posts no more than',
+'searchimg2' => 'days old',
+'searchimg3' => 'All Posts',
+'collapse' => 'collapse',
+'UTC' => '(UTC)',
+'maint' => 'Remove this file if your board is in maintenance for no reason.',
+'printpage' => 'Print this page',
+);
+
+%load_txt = (
+'152' => 'you have',
+'153' => 'messages',
+'154' => 'are new.',
+'154b' => 'new messages.',
+'155' => 'is new.',
+'155b' => 'new message.',
+'nonew' => 'and no new messages.',
+'231' => 'Gender',
+'female' => 'Female',
+'male' => 'Male', 
+'471' => 'message',
+'616' => qq~Remember, this forum is in <a href="$boardurl/AdminIndex.$yyaext?action=admincheck;username=USER;action2=newsettings;page=maintenance" style="font-weight: bold;">'Maintenance Mode'</a>.~,
+'616a' => qq~Remember, this forum is in <a href="$boardurl/AdminIndex.$yyaext?action=newsettings;page=maintenance" style="font-weight: bold;">'Maintenance Mode'</a>.~,
+'617' => 'Remember, last Backup was done on:',
+'773' => "IP not found, please change \$user_ip in \$lang/Main.lng",
+'805' => 'You',
+'806' => '<b>can</b>',
+'807' => '<b>cannot</b>',
+'808' => 'view Topics in this Board.',
+'809' => 'post replies to Topics in this Board.',
+'810' => 'start new Topics in this Board.',
+'811' => 'start Polls in this Board.',
+'812' => 'post towards your Post Count in this Board.',
+'813' => 'post Attachments in this Board.',
+);
+
+%load_imtxt = (
+'46' => 'Storage',
+'71' => 'Printed from your',
+);
+
+%security_txt = (
+'430' => ', you are banned from using this forum',
+'678' => 'Sorry',
+);
+
+%reftxt=(
+'1' => 'Referer Security',
+'2' => 'Select Board Actions which are allowed from outside your domain',
+'3' => "(These commands are derived from $sourcedir/SubList.pl)",
+'4' => 'Save Settings',
+'6' => 'Referer Domain:',
+'7' => 'Your Domain:',
+);
+
+%dereftxt =(
+'1' => 'You are being redirected.... one moment please.',
+);
+
+%timelocktxt=(
+'02' => ' day(s) to modify Posts. This Post may not be altered.',
+'02a' => ' day(s) to delete Posts. This Post may not be deleted.',
+);
+
+%smiltxt = (
+'1' => 'More Smilies',
+'21' => 'Click on the Smiley you wish to insert into your message:',
+);
+
+%timetxt = (
+'1' => '<sup>st</sup>',
+'2' => '<sup>nd</sup>',
+'3' => '<sup>rd</sup>',
+'4' => '<sup>th</sup>',
+);
+
+%pidtxt = (
+'01' => 'all',
+'02' => 'Click for previous page - double click for first page.',
+'03' => 'Click for next page - double click for last page.',
+);
+
+##  jump menu
+%jumpto_txt = (
+'to' => 'Forum Jump &raquo;',
+'mess' => ' &raquo; my Messages',
+'fav' => ' &raquo; my Favorites',
+'note' => ' &raquo; my Notifications',
+);
+
+## guest language selector
+%guest_txt =(
+'sellanguage' => 'Choose Language',
+'changelanguage' => 'Change Language',
+);
+
+## recent lists
+%recent_txt = (
+'recenttopic' => ' &raquo; 10 most recent Topics',
+'recentposts' => ' &raquo; 10 most recent Posts',
+);
+
+## pm to e-mail forward
+$forwardedpm = qq~This alert was forwarded as e-mail~;
+
+%reg_txt = (
+'reason' => 'Please state your reason(s) for applying for membership in this forum',
+'reason_exp' => 'This information will not be saved, but will only be used to evaluate your application.',
+'admin_alert_start_one' => 'There is <b>',
+'admin_alert_start_more' => 'There are <b>',
+'admin_alert_one' => '</b> validated Registrant',
+'admin_alert_more' => '</b> validated Registrants',
+'admin_alert_end' => ' awaiting approval.',
+'admin_alert_end_more' => ' awaiting approval.', ## For languages that need a different end line on more than one user
+'admin_alert_act_one' => '</b> Pre-Registered Member that is',
+'admin_alert_act_more' => '</b> Pre-Registered Members that are',
+'admin_alert_act_end' => ' not yet validated.',
+'admin_alert_act_end_more' => ' not yet validated.', ## For languages that need a different end line on more than one user
+'no_masterkey'=> '<div class="editbg">No Masterkey was set in the Security Settings/Validation Image section of the Admin Center<br />Now using default value which is less safe.</div>',
+);
+
+%lookup_txt = (
+'01' => 'Lookup',
+'02' => 'on a Whois server:',
+'iplookup' => 'IP Lookup',
+);
+
+%croak = (
+'open' => 'Cannot open',
+'close' => 'Cannot close',
+'print' => 'Cannot print',
+);
+
+timetostring($date);
+$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext">$mbname</a> &#187; Powered by <a href="http://www.yabbforum.com" target="_blank">$YaBBversion</a>!<br />\n<a href="http://www.yabbforum.com" target="_blank">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.~; 
+
+1;

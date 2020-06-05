@@ -1,0 +1,43 @@
+###############################################################################
+# Sessions.lng (Sessions text definitions)                                    #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$sessionslngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%session_txt = (
+'1' => 'Activate Session ID&#39;s?',
+'2' => 'This protects the Administrative Functions by using a three part Session Key based on IP address.',
+'3' => "Your Session has expired as you entered the forum from a different IP address ($user_ip).",
+'4' => 'To check your credentials answer the following question with the answer you entered in your profile.',
+'6' => 'You failed to validate your credentials and are logged out.',
+'8' => 'Select your Session Revalidation Question here',
+'9' => 'To check your credentials select a question and provide an answer to re-validate your session.',
+'9a' => 'If you select your password as validation you can leave the field empty.',
+'10' => 'You did not select a Session Question in your profile so you must use your password to verify your credentials.',
+);
+
+%sesquest_txt = (
+'password' => 'Use my password as validation',
+'1' => 'My favorite animal is a',
+'2' => 'The name of my favorite pet is',
+'3' => 'My phone number is',
+'4' => 'My birth-date is',
+'5' => 'My best friend is',
+'6' => 'I&#39;m in love with',
+'7' => 'The person I hate most is',
+'8' => 'My Zip code is',
+'9' => 'My favorite sport is',
+'10' => 'My favorite drink is',
+);
+
+1;

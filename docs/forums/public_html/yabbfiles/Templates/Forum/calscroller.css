@@ -1,0 +1,17 @@
+/* Scroller styles */
+#eventcaldata{
+	width:100%;
+	background:transparent;
+
+}
+#eventcaldata.hasJS{
+	height:120px;
+	overflow:hidden;
+	position:relative
+}
+#eventcaldata.hasJS div{
+	position:absolute;
+	top:120px;
+	left:0;
+	margin:0
+}

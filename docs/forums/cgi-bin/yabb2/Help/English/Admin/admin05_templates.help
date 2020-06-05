@@ -1,0 +1,21 @@
+$SectionName = "Manage_Templates";
+
+### Section 1
+#############################################
+$SectionSub1 = "Accessing_the_Template_Editor";
+$SectionBody1 = qq~<p>YaBB gives you the ability to quickly and easily add and/or modify the look and feel of your Forum. In order to access these functions, you must be logged in as a Forum Administrator or Global Moderator with proper access rights. In the &#8220;Admin Center&#8221; find the section in the left hand menu titled &#8220;Forum Layout&#8221;. There you will see three links: &#8220;Template Configuration&#8221;, &#8220;Style Sheet&#8221;, and &#8220;Template&#8221;.</p>
+~;
+#############################################
+
+### Section 2
+#############################################
+$SectionSub2 = "Template_Configuration";
+$SectionBody2 = qq~If you would like to add a Template (also known as a skin), change which stylesheet file you'd like to use for your Forum, or use templates other than the default one, this section allows you to do that.
+<p><b>Adding a New Skin</b></p>
+<ul>
+    <li>Create a folder in 'yabbfiles/Templates/Forum' (this location may be different for you) for the graphics for your new skin and upload your graphics. Also upload your new stylesheet to the same place that default stylesheet (default.css) is. (Do <b>NOT</b> overwrite your default stylesheet.) Your new stylesheet should have a name that will be easily associated with your new graphics folder. (For instance, you would like to use a 'Noir' skin. Name the graphics folder 'noir' and the stylesheet 'noir.css'.)</li>
+    <li>Create a folder in your 'yabb2/Templates' directory for your new template files. (Again, make sure the name is something you will easily associate with your new skin.) Upload your new Template files into this directory. The '.html' file must <b>not</b> be named 'default.html' - give it the same name as your new folder. (Using the above example, name the folder 'noir' and the .html file 'noir.html'.)</li>
+    <li>In &#8220;Template Configuration&#8221; the names of your new stylesheet and folders should now show up in the drop-down selection box. Choose the new folders, templates, and stylesheet for your new skin. Create a name for the new skin and type it into the textbox at the bottom of the &#8220;Template Configuration&#8221; page. Save your new skin under its new name. Now you can choose your new skin as the default for new members and guests in the &#8220;Forum Settings and Preferences&#8221; area.</li>
+</ul>
+~;
+#############################################

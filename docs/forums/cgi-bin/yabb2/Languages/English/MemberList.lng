@@ -1,0 +1,47 @@
+###############################################################################
+# MemberList.lng (Member List text definitions)                               #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$memberlistlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%ml_txt = (
+'1' => 'Sort by:',
+'2' => 'GO!',
+'3' => 'Viewing The',
+'4' => 'Members By',
+'19' => 'Page Index toggle',
+'21' => 'Posts',
+'34' => 'Avatar',
+'35' => 'Name',
+'87' => 'Position',
+'96' => 'Website',
+'139' => 'Pages',
+'233' => 'Date Registered',
+'234' => 'Reg. Date',
+'307' => 'e-mail',
+'308' => 'Hidden E-mail',
+'309' => 'of',
+'312' => 'Viewing Members By Letter',
+'313' => 'Viewing The',
+'314' => 'Members By Number of Posts',
+'331' => 'Members',
+'759' => 'Please select a letter.',
+'760' => 'There are no entries available for this letter.',
+'800' => 'Other',
+'801' => 'Search by Name or E-mail',
+'802' => 'Sorry - no matches found for',
+'dr_warning' => '* Account older than Forum - please verify Forum Start Date:',
+'dr_warnurl' => 'Here',
+);
+
+1;

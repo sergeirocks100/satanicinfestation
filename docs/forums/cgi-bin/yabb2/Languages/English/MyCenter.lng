@@ -1,0 +1,74 @@
+###############################################################################
+# MyCenter.lng (My Center text definitions)                                   #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$mycenterlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+## LEAVE USERLABEL intact. Move within the string for correct language syntax!
+
+%mycenter_txt = (
+'welcometxt' => "USERLABEL&#39;s Control Panel",
+'buddylisttitle' => 'Your Buddies',
+'buddylistnone' => 'Your Buddy List is empty',
+'buddydeleted' => 'This Buddy was deleted. The name is no longer available.',
+'hiddenemail' => 'Hidden E-mail',
+'currentsettings' => 'Your current Settings:',
+'onoffstatus' => 'Online/Offline Status:', 
+'onoffstatuson' => 'Online/Offline',
+'onoffstatusaway' => 'Away',
+'view' => 'View',
+'stealth' => 'Stealth:',
+'stealth_off' => 'Stealth Mode Off',
+'stealth_on' => 'Stealth Mode On',
+'posts' => 'Posts',
+'location' => 'Location', 
+'mylastposts' => 'View my last 5 posts', 
+);
+
+%display_txt = (
+'139' => 'Pages',
+);
+
+%mc_menus = (
+'messages' => 'Messages',
+'profile' => 'Profile',
+'posts' => 'Posts',
+);
+
+%pm_search = (
+'all' => 'All',
+'justthis' => 'This folder only',
+'byuser' => 'by Screen Name',
+'desc' => 'Search my PMs',
+'search' => 'Search',
+);
+
+%mc_folders = (
+'foldername' => 'Folder Name',
+);
+
+%my_favs = (
+'70' => 'Subject',
+'109' => 'Started By',
+'110' => 'Replies',
+'301' => 'Views',
+'330' => 'Topics',
+'21' => 'Posts',
+'22' => 'Last Post',
+'525' => 'By',
+'526' => 'by',
+'527' => 'Started',
+'737' => 'Check all',
+);
+
+1;

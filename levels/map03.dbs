@@ -13,9 +13,9 @@ maps
 		}
 		defaultfloortexture = "FLAT5_4";
 		defaultceiltexture = "FLOOR0_6";
-		defaulttoptexture = "BIGBRIK2";
-		defaultwalltexture = "BIGBRIK2";
-		defaultbottomtexture = "BIGBRIK2";
+		defaulttoptexture = "METAL5";
+		defaultwalltexture = "METAL5";
+		defaultbottomtexture = "METAL5";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = 1006.506f;
-		viewpositiony = 1090.026f;
-		viewscale = 0.3642719f;
+		viewpositionx = 1108.446f;
+		viewpositiony = 419.3299f;
+		viewscale = 0.4735599f;
 		
 		grid
 		{

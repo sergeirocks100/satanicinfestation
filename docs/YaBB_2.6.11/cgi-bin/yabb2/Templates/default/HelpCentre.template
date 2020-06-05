@@ -1,0 +1,95 @@
+###############################################################################
+# default.HelpCentre.template                                                 #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+$helpcentretemver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+$HelpTemplateLoaded = '1';
+$top_img = qq~$imagesdir/back_to_top.png~;
+$moderator_class  = 'catbg';
+$admin_class      = 'catbg';
+$global_mod_class = 'catbg';
+$UserClass        = 'catbg';
+
+### Creates the Navigation Bar at the top ###
+$HelpNavBar = qq~
+    <table class="bordercolor pad_2px cs_thin h_25px" style="margin-bottom:10px">
+        <colgroup>
+            <col span="4" style="width:25%" />
+        </colgroup>
+        <tr>
+            <td class="{user class} center">{user menu}</td>
+            <td class="{moderator class} center">{moderator menu}</td>
+            <td class="{global mod class} center">{global mod menu}</td>
+            <td class="{admin class} center">{admin menu}</td>
+        </tr>
+    </table>
+~;
+
+### The Main Layout for the whole page. ###
+$MainLayout = qq~
+    <div style="float: left; width: 24%; margin-bottom:10px">
+        <table class="bordercolor pad_4px cs_thin">
+            <tr>
+                <td class="catbg small">$helptxt{'2'}</td>
+            </tr><tr>
+                <td class="windowbg2">{yabb contents}</td>
+            </tr>
+        </table>
+    </div>
+    <div style="float: right; width: 74%; margin-bottom: 10px;">
+{yabb body}
+    </div>
+<div class="clear"></div>~;
+
+### Prints this for the header of the contents #
+$ContentHeader = qq~
+<a href="#{yabb section_anchor}"><b>{yabb section_name}</b></a>
+~;
+
+### Prints this for every item in the contents #
+$ContentItem = qq~
+    <li class="small" style="padding-left: 10px; padding-right: 5px; margin: 0;">
+        <a href="#{yabb anchor}">{yabb content}</a>
+    </li>~;
+
+### Prints this for the Header of the main section (title etc) #
+$BodyHeader = qq~
+    <table class="bordercolor pad_4px cs_thin" style="table-layout: fixed">
+        <tr>
+            <td class="titlebg">
+                <span class="anchor" id="{yabb section_anchor}"></span><b>{yabb section_name}</b>
+            </td>
+        </tr>~;
+
+### Prints this for the Sub headers of the main section #
+$BodySubHeader = qq~<tr>
+            <td class="catbg">
+                <span class="anchor" id="{yabb section_anchor}"></span><b>{yabb section_sub}</b>
+            </td>
+        </tr>~;
+
+### Prints this for every item in the body text #
+$BodyItem = qq~<tr>
+            <td class="windowbg2">
+                {yabb item}
+                <span style="float:right;"><span onclick="toTop(0)" class="cursor"><img src="$top_img" alt="$helptxt{'643'}" title="$helptxt{'643'}" /></span>&nbsp;</span>
+            </td>
+        </tr>~;
+
+### Prints this after each file in a help directory has finished printing. #
+$BodyFooter = qq~
+    </table>
+    <br />
+~;
+
+1;

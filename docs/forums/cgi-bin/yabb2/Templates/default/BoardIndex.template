@@ -1,0 +1,384 @@
+###############################################################################
+# default.BoardIndex.template                                                 #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+$boardindextemver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+$boardhandellist = qq~
+    {yabb expand}{yabb collapse}{yabb markallread}
+~;
+$bdpicExt = 'png';
+## for the default announcement, recycle, subboard and regular board markers ##
+$brd_dropdown = 'dropdown.png';
+$brd_dropup = 'dropup.png';
+$brd_arrowup = 'arrowup.gif';
+$brd_loadbar = 'loadbar.gif';
+$brd_info = 'info.png';
+$brd_online = 'online.png';
+$brd_fadeleftdropdown = 'fadeleftdropdown.gif';
+$brd_faderightdropdown = 'faderightdropdown.gif';
+$brd_closebutton = 'closebutton.png';
+$sub_arrow_dn = 'sub_arrow.png';
+$sub_arrow_up = 'sub_arrow_up.png';
+$extern = 'extern.png';
+$sub_extern = 'extern_sub.png';
+$tabfill = q~~;
+$topiccut = 25;
+$brdpicwidth = ($max_brd_img_width || 50) + 20;
+$boardindex_template = qq~<!-- Default Board Graphics courtesy of http://www.shapes4free.com/ -->
+<!-- Board Index Showcase Poll start -->
+{yabb pollshowcase}
+<!-- Board Index Showcase Poll end-->
+<!-- Board Index Category block start, should be left as is -->
+{yabb catsblock}
+<!-- Board Index Category block end, should be left as is -->
+~;
+
+if(!$iamguest && !$subboard_sel) {
+get_micon();
+$boardindex_template .= qq~
+<!-- Board Index Button Bar start -->
+        <table class="bordercolor pad_4px">
+            <colgroup>
+                <col style="width:50%" span="2" />
+            </colgroup>
+            <tr class="windowbg">
+                <td class="small">
+                        <span class="small bold"><img src="$imagesdir/$newload{'brd_new'}" id="no_edit" alt="$boardindex_txt{'333'}" title="$boardindex_txt{'333'}" /> $boardindex_txt{'333'}&nbsp;&nbsp;
+                        <img src="$imagesdir/$newload{'brd_old'}" alt="$boardindex_txt{'334'}" title="$boardindex_txt{'334'}" /> $boardindex_txt{'334'}</span>
+                </td><td class="right small">
+                        {yabb boardhandellist}
+                </td>
+            </tr>
+        </table>
+<!-- Board Index Button Bar end -->
+~;
+}
+
+if(!$subboard_sel) {
+$boardindex_template .= qq~
+<!-- Info Center block start -->
+        <table class="tabtitle tabtitle-text" style="margin-top:1em">
+            <colgroup>
+                <col style="width:1%" />
+                <col style="width:99%" />
+            </colgroup>
+            <tr>
+                <td>&nbsp;</td>
+                <td>$boardindex_txt{'200'}</td>
+            </tr>
+        </table>
+        <table class="bordercolor pad_4px cs_thin">
+            <colgroup>
+                <col style="width:${brdpicwidth}px" />
+                <col style="width:auto" />
+            </colgroup>
+            <tr>
+                <td class="windowbg center">
+                    <img src="$imagesdir/$brd_info" alt="" />
+                </td>
+                <td class="windowbg2 info-center center vtop">
+                    <div class="small" style="float: left; width: 59%; text-align: left;">
+                        $boardindex_txt{'489'} <b>{yabb totalmessages} $boardindex_txt{'21l'}</b> $boardindex_txt{'490'} <b>{yabb totaltopics} $boardindex_txt{'330l'}</b>.<br />
+                        {yabb lastpostlink} {yabb lastpostdate}
+                        {yabb recenttopics}{yabb spc}{yabb recentposts}
+                    </div>
+                    <div class="small" style="float: left; width: 40%; text-align: left;">
+                        $boardindex_txt{'487'} {yabb membercount} $boardindex_txt{'488'}.<br />
+                        {yabb latestmember}
+                        {yabb ims}
+                    </div>
+                </td>
+            </tr><tr>
+                <td class="windowbg center">
+                    <img src="$imagesdir/$brd_online" alt="" />
+                </td>
+                <td class="windowbg2 info-center center vtop">
+                    <div class="small" style="float: left; width: 90%; text-align: left;">
+                    $boardindex_txt{'800'} <b>{yabb mostusers}</b>$maintxt{'30b'} $maintxt{'30'} {yabb mostusersdate}.<br />
+                    $boardindex_txt{'801'} <b>{yabb mostmembers}</b>$maintxt{'30b'} $maintxt{'30'} {yabb mostmembersdate}.<br />
+                    $boardindex_txt{'802'} <b>{yabb mostguests}</b>$maintxt{'30b'} $maintxt{'30'} {yabb mostguestsdate}.<br />
+                    $boardindex_txt{'803'} <b>{yabb mostbots}</b>$maintxt{'30b'} $maintxt{'30'} {yabb mostbotsdate}.
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table class="tabtitle tabtitle-text" style="margin-top:10px">
+            <colgroup>
+                <col style="width:1%" />
+                <col style="width:99%" />
+            </colgroup>
+            <tr>
+                <td>&nbsp;</td>
+                <td>$boardindex_txt{'158'}</td>
+            </tr>
+        </table>
+        <table class="bordercolor pad_4px cs_thin mar-bot">
+            <colgroup>
+                <col style="width:${brdpicwidth}px" />
+                <col style="width:auto" />
+            </colgroup>
+            <tr>
+                <td class="windowbg info-center center">
+                    <img src="$imagesdir/$brd_online" alt="" />
+                </td>
+                <td class="windowbg2 info-center">
+                    <div class="small" style="float: left; width: 59%; text-align: left;">
+                    {yabb users}<br />
+                    {yabb onlineusers}
+                    {yabb guests}<br />
+                    {yabb onlineguests}
+                    {yabb bots}<br />
+                    {yabb onlinebots}
+                    </div>
+                    <div style="float: left; width: 40%; text-align: left;">
+                    {yabb groupcolors}
+                    </div>
+                </td>
+            </tr>
+        </table>
+<!-- ## Event Cal ## -->
+    {yabb caldisplay}
+<!-- ## End Event Cal ## -->
+    {yabb sharedlogin}
+<!-- Info Center block end -->
+        {yabb new_load}
+        ~;
+}
+
+## Category header ##
+
+$new_msg_bg = "windowbg";
+$new_msg_class = "small";
+
+$catheader = qq~
+        <table class="tabtitle tabtitle-text">
+            <colgroup>
+                <col style="width:1%" />
+                <col style="width:59%" />
+                <col style="width:8%" />
+                <col style="width:8%" />
+                <col style="width:24%" />
+            </colgroup>
+            <tr>
+                <td>&nbsp;</td>
+                <td>{yabb catimage} {yabb catrss} {yabb catlink}</td>
+                <td class="center">$boardindex_txt{'330'}</td>
+                <td class="center">$boardindex_txt{'21'}</td>
+                <td class="center">$boardindex_txt{'22'}</td>
+            </tr>
+        </table>
+        <table {yabb colboardtable} class="bordercolor pad_4px cs_thin mar-bot">
+            <tr><td style="display:none" colspan="5">&nbsp;</td></tr>
+            {yabb newmsg start}{yabb newmsg icon}{yabb newmsg}{yabb newmsg end}
+        </table>
+        <table {yabb boardtable} class="bordercolor pad_4px cs_thin mar-bot;" style="table-layout:fixed">
+            <colgroup>
+                <col style="width:${brdpicwidth}px" />
+                <col style="width:auto" />
+                <col style="width:8%" />
+                <col style="width:8%" />
+                <col style="width:24%" />
+            </colgroup>~;
+
+## Looks of each board in category  ##
+
+$boardblock = qq~<tr>
+                <td class="{yabb altbrdcolor} center">
+                    <a href="{yabb boardurl}">{yabb boardpic}</a>
+                </td>
+                <td class="{yabb altbrdcolor}">
+                    <div style="position: relative; height: 100%; width: 100%">
+                        {yabb new} {yabb boardrss} <a id="{yabb boardanchor}" href="{yabb boardurl}"><b>{yabb boardname}</b></a>{yabb boardviewers}<br />
+                        {yabb boarddesc}
+                        <div class="small" style="font-style:italic;">{yabb moderators}</div>
+                        <div class="small" style="display: inline-block; margin-top:5px">{yabb subboardlist}</div>
+                        <div style="position: absolute; bottom: 0; right: 0;">
+                        {yabb messagedropdown}
+                        </div>
+                    </div>
+                </td>
+                <td class="{yabb altbrdcolor} center">{yabb threadcount}</td>
+                <td class="{yabb altbrdcolor} center">{yabb messagecount}</td>
+                <td class="{yabb altbrdcolor}">
+                    <span class="small" style="float: left; margin-left: 12px;">
+                        {yabb lastpostlink}<br />
+                        <b>$boardindex_txt{'524'}:</b> {yabb lasttopiclink}<br />
+                        <b>$boardindex_txt{'525'}:</b> {yabb lastposter}
+                    </span>
+                </td>
+            </tr>
+{yabb expandmessages}
+~;
+$boardblockpw = qq~<tr>
+                <td class="{yabb altbrdcolor} center">
+                    <a href="{yabb boardurl}">{yabb boardpic}</a>
+                </td>
+                <td class="{yabb altbrdcolor}" colspan="3">
+                    <div style="position: relative; height: 100%; width: 100%">
+                        {yabb new} <a id="{yabb boardanchor}" href="{yabb boardurl}"><b>{yabb boardname}</b></a>{yabb boardviewers}<br />
+                        {yabb boarddesc}
+                        <div class="small" style="font-style:italic;">{yabb moderators}</div>
+                        <div class="small" style="display: inline-block; margin-top:5px">{yabb subboardlist}</div>
+                        <div style="position: absolute; bottom: 0; right: 0;">
+                        {yabb messagedropdown}
+                        </div>
+                    </div>
+                </td>
+                <td class="{yabb altbrdcolor}">
+                    <span class="small" style="float: left; margin-left: 12px;">
+                        {yabb lastpostlink}<br />
+                    </span>
+                </td>
+            </tr>~;
+
+$boardblockext = qq~<tr>
+      <td class="{yabb altbrdcolor} center"><a href="{yabb boardurl}" target="_blank">{yabb boardpic}</a></td>
+      <td class="{yabb altbrdcolor}" colspan="3">
+            <a id="{yabb boardanchor}" href="{yabb boardurl}" target="_blank"><b>{yabb boardname}</b></a><br />
+            {yabb boarddesc}
+      </td>
+      <td class="{yabb altbrdcolor} center small">
+            <span style="float: left; margin-left: 12px;"><b>$boardindex_txt{'526'}</b>: {yabb lastpostlink}</span>
+      </td>
+</tr>~;
+
+$nopost_boardblock = qq~<tr>
+                <td class="{yabb altbrdcolor} center">
+                    <a href="{yabb boardurl}">{yabb boardpic}</a>
+                </td>
+                <td class="{yabb altbrdcolor}" colspan="4">
+                    {yabb new} <a name="{yabb boardanchor}" href="{yabb boardurl}"><b>{yabb boardname}</b></a><br />
+                    {yabb boarddesc}
+                    <br />
+                    <div class="small" style="display: inline-block; margin-top:5px">{yabb subboardlist}</div>
+                </td>
+            </tr>
+{yabb expandmessages}
+~;
+
+$subboard_links = qq~<span style="white-space:nowrap">{yabb new} <a href="{yabb boardurl}">{yabb boardname}</a>{yabb sub_lock}</span>~;
+$subboard_links_ext = qq~<span style="white-space:nowrap"><img src="$imagesdir/$sub_extern" alt="" /><a href="{yabb boardurl}" target="_blank">{yabb boardname}</a></span>~;
+$subboard_list = qq~<b>{yabb subdropdown}:</b> {yabb subboardlinks}~;
+
+# Category footer                          #
+
+$catfooter = qq~        </table>
+~;
+
+#advanced tabs
+$brd_advanced_tabs = qq~    <form action="$scripturl?action=addtab2" method="post" name="addtabtext" style="font-size: 11px; display: inline;" onsubmit="if(!checkTab(this)) {return false} else {return submittab()}">
+    <table>
+        <colgroup>
+            <col style="width:40px" />
+            <col style="width:auto" />
+        </colgroup>
+        <tr>
+            <td class="tabmenuleft">&nbsp;</td>
+            <td class="tabmenu">
+                <span class="selected" style="cursor: auto; vertical-align: middle; padding-top: 1px; white-space: nowrap;"><label for="tabtext">$tabfill {yabb tabtext}</label> <input type="text" name="tabtext" id="tabtext" value="" size="10" class="small" style="vertical-align: middle;" /></span>
+                <br /><br /><span class="selected" style="cursor: auto; vertical-align: middle; padding-top: 1px; white-space: nowrap;"><label for="taburl">$tabfill {yabb taburl}</label> <input type="text" name="taburl" id="taburl" value="" size="25" class="small" style="vertical-align: middle;" /></span>
+                <br /><br /><span class="selected" style="cursor: auto; vertical-align: middle; padding-top: 1px; white-space: nowrap;"><label for="tabwin">$tabfill {yabb tabwin}</label> <input type="checkbox" name="tabwin" id="tabwin" style="border: 0; padding: 0; margin: 0; background-color: transparent; vertical-align: middle;" /></span>
+                <br /><br /><span class="selected" style="cursor: auto; vertical-align: middle; padding-top: 1px; white-space: nowrap;"><label for="showto">$tabfill {yabb tabview}</label>
+                    <select name="showto" id="showto" class="small" style="vertical-align: middle;">
+                        <option value="0" selected="selected">{yabb viewall}</option>
+                        <option value="1">{yabb viewmem}</option>
+                        <option value="2">{yabb viewgm}</option>
+                        <option value="3">{yabb viewadm}</option>
+                    </select>
+                </span>
+                <br /><br /><span class="selected" style="cursor: auto; vertical-align: middle; padding-top: 1px; white-space: nowrap;"><label for="addafter">$tabfill {yabb tabinsert}</label>
+                    <select name="addafter" id="addafter" class="small" style="vertical-align: middle;">
+                        {yabb edittabs}
+                    </select>
+                </span>
+                <br /><br /><span class="selected" style="cursor: auto; vertical-align: middle; padding-top: 1px; white-space: nowrap;"><input type="submit" value="{yabb addtab}" class="small" /></span>
+                <br /><br />
+            </td>
+        </tr>
+    </table>
+    </form>~;
+
+$brd_advanced_tabs_edit = qq~
+    <br />
+    <table>
+        <colgroup>
+            <col style="width:auto" />
+            <col style="width:45px" />
+            <col style="width:160px" />
+        </colgroup>
+        <tr>
+            <td class="tabmenu">
+                <ul>{yabb edittabmenu}</ul>
+            </td>
+            <td class="tabmenuright vtop">&nbsp;</td>
+            <td class="rightbox center">
+                <b>{yabb reordertab}</b>
+            </td>
+        </tr><tr>
+            <td colspan="2">&nbsp;</td>
+            <td class="center vtop" rowspan="3">
+                <form action="$scripturl?action=reordertab" method="post" name="tabsorder" style="display: inline; white-space: nowrap;">
+                    <select name="ordertabs" class="small" size="{yabb selsize}" style="width: 18em;">
+                        {yabb edittabs}
+                    </select>
+                    <br />
+                    <input type="submit" value="{yabb tableft}" name="moveleft" style="font-size: 11px; width: 65px; margin-top:.5em" />
+                    <input type="submit" value="{yabb tabright}" name="moveright" style="font-size: 11px; width: 65px; margin-top:.5em" />
+                </form>
+            </td>
+        </tr><tr>
+            <td class="vtop">
+                <div class="small" style="float: left; width: 98%; padding: 4px;">
+                    {yabb edittext1} {yabb tabsave} {yabb edittext2} {yabb tabdel} {yabb edittext3}<br />
+                    {yabb reordertext}
+                </div>
+            </td>
+            <td>&nbsp;</td>
+        </tr><tr>
+            <td colspan="2" style="font-size: 50px; text-align: left; vertical-align: top;">&nbsp;</td>
+        </tr>
+    </table>
+~;
+
+$brd_expandmessages =
+qq~         <tr id="dropsubrow_{yabb curboard}" style="display: none">
+                <td id="dropsub_{yabb curboard}" class="center" colspan="5"></td>
+            </tr><tr id="droprow_{yabb curboard}" style="display: none">
+                <td class="center" style="padding:0" colspan="5">
+                    <div style="width: 100%; position: relative">
+                        <table>
+                            <colgroup>
+                                <col style="width:20px" />
+                                <col style="width:auto" />
+                                <col style="width:20px" />
+                            </colgroup>
+                            <tr>
+                                <td class="bottom" style="background-image:url($imagesdir/$brd_fadeleftdropdown)">
+                                    <img src="$imagesdir/$brd_closebutton" onclick="MessageList('$scripturl\?board\={yabb curboard};messagelist=1','$yyhtml_root','{yabb curboard}', 0)" style="position: absolute; cursor: pointer; bottom: -12px; left: -12px" alt="" />
+                                </td>
+                                <td id="drop_{yabb curboard}" class="center" style="padding:0 0 8px 0;"></td>
+                                <td class="vtop" style="background-image:url($imagesdir/$brd_faderightdropdown)">
+                                    <img src="$imagesdir/$brd_closebutton" onclick="MessageList('$scripturl\?board\={yabb curboard};messagelist=1','$yyhtml_root','{yabb curboard}', 0)" style="position: absolute; cursor: pointer; top: -12px; right: -12px" alt="" />
+                               </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>~;
+
+$brd_newrowend = q~</span></td></tr>~;
+
+$brd_newrow = qq~<tr>
+        <td class="{yabb new_msg_bg} h_18px" colspan="5"><span class="{yabb new_msg_class}">~;
+
+1;

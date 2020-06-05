@@ -1,0 +1,13 @@
+$mloaded = 1;
+@categoryorder = qw(general staff);
+$cat{'general'} = "general,test";
+$cat{'staff'} = "announcements,recycle";
+$catinfo{'general'} = "General Category||1||0";
+$catinfo{'staff'} = "Forum Staff|Administrator, Global Moderator|1||0";
+$board{'general'} = "General Board||1";
+$board{'test'} = "Test Zone||";
+$board{'announcements'} = "Global Announcements||";
+$board{'recycle'} = "Recycle Bin||";
+$subboard{'files'} = qq~~;
+
+1;

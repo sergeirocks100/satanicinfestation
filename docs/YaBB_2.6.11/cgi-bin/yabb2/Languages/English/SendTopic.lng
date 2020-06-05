@@ -1,0 +1,49 @@
+###############################################################################
+# SendTopic.lng (SendTopic text definitions)                                  #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$sendtopiclngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%sendtopic_txt = (
+'118' => 'Topic',
+'241' => 'field.',
+'318' => 'From',
+'335' => 'Your name',
+'336' => 'Your e-mail address',
+'339' => 'Send',
+'707' => 'Send Topic',
+'708' => 'to a friend.',
+'717' => 'Recipient&#39;s name',
+'718' => 'Recipient&#39;s e-mail address',
+'error_sender_name' => 'You must insert your name.',
+'error_sender_email' => 'You must insert your e-mail.',
+'error_recipient_name' => 'You must insert the recipient&#39;s name.',
+'error_recipient_email' => 'You must insert the recipient&#39;s e-mail.',
+'error_verification' => 'The verification code is missing.', 
+'verification_question_desc' => 'Please answer the above verification question.',
+'verification_question_case' => 'Answers are case-sensitive.',
+'error_verification_question' => 'You must answer the verification question.',
+);
+
+%floodtxt = (
+'1' => 'Your Verification Code is',
+'3' => 'Verification Code',
+'casewarning' => 'Please type the characters that appear in the image. The characters must be typed in the same order, and they are case-sensitive.',
+'casewarning_1' => 'Please type the characters exactly as they appear in the image,',
+'casewarning_2' => '<br /><span style="font-weight: bold;">without the first',
+'casewarning_3' => '<br /><span style="font-weight: bold;">without the last',
+'casewarning_4' => 'and last',
+'casewarning_5' => 'characters.</span><br />The characters must be typed in the same order,<br />and they are case-sensitive.',
+);
+
+1;

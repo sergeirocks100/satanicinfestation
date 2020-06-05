@@ -1,0 +1,46 @@
+###############################################################################
+# TabMenu.lng (TabMenu text definitions)                                      #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$tabmenulngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%tabmenu_txt=(
+'texterr' => 'The Text field is empty.',
+'tabext' => 'A tab for the same action or with the same name already exists.',
+'tabfront' => 'Front',
+'taburl' => 'URL',
+'tabwin' => 'New window',
+'edittab' => 'Edit tabs',
+'tabdel' => 'Delete this tab',
+'viewgm' => 'GMod +',
+'viewadm' => 'Admin',
+'tabtext' => 'Text',
+'taberr' => 'Required information missing:',
+'addtab' => 'Add',
+'savetab' => 'Save Text',
+'reordertab' => 'Reorder Tabs:',
+'tableft' => '&lt;',
+'tabright' => '&gt;',
+'edittext1' => 'Above you see the tabs the way they would appear if they were all visible at one time. If you have added one or more tabs you now have the option to edit the visible text directly inside the tab and then click the',
+'edittext2' => 'icon to save the new text or you can delete the tab by clicking on the',
+'edittext3' => 'icon. Note that you <b>cannot edit URLs</b>.',
+'reordertext' => 'On the right hand side there is a list of all your tabs allowing you to change the order they appear in the tab menu. Select the tab you want to move and click on the "&lt;" or "&gt;" button to move the tab in the desired direction.',
+'urlerr' => 'The URL field is empty.',
+'viewmem' => 'Members +',
+'viewall' => 'Guests +',
+'newtab' => 'Add a tab',
+'tabinsert' => 'Add after',
+'tabview' => 'Visible to',
+);
+
+1;

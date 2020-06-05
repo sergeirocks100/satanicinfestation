@@ -1,0 +1,55 @@
+###############################################################################
+# Smtp.lng (Smtp server text definitions)                                     #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$smtplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%smtp_txt = (
+'1' => "SERVER ERROR:Could not find $smtpaddr",
+'2' => 'SERVER ERROR: Could not open a socket connection',
+'3' => "SERVER ERROR: Could not connect to $smtpaddr at port $port",
+'4' => 'SYSTEM ERROR: The To address is empty',
+'5' => 'Mail Server communication log:',
+'no_to' => 'The &#39;To&#39; variable (recipient address) is empty and is needed in the SMTP protocol',
+'no_from' => 'The &#39;From&#39; variable (sender address) is empty and is needed in the SMTP protocol',
+'211' => 'System status, or system help reply',
+'214' => 'Help message',
+'220' => '<domain> Service ready',
+'221' => '<domain> Service closing transmission channel',
+'250' => 'Requested mail action okay, completed',
+'251' => 'User not local: will forward to <forward-path>',
+'354' => 'Start mail input: end with <CRLF>.<CRLF>',
+'421' => '<domain> Service not available',
+'432' => 'A password transition is needed',
+'450' => 'Requested mail action not taken: mailbox unavailable',
+'451' => 'Requested action aborted: local error in processing',
+'452' => 'Requested action not taken: insufficient system storage',
+'454' => 'Temporary authentication failure',
+'500' => 'Syntax error, command unrecognized',
+'501' => 'Invalid mail recipient. Relay requires SMTP AUTH',
+'502' => 'Command not implemented',
+'503' => 'Bad sequence of commands',
+'504' => 'Command parameter or authorization type not implemented',
+'530' => 'Authentication required',
+'534' => 'Authentication mechanism is too weak',
+'538' => 'Encryption required for requested authentication mechanism',
+'535' => 'Authentication failed',
+'550' => 'Requested action not taken: mailbox or user unavailable',
+'551' => 'User not local: please try <forward-path>',
+'552' => 'Requested mail action aborted: exceeded storage allocation',
+'553' => 'Requested action not taken: mailbox name not allowed',
+'554' => 'Transaction failed',
+'555' => 'Member',
+);
+
+1;

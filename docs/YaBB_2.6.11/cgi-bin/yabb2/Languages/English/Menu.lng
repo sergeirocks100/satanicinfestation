@@ -1,0 +1,124 @@
+###############################################################################
+# Menu.lng (Image text/images definitions)                                    #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$menulngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+if (!$language){$language = $lang;}
+
+%img_txt =(
+'2' => 'Admin',
+'27' => 'View Profile',
+'31' => 'Remove',
+'33' => 'Start new topic',
+'34' => 'Login',
+'34a' => 'Update Session',
+'54' => 'Remove',
+'55' => 'Remove Selected',
+'63' => 'Moderators',
+'66' => 'Modify',
+'69' => 'E-mail',
+'70' => 'My Favorites',
+'71' => 'Add to Favorites',
+'72' => 'Remove from Favorites',
+'79' => 'Edit Profile',
+'97' => 'Register',
+'102' => qq~<img src="$imagesdir/back_to_top.png" alt="Top" title="to Top" />~,
+'102b' => qq~<img src="$imagesdir/back_to_bot.png" alt="Bottom" title="to Bottom" />~,
+'103' => 'Board Index',
+'104' => 'Lock/Unlock',
+'105' => 'Last Post',
+'108' => 'Logout',
+'119' => 'Help',
+'121' => 'Remove',
+'131' => 'Notify of replies',
+'131a' => 'Add Topic Notification',
+'131d' => 'Delete Topic Notification',
+'132' => 'Move',
+'144' => 'PM',
+'144a' => 'Personal Message',
+'145' => 'Quote',
+'145q' => 'Mark &amp; Quote',
+'146' => 'Reply',
+'182' => 'Search',
+'300' => 'Mark Topics as Read',
+'316' => 'Inbox',
+'320' => 'Sent box',
+'321' => 'New Message',
+'323' => 'Preferences',
+'331' => 'Members',
+'418' => 'Notification',
+'452' => 'Mark All Posts as Read',
+'465' => 'Print',
+'465a' => 'Print Post',
+'467' => 'Profile',
+'515' => 'WWW',
+'707' => 'Send Topic',
+'781' => 'Sticky',
+'620' => 'Split',
+'621' => 'Move, Split &amp; Splice',
+'620a' => 'Split this topic starting with this message as the first message in a new topic, followed by the other posts until the last post added to this thread.',
+'621a' => 'Open window to Move, Split or Splice topics.',
+'622' => 'Hide',
+'623' => 'Collapse',
+'624' => 'Expand',
+'625' => 'Add to My Favorites',
+'626' => 'Remove from My Favorites',
+'627' => 'Mark as Unread',
+'mycenter' => "User CP",
+'addbuddy' => 'Add to My Buddy List',
+'pmadmin' => 'Send message to Admin(s)',
+'alertmod' => 'Alert Board Moderator about this Post',
+'alertmodtext' => 'Report Post',
+'forward' => 'Forward',
+'sendpm' => 'Send message',
+'sendbmess' => 'Send broadcast message',
+'aim' => 'AIM',
+'facebook' => 'Facebook',
+'gtalk' => 'GTalk',
+'icq' => 'ICQ',
+'msn' => 'MSN',
+'myspace' => 'MySpace',
+'skype' => 'Skype/VoIP',
+'yim' => 'YIM',
+'twitter' => 'Twitter',
+'youtube' => 'YouTube',
+'birthdaylist' => 'Birthday List',
+'eventcal' => 'Calendar',
+'to_top' => 'To Top of Page', 
+);
+
+%img_polltxt = (
+'1' => 'Create Poll',
+'2' => 'Add Poll',
+'20' => 'Open',
+'21' => 'Close',
+'27' => 'Remove',
+'33' => 'View Votes',
+'33a' => 'View Topic',
+'39' => 'Modify',
+'43' => 'Remove Vote',
+'44' => 'Poll',
+'45' => 'New Poll',
+'46' => 'Poll closed',
+);
+
+%img_imtxt = (
+'42' => 'Buddylist',
+'46' => 'Storage',
+);
+
+require Sources::Menu;
+SetMenu();
+
+1;

@@ -1,0 +1,62 @@
+###############################################################################
+# MoveSplitSplice.lng (Move, Split and Splice text definitions)               #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$movesplitsplicelngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%sstxt=(
+'1' => 'Move, Split &amp; Splice',
+'2' => 'Split Posts',
+'3' => 'Posts',
+'4' => 'Leave',
+'5' => 'Splice To',
+'6' => 'Category',
+'7' => 'Board',
+'8' => 'Topic',
+'9' => 'New Topic Subject',
+'10' => 'Position',
+'11' => "'Moved/Spliced to...' Info",
+'12' => 'Leave the original Posts',
+'13' => 'Leave Nothing',
+'14' => 'Select which posts to move from the current topic:',
+'14a' => 'Hold down the SHIFT or CTRL keys while clicking to select multiple posts.',
+'15' => 'Choose what to leave in place of the post, if anything.<br />If you want to move &raquo;&raquo; All Posts &laquo;&laquo;, a notice will be left anyway.',
+'15a' => 'Insert a new Post behind the moved Posts, containing the info from where they came and who moved them.',
+'16' => 'Select which category to move the selected Posts to.',
+'17' => 'Select which board to move the selected Posts to.',
+'18' => 'Select which topic to move the selected Posts to.',
+'19' => 'Select the position to splice the selected posts to.<br />The posts will be placed below the indicated position.',
+'20' => 'Enter the subject of the new topic here.<br />Leave this box blank if you want to use the subject from the first selected post.',
+'21' => 'Re:',
+'22' => 'You must designate a Category.',
+'22a' => 'You must designate a Board.',
+'22b' => 'You must designate a',
+'23' => 'post to be moved.',
+'24' => 'Submit',
+'25' => 'Reset',
+'26' => '&raquo;&raquo; All Posts &laquo;&laquo;',
+'27' => 'This board cannot be posted in and no posts should be moved into it.',
+'28' => '&raquo;&raquo; Categories &laquo;&laquo;',
+'29' => '&raquo;&raquo; Boards &laquo;&laquo;',
+'30' => '&raquo;&raquo; New Topic &laquo;&laquo;',
+'31' => '&raquo;&raquo; Topic End &laquo;&laquo;',
+'32' => '&raquo;&raquo; Topic Beginning &laquo;&laquo;',
+
+'40' => 'Reply',
+'41' => 'Topic Start',
+
+'50' => 'Please go back and reload that page first, or you will not be able to Submit.',
+'51' => 'It&#39;s not allowed to splice two Polls.',
+);
+
+1;

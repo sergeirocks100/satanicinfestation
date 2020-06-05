@@ -1,0 +1,35 @@
+###############################################################################
+# AddModerators.lng                                                           #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+# Mod created by Carsten Dalgaard                                             #
+#               and added to YaBB core in Version 2.5.4                       #
+# Released: January 28, 2013, Copyright 2013 Carsten Dalgaard                 #
+###############################################################################
+
+$addmoderatorslngver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+%addmod_txt = (
+'addmod_title' => q~Moderator~,
+'addmod_text' => q~Here you can assign the member as Moderator to any/all boards. Hold down Ctrl or Shift key (Apple key on Mac) and click to select more boards.~,
+'addmod_all' => q~Select all.~,
+'addmod_save' => q~Save~,
+'remove' => q~Are you sure you want to remove the member from the list?~,
+'modpagetitle' => q~Select Moderators~,
+'instructions' => q~Double-click to remove a name from the list~,
+'modsearch' => q~Add/Delete Moderators~,
+'addselected' => q~Add Selected~,
+'pageclose' => q~Close~,
+'instruct' => q~Type the first few characters of the new moderator's name, then select one or more names in the list and click on "Add Selected".~,
+'noresults' => q~No Results~,
+);
+
+1;

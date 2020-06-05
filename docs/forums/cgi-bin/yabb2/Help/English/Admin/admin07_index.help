@@ -1,0 +1,92 @@
+$SectionName = "Help_Topic_Index";
+
+### Section 1
+#############################################
+$SectionSub1 = "Help_Topic_Index_Intro";
+$SectionBody1 = qq~<p>The Help Topic Index can help you learn your YaBB's features quickly and assist you with locating help topics in the YaBB Codex.</p>
+~;
+#############################################
+
+### Section 2
+#############################################
+$SectionSub2 = "How&#45;To_Topics";
+$SectionBody2 = qq~<p>These answer many commonly asked questions by new forum Administrators about how to use the forum features.</p>
+<p><b>HOW-TO...</b></p>
+<ul>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217217800" target="_blank">Add a new Board</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217217419" target="_blank">Add a new Category</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217294882" target="_blank">Make a Moderator</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217400265" target="_blank">Make a Global Moderator</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217819051" target="_blank">Make a new Post-Dependent Member Group</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1218345096" target="_blank">Make a new Post-Independent Member Group</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217819515" target="_blank">Move a user to a different Post-Dependent Member Group</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1218429222" target="_blank">Move a user to a different Post-Independent Member Group</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217261075" target="_blank">Disable the Search feature</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217258547" target="_blank">Use the registration options</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1218776684" target="_blank">Change the Forum Logo</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217706934" target="_blank">Use your own image as an Avatar</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?board=templates" target="_blank">Work with Templates</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?board=templates" target="_blank">Change colors in Greybox feature</a></li>
+</ul>
+~;
+#############################################
+
+
+### Section 3
+#############################################
+$SectionSub3 = "What_To_Do_Topics";
+$SectionBody3 = qq~<p>These answer many commonly asked questions by new forum Administrators about what to do if problems or errors are encountered.</p>
+<p><b>WHAT SHOULD I DO IF...</b></p>
+<ul>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?board=errors" target="_blank">I get a Server Error?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217258342" target="_blank">I have Admin login problems?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1202251271" target="_blank">Some members appear as Ex-Members?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1192485451" target="_blank">I get a Forum Error message?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1212249372" target="_blank">My forum loads slowly?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217258894" target="_blank">My forum is locked in Maintenance mode?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1218835928" target="_blank">My forum graphics don't display correctly?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217951488" target="_blank">I can't see any button for the Admin Center?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1217810041" target="_blank">I'm not sure if my paths are correct &#40;standard installation&#41;?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1190671650" target="_blank">I'm not sure if my paths are correct &#40;cPanel installation&#41;?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1190669204" target="_blank">I need more help with paths?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1190674425" target="_blank">I need to move my forum?</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1218648482" target="_blank">New users register but can't post?</a></li>
+</ul>
+~;
+#############################################
+
+### Section 4
+#############################################
+$SectionSub4 = "Modifying_Your_Forum";
+$SectionBody4 = qq~<p>This section contains information on modifying your forum. Before making ANY modification, you should backup your forum in case something goes wrong. Also note that while some basic information about the BoardMOD program is provided for YaBB users, the YaBB Team does not provide support for the BoardMOD program or any of the MODS or Templates available there. If you have support questions about those products, you should address them on the <a href="http://www.boardmod.org" target="_blank">BoardMOD</a> site.</p>
+<p><b>Modification Information Links</b></p>
+<ul>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?board=lng_1" target="_blank">Adding another Language</a></li>
+    <li><a href="http://www.yabbforum.com/community/YaBB.pl?board=languagepack" target="_blank">Language Pack support</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?board=modification" target="_blank">Making minor modifications to your forum</a></li>
+    <li><a href="http://www.yabbforum.com/codex/YaBB.pl?num=1190677475" target="_blank">Using the BoardMOD program</a></li>
+</ul>
+~;
+#############################################
+
+### Section 5
+#############################################
+$SectionSub5 = "Getting_Support_From_YaBB";
+$SectionBody5 = qq~This section contains some advice to help you get any problems resolved as quickly as possible should you need to post a request for support at <a href="http://www.yabbforum.com/community/YaBB.pl" target="_blank">YaBB Support Forum</a>.
+<p><b>How to Get Support from YaBB</b></p>
+<ul>
+    <li class="help_attn_strong">Never post your forum's Admin login details or your FTP details in a post. If that kind of private information is needed to help you get the problem fixed, a staff member will request you send it to them in a Personal Message &#40;PM&#41;</li>
+    <li>Before you post, please check the <a href="http://www.yabbforum.com/codex/" target="_blank">YaBB Codex</a> &#40;it is searchable&#41; and do a search on the Support forum to see if your problem has been answered before. Try a few different search terms.</li>
+    <li>Please post your request in the correct board. They are all identified in the board descriptions. If you aren't sure, use the General Usage and Feature Troubleshooting board.</li>
+    <li>Don't post in the "Bugs" boards. If you suspect you have a bug, post it in one of the Support boards along with what steps it takes to see or reproduce the error. If it is indeed a bug, a Support Team member will move it to the Bugs board for you.</li>
+    <li>There is valuable information in the Stickied Posts at the top of each Support board. Please read them.</li>
+    <li>Please start your own topic, and don't jump in on the end of someone else's support request. You may have the same symptoms, but not always the same fix, so it's best to keep your request separate.</li>
+    <li>NEVER cross-post. That means stating your problem in one topic, then repeating it over in another topic or board. The Support Team reads all of them, and you will not get an answer any faster by giving them twice as much to read first.</li>
+    <li>Features, files, and options vary with different versions. So do answers. Please be sure to state what version you are using in your first post of each support request. Other information that helps is what kind of server you are on &#40;Unix, Windows, etc.&#41;, is it a hosted account or your own server at home, and is your forum modified in any way?</li>
+    <li>Be specific! &#8220;My car doesn't work&#8221; won't help your mechanic fix it. Neither will saying your forum doesn't work. Tell us WHAT doesn't work, what steps or situation is needed to see whatever error or problem you're experiencing. Who is affected: All users? Some users? One user?</li>
+    <li>Most importantly, please be patient. Some problems take longer than others to figure out. While you may think no one is answering you, the support team may be searching code or trying to duplicate your error on their own forums. Most questions get answered within a day or so, but remember the Support Team members have jobs, families, and lives.</li>
+</ul>
+~;
+#############################################
+
+1;

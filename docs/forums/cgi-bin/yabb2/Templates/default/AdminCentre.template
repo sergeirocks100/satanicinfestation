@@ -1,0 +1,336 @@
+###############################################################################
+# AdminCentre.template                                                        #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+$admincentretemver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+$adminlogo    = 'adminlogo.png';
+$versionchk   = 'http://www.yabbforum.com/update/versioncheck.js';
+$versionimg   = 'http://www.yabbforum.com/images/version/versioncheck.gif';
+$aarea = 'aarea.jpg';
+
+$header = qq~<?xml version="1.0" encoding="$yymycharset" standalone="no" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="$abbr_lang" lang="$abbr_lang">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=$yymycharset" />
+    <title>{yabb title}</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    {yabb style}
+    <script type="text/javascript" src="$yyhtml_root/YaBB.js"></script>
+    <script type="text/javascript">
+    function toggleList(e){
+        element = document.getElementById(e).style;
+
+        if (element.display == "") {
+            element.display = "none"
+            setcookie("admin_center" + e, "1", new Date().getTime() + 525600 * 60007);
+        } else {
+            element.display = ""
+            setcookie("admin_center" + e, "0", new Date());
+        }
+    }
+
+    function setcookie(name, value, expire){
+        var theDate = new Date();
+        theDate.setTime(expire);
+
+        if (expire) {
+            document.cookie = name + "=" + escape(value) + "; expires=" + theDate.toGMTString();
+        } else {
+            document.cookie = name + "=" + escape(value);
+        }
+    }
+
+    function getcookie(name){
+        var cookies = document.cookie.split(/[;][ ]?/), temp;
+
+        for(var i = 0; i < cookies.length; i++)
+        {
+            temp = cookies[i].split("=");
+            if (temp[0] == name)
+                return temp[1];
+        }
+        return;
+    }
+
+    function AdminCheck(){
+        var bars = ["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9"];
+
+        for(var i = 0; i < bars.length; i++)
+        {
+            if (getcookie("admin_center" + bars[i]) == "1")
+                toggleList(bars[i]);
+        }
+    }
+    {yabb javascript}
+    </script>
+</head>~;
+
+$leftmenutop = qq~
+<body>
+    <img src="$admin_images/$adminlogo" id="adminlogo" alt="Yet Another Bulletin Board"/>
+    <div id="menu">{yabb maintenance}~;
+
+$leftmenubottom = qq~
+    </div>
+    <script type="text/javascript">
+        setTimeout("AdminCheck()", 80);
+    </script>~;
+
+$topnav = qq~
+    <div id="ql">
+        <table style="width:auto; margin-left:0">
+            <colgroup>
+                <col style="width:190px" />
+                <col style="width:auto" span="6" />
+            </colgroup>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="center">{yabb topmenu_one}</td>
+                <td>&nbsp;|&nbsp;</td>
+                <td class="center">{yabb topmenu_two}</td>
+                <td class="center">&nbsp;|&nbsp;</td>
+                <td class="center">{yabb topmenu_tree}</td>
+                <td>&nbsp;|&nbsp;</td>
+                <td class="center">{yabb topmenu_four}</td>
+            </tr>
+        </table>
+    </div>~;
+
+$mainbody = qq~
+    <div id="content">
+        {yabb main}
+        <div class="rightboxdiv" style="float:left; height:100px">
+            <div style="float:left; width:99%; text-align:center;">{yabb_admin debug}</div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function savealert() {
+            alert("$admin_txt{'setsettings'}")
+        }
+    </script>
+</body>
+</html>
+~;
+
+$front_page = qq~<div class="bordercolor rightboxdiv">
+    <table class="border-space pad-cell" style="margin-bottom:.5em">
+        <tr>
+            <td class="titlebg" colspan="2">
+                <b>$admintxt{'1'}</b>
+            </td>
+        </tr><tr>
+            <td class="windowbg2">
+                <img alt="Admin Centre Logo" src="$admin_images/$aarea" />
+            </td>
+            <td class="windowbg2">
+                $admintxt{'2'}
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="float: left; width: 49%; text-align: left;">
+    <div class="bordercolor rightboxdiv">
+        <table class="border-space pad-cell" style="margin-bottom:.5em">
+            <tr>
+                <td class="titlebg">
+                    <b>$admintxt{'6'}</b>
+                </td>
+            </tr><tr>
+                <td class="catbg center small">
+                    YaBB 2
+                </td>
+            </tr><tr>
+                <td class="windowbg2">
+                    <div class="pad-more">$credits_txt{'yabb2'}</div>
+                </td>
+            </tr><tr>
+                <td class="catbg center small">
+                    YaBB 2.5.2
+                </td>
+            </tr><tr>
+                <td class="windowbg2">
+                    <div class="pad-more">$credits_txt{'yabb252'}</div>
+                </td>
+            </tr><tr>
+                <td class="catbg center small">
+                    YaBB 2.6.11
+                </td>
+            </tr><tr>
+                <td class="windowbg2">
+                    <div class="pad-more">$credits_txt{'yabb260'}</div>
+                </td>
+            </tr><tr>
+                <td class="catbg center small">
+                    $credits_txt{'Thanks'}
+                </td>
+            </tr><tr>
+                <td class="windowbg2">
+                    <div class="pad-more">$credits_txt{'yabb'}, $credits_txt{'yabb2Credits'}<br /><br />$credits_txt{'noBytesHarmed'}</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="bordercolor rightboxdiv">
+        <script src="$versionchk" type="text/javascript"></script>
+        <div id = "version"></div>
+        <script type="text/javascript">
+        var aa = '<table class="border-space pad-cell">';
+        var bb = '<tr><td class="titlebg" colspan="2"><b>$admintxt{'3'}</b></td></tr>';
+        var cc = '<tr><td class="windowbg2">$versiontxt{'4'}</td><td class="windowbg2"><b>{yabb YaBBversion}</b></td></tr>';
+        if (typeof STABLE == "undefined" || STABLE == null ) {
+                var dd = '<tr><td class="titlebg" colspan="2">$rna</b></td></tr>';
+                var ee = '';
+                var ff = '';
+                var gg = '';
+        } else {
+                dd = '<tr><td class="windowbg2">$versiontxt{'5'}</td><td class="windowbg2"><b>'+STABLE+'</b></td></tr>';
+                ee = '<tr><td class="windowbg2">$versiontxt{'7'}</td><td class="windowbg2"><b>'+BETA+'</b></td></tr>';
+                ff = '<tr><td class="windowbg2">$versiontxt{'8'}</td><td class="windowbg2"><b>'+ALPHA+'</b></td></tr>';
+                if (STABLE == "{yabb YaBBversion}") {
+                    gg = '<tr><td class="windowbg2" colspan="2"><div class="pad-more">$versiontxt{'6'}</div></td></tr>';
+                } else {
+                    gg = '<tr><td class="windowbg2" colspan="2"><div class="pad-more">$versiontxt{'2'}'+STABLE+'$versiontxt{'3'}</div></td></tr>';
+                }
+        }
+        var hh = '</table>';
+        var p = document.getElementById("version");
+        p.innerHTML = aa + bb + cc + dd + ee + ff + gg + hh;
+        </script>
+    </div>
+</div>
+<div style="float: left; width: 50%; text-align: right;">
+    <div class="bordercolor leftboxdiv" style="margin-bottom:.5em">
+        <table class="border-space pad-cell">
+            <tr>
+                <td class="titlebg">
+                    <b>$admintxt{'4'}</b>
+                </td>
+            </tr><tr>
+                <td class="windowbg2">
+                    <iframe src="http://www.yabbforum.com/update/" frameborder="0" id="update"></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="bordercolor leftboxdiv">
+        <table class="border-space pad-cell">
+            <tr>
+                <td class="titlebg">
+                    <b>$admintxt{'5'}</b>
+                </td>
+            </tr><tr>
+                <td class="windowbg2" >
+                    <div style="height:15em; overflow:auto">
+                    {yabb lastlogins}
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>~;
+
+$last_div = q~
+</div>~;
+
+$convert_box = qq~    <div class="bordercolor leftboxdiv" style="margin-top:.5em">
+        <table class="border-space pad-cell">
+            <tr>
+                <td class="titlebg"><b>$admintxt{'conv'}</b></td>
+            </tr><tr>
+                <td class="windowbg2">
+                    <div class="pad-more">$admintxt{'conv2'}</div>
+                </td>
+            </tr>
+        </table>
+        <form name="backdelete" action="$adminurl?action=convdelete" method="post">
+            <table class="border-space pad-cell">
+                <tr>
+                    <td class="titlebg">
+                        <b>$admintxt{'7'}</b>
+                    </td>
+                </tr><tr>
+                    <td class="windowbg2">
+                        <div class="pad-more">$admintxt{'8'}</div>
+                    </td>
+                </tr><tr>
+                    <td class="catbg center">
+                        <input type="submit" value="$admintxt{'9'}" class="button" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>~;
+
+$spacer = q~<div class="rightboxdiv" style="float:left; height:100px">&nbsp;~;
+
+## Passwordcheck ##
+$show_check = qq~<tr>
+        <td class="windowbg vtop"><label for="passwrd1"><b>{yabb reg_1}:</b></label></td>
+        <td class="windowbg2">
+            <div style="float:left;">
+                <input autocomplete="off" type="password" maxlength="30" name="passwrd1" id="passwrd1" value="{yabb tmpregpasswrd1}" size="30" onkeypress="capsLock(event,'cappasswrd1')" onkeyup="runPassword(this.value);" />
+           </div>
+           <div style="float: left; width: 150px; height: 20px;">
+               <div id="password-strength-meter"></div>
+               <div class="pstrength-bar" id="passwrd1_bar"></div>
+               <div class="pstrength-info" id="passwrd1_text">&nbsp;</div>
+           </div>
+           <div id="cappasswrd1">{yabb reg_caplock}</div>
+           <div id="cappasswrd1_char">{yabb reg_wrongchar}: <span id="cappasswrd1_character">&nbsp;</span></div>
+       </td>
+    </tr><tr>
+        <td class="windowbg vtop">
+            <label for="passwrd2"><b>{yabb reg_2}:</b></label>
+        </td>
+        <td class="windowbg2 vtop">
+            <input autocomplete="off" type="password" maxlength="30" name="passwrd2" id="passwrd2" value="{yabb tmpregpasswrd2}" size="30" onkeypress="capsLock(event,'cappasswrd2')" />
+            <div id="cappasswrd2">{yabb reg_caplock}</div>
+            <div id="cappasswrd2_char">{yabb reg_wrongchar}: <span id="cappasswrd2_character">&nbsp;</span></div>
+            {yabb check_js}
+        </td>
+    </tr>~;
+
+$my_admin_login = qq~
+<table class="tabtitle border-space pad-cell" style="width:500px">
+    <tr>
+        <td class="center"><b>$admin_txt{'901'}</b></td>
+    </tr>
+</table>
+<form action="{yabb adminchk}" method="post" name="confirmform">
+<table class="bordercolor border-space pad-cell" style="width:500px; margin-bottom:1em">
+    <tr>
+        <td class="windowbg2 center">
+            <label for="passwrd"><span class="small"><br />$admin_txt{'siddescript'}<br /></span></label>
+        </td>
+    </tr><tr>
+        <td class="windowbg2 center">
+            <div style="padding-top: 4px;">
+                <div><input type="password" name="passwrd" id="passwrd" size="15" style="width: 150px;" onkeypress="capsLock(event,'cappasswrd')" /></div>
+                <div style="color: #f00; font-weight: bold; display: none" id="cappasswrd">$admin_txt{'capslock'}</div>
+                <div style="color: #f00; font-weight: bold; display: none" id="cappasswrd_char">$admin_txt{'wrong_char'}: <span id="cappasswrd_character">&nbsp;</span></div>
+            </div>
+        </td>
+    </tr><tr>
+        <td class="catbg center" style="padding: 8px;">
+            <input type="hidden" name="action" value="{yabb act}" />
+            <input type="hidden" name="page" value="{yabb page}" />
+            <input type="submit" value="$admin_txt{'900'}" class="button" />
+        </td>
+    </tr>
+</table>
+</form>
+<script type="text/javascript">
+        document.confirmform.passwrd.focus();
+</script>~;
+
+1;

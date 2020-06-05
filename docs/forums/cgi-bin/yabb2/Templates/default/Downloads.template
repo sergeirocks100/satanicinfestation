@@ -1,0 +1,149 @@
+###############################################################################
+# default.Downloads.template                                                  #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.6.11                                                 #
+# Packaged:       December 2, 2014                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+$downloadstemver = 'YaBB 2.6.11 $Revision: 1611 $';
+
+
+$downloads_top = qq~<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="$abbr_lang" lang="$abbr_lang">
+<head>
+<title>{yabb fatxt39}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=$yymycharset" />
+<link rel="stylesheet" href="$yyhtml_root/Templates/Forum/$usestyle.css" type="text/css" />
+<script type="text/javascript">
+    function download_file(amfn) {
+        window.open('$scripturl?action=downloadfile;file=' + encodeURIComponent(amfn),'_blank');
+        self.setTimeout('location.reload()', 3000);
+    }
+    function load_thread(amthreadid,amreplies) {
+        try{
+            if (typeof(opener.document) == 'object') throw '1';
+            else throw '0';
+        } catch (e) {
+            if (amreplies > 0 || ~
+      . (
+        (
+            ( $ttsureverse && ${ $uid . $username }{'reversetopic'} )
+              || $ttsreverse
+        ) ? 1 : 0
+      )
+      . qq~ == 1) amreplies = '/' + amreplies + '#' + amreplies;
+            else amreplies = '';
+            if (e == 1) {
+                opener.location.href='$scripturl?num=' + amthreadid + amreplies;
+                self.close();
+            } else {
+                location.href='$scripturl?num=' + amthreadid + amreplies;
+            }
+        }
+    }
+</script>
+</head>
+<body class="littlebody" style="margin:0 auto">
+    <div id="container">
+    <br />~;
+
+$downloads_bottom = q~
+<br />
+</div>
+</body>
+</html>~;
+
+$downloads_att =
+qq~<tr>
+        <td class="windowbg2 center" colspan="{yabb colspan}"><b><i>{yabb fatxt48}</i></b></td>
+    </tr><tr>
+        <td class="catbg center" colspan="{yabb colspan}"><a href="javascript:try{if(typeof(opener.document)=='object'){throw '1';}else{throw '0';}}catch (e){if(e==1) {opener.location.href='$scripturl?num={yabb thread}';self.close();}else{location.href='$scripturl?num={yabb thread}';}}">{yabb fatxt70} "<i>{yabb threadname}</i>"</a> &nbsp; | &nbsp; <a href="javascript:window.close();">{yabb fatxt71}</a></td>
+    </tr>~;
+
+$my_att_admin = qq~
+        <td class="windowbg2 center"><input type="checkbox" name="del_{yabb thread}" value="{yabb amfn}" /></td>~;
+
+$my_att_admin_b = q~
+         <td class="catbg center">
+            <input type="checkbox" name="checkall" value="" onclick="if(this.checked){checkAll();}else{uncheckAll();}" />
+        </td>~;
+
+$my_att_admin_c =  qq~{yabb amv_txt38a} &nbsp; <input type="submit" value="{yabb admin_txt32}" class="button" />~;
+
+$my_out_att_admin_a = qq~
+        <td class="windowbg center"><b>{yabb fatxt45}</b></td>~;
+
+
+$downloads_att_b = qq~<tr>
+            {yabb att_admin}
+        <td class="windowbg2"><a href="javascript:void(download_file('{yabb amfn}'));"> {yabb amfn}</a></td>
+        <td class="windowbg2 center"><img src="{yabb attach_gif}" class="bottom" alt="" /></td>
+        <td class="windowbg2 right">{yabb amkb} KB</td>
+        <td class="windowbg2 center">{yabb amdate}</td>
+        <td class="windowbg2 right">{yabb amcount}</td>
+        <td class="windowbg2"><a href="javascript:load_thread('{yabb thread}','{yabb amreplies}');">{yabb amthreadsub}</a></td>
+        <td class="windowbg2 center">{yabb amposter}</td>
+        </tr>~;
+
+$downloads_att_c = qq~<tr>
+          {yabb att_admin_b}
+        <td class="catbg" colspan="7">
+            <table>
+				<colgroup>
+                    <col style="width:33%" />
+                    <col style="width:34%" />
+                    <col style="width:33%" />
+				</colgroup>
+                <tr>
+                    <td class="small">
+           {yabb att_admin_c}
+                    </td>
+                    <td class="center" style="white-space:nowrap"> &nbsp; <a href="javascript:load_thread('{yabb thread}',0);">{yabb fatxt70} "<i>{yabb threadname}</i>"</a> &nbsp; | &nbsp; <a href="javascript:window.close();">{yabb fatxt71}</a> &nbsp; </td>
+                    <td class="small right">{yabb pageindex}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>~;
+
+$downloads_att_out_a = qq~
+<table class="tabtitle" style="width:98%">
+    <tr>
+        <td style="padding-left:1em">
+            <img src="$imagesdir/xx.gif" alt="" />&nbsp;<b>{yabb fatxt39}</b>
+        </td>
+    </tr>
+</table>
+<table class="pad_4px" style="width:98%">
+    <tr>
+        <td class="windowbg center" colspan="{yabb colspan}">
+            <br />
+            {yabb fatxt75}:<br />
+            "<i>{yabb threadname}</i>"<br />
+            <br />
+            <span class="small">{yabb fatxt76}</span>
+            <br />
+        </td>
+    </tr><tr>
+        <td class="titlebg" colspan="{yabb colspan}">
+            <div class="small" style="float: left; text-align: left;">{yabb fatxt28} {yabb max} {yabb numshow}
+            <br />{yabb pageindex}</div>
+        </td>
+    </tr><tr>~;
+
+$downloads_tbl_end = qq~</td>
+    </tr>
+    {yabb viewattachments}
+</table>~;
+
+$my_att_sort_a = qq~<td onclick="location.href='$scripturl?action=viewdownloads;thread={yabb thread};sort=~;
+$my_att_sort_b = qq~</td>
+        <td onclick="location.href='$scripturl?action=viewdownloads;thread={yabb thread};sort=~;
+$my_att_sort_c = qq~style="border: 0; border-style: outset; cursor: pointer; text-align:center"><a href="$scripturl?action=viewdownloads;thread={yabb thread};sort=~;
+
+1;

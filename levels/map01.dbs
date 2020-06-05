@@ -10,12 +10,21 @@ maps
 		
 		resources
 		{
+			
+			resource0
+			{
+				type = 0;
+				location = "C:\\Users\\13363\\Downloads\\d1gfxd2\\d1gfxd2.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
 		}
 		defaultfloortexture = "FLOOR4_8";
 		defaultceiltexture = "F_SKY1";
-		defaulttoptexture = "GRAY7";
-		defaultwalltexture = "GRAY7";
-		defaultbottomtexture = "GRAY7";
+		defaulttoptexture = "ICKWALL5";
+		defaultwalltexture = "ICKWALL5";
+		defaultbottomtexture = "ICKWALL5";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -29,9 +38,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -150.6893f;
-		viewpositiony = 242.5846f;
-		viewscale = 31.5115f;
+		viewpositionx = -495.6045f;
+		viewpositiony = 1128.55f;
+		viewscale = 0.3937369f;
 		
 		grid
 		{
