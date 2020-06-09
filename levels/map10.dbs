@@ -10,21 +10,12 @@ maps
 		
 		resources
 		{
-			
-			resource0
-			{
-				type = 0;
-				location = "C:\\Users\\13363\\Downloads\\udgfxd2.wad";
-				option1 = 0;
-				option2 = 0;
-				notfortesting = 0;
-			}
 		}
-		defaultfloortexture = "CEIL5_1";
+		defaultfloortexture = "CEIL5_2";
 		defaultceiltexture = "F_SKY1";
-		defaulttoptexture = "METAL2";
-		defaultwalltexture = "METAL2";
-		defaultbottomtexture = "METAL2";
+		defaulttoptexture = "STONE7";
+		defaultwalltexture = "STONE7";
+		defaultbottomtexture = "STONE7";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -38,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -131.6351f;
-		viewpositiony = 1008.777f;
-		viewscale = 0.8003162f;
+		viewpositionx = -308.0471f;
+		viewpositiony = 1364.68f;
+		viewscale = 1.040412f;
 		
 		grid
 		{
@@ -54,16 +45,6 @@ maps
 			gridrotate = 0f;
 			gridoriginx = 0f;
 			gridoriginy = 0f;
-		}
-		scriptcompiler = "zdoom_acs.cfg";
-		
-		fieldtypes
-		{
-			
-			sidedef
-			{
-				offsetx_mid = 1;
-			}
 		}
 	}
 }
