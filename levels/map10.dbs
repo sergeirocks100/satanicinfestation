@@ -10,6 +10,15 @@ maps
 		
 		resources
 		{
+			
+			resource0
+			{
+				type = 0;
+				location = "C:\\Users\\13363\\Downloads\\d1gfxd2\\d1gfxd2.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
 		}
 		defaultfloortexture = "CEIL5_2";
 		defaultceiltexture = "F_SKY1";
@@ -29,9 +38,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -308.0471f;
-		viewpositiony = 1364.68f;
-		viewscale = 1.040412f;
+		viewpositionx = -572.5507f;
+		viewpositiony = 976.4227f;
+		viewscale = 2.285785f;
 		
 		grid
 		{
