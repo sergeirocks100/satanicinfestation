@@ -1,3 +1,20 @@
+   (                                  )  (                               
+   )\ )    (       *   )    (      ( /(  )\ )   (                        
+  (()/(    )\    ` )  /(    )\     )\())(()/(   )\                       
+   /(_))((((_)(   ( )(_))((((_)(  ((_)\  /(_))(((_)                      
+  (_))   )\ _ )\ (_(_())  )\ _ )\  _((_)(_))  )\___                      
+  / __|  (_)_\(_)|_   _|  (_)_\(_)| \| ||_ _|((/ __|                     
+  \__ \   / _ \    | |     / _ \  | .` | | |  | (__                      
+ (|___/  /)/ (_\   |_|  ( /_/ \_\ |_|\_||___|  \___| (        )      )   
+ )\ )  ( /(  )\ )       )\ )  *   )    (       *   ) )\ )  ( /(   ( /(   
+(()/(  )\())(()/(  (   (()/(` )  /(    )\    ` )  /((()/(  )\())  )\())  
+ /(_))((_)\  /(_)) )\   /(_))( )(_))((((_)(   ( )(_))/(_))((_)\  ((_)\   
+(_))   _((_)(_))_|((_) (_)) (_(_())  )\ _ )\ (_(_())(_))    ((_)  _((_)  
+|_ _| | \| || |_  | __|/ __||_   _|  (_)_\(_)|_   _||_ _|  / _ \ | \| |  
+ | |  | .` || __| | _| \__ \  | |     / _ \    | |   | |  | (_) || .` |  
+|___| |_|\_||_|   |___||___/  |_|    /_/ \_\   |_|  |___|  \___/ |_|\_|  
+                                                                         
+
 Satanic Infestation is my fork of Freedoom, because i disagree with the way it’s going, the project seems to go in a lot of strange directions that don't go well with a Doom or Doom 2 IWAD replacement, 
 all of the references to Satanism are gone, a lot of the new assets go in odd directions that don't mesh all that well, and it generally doesn’t capture the vibe of what i think a
 open IWAD should be.
