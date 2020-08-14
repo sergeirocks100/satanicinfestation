@@ -152,6 +152,20 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 For a list of contributors to the Freedoom project, see the file CREDITS.
 
+SilverMiner's sky textures:
+
+you may do whatever you want with them.
+
+Bingle Derry's sprites:
+
+Do whatever you want with them.
+
+Kut's map:
+
+CC-BY-4.0
+
+https://creativecommons.org/licenses/by/4.0/
+
 acceptable licenses for contributions:
 
 permissive free licenses that allow for commercial use, like the 3-cluse BSD license, the Unlicense, or Creative Commons
