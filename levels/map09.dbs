@@ -12,7 +12,7 @@ maps
 		{
 		}
 		defaultfloortexture = "CEIL5_1";
-		defaultceiltexture = "F_SKY1";
+		defaultceiltexture = "CEIL5_1";
 		defaulttoptexture = "STONE";
 		defaultwalltexture = "STONE";
 		defaultbottomtexture = "STONE";
@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = 63.17291f;
-		viewpositiony = -1.767105f;
-		viewscale = 0.2155484f;
+		viewpositionx = -1812.347f;
+		viewpositiony = 1371.396f;
+		viewscale = 0.2802117f;
 		
 		grid
 		{
@@ -41,10 +41,10 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 32f;
-			gridrotate = 0f;
-			gridoriginx = 0f;
-			gridoriginy = 0f;
+			gridsize = 16;
+			gridrotate = 0;
+			gridoriginx = 0;
+			gridoriginy = 0;
 		}
 	}
 }
