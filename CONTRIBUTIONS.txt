@@ -1,26 +1,22 @@
-1: All maps must be limit removing or vanilla compatible, and use no textures that aren't in the approved list, all maps must also come in at 384 kilobytes or less
+1﻿: All ﻿maps must be limit removing or vanilla compatible, and use no textures that aren't in the approved list, all maps must also come in at 384 kilobytes or less.
 
-2: When testing your maps, be sure to test them in Crispy Doom 5.8.0, as that is the source port target of the project
+2: When testing your maps, be sure to test them in the latest version of Crispy Doom, as that is the source port target of the project.
 
-3: MIDIs of all genres are accepted, although a hiphop/horrorcore style is preferred
+3: Maps for the future GZDoom version of the project should be tested in the lastest versions of GZDoom, LZDoom, and Zandronum, i don't care for ZDaemon, so testing in it isn't necessary.
 
-4: When it comes to textures, use IAC instead of UAC or AGM, templates for the IAC logo can be found in the /patches folder in the Github
+4: MIDIs of all genres are accepted.
 
-5: Don't use WADs outside of maps, for other things, like sounds or textures, put them in a zip file, it avoids the problem of me needing to open a 
-WAD in SLADE and move them to the deutex tree
+5: When it comes to textures, use IAC instead of UAC or AGM, templates for the IAC logo can be found in the /patches folder in the Github.
 
-6: Please put sprite offsets in a text file instead of putting them directly on the images, it's quite a chore to have to open each individual 
-frame in SLADE and then copy the offsets to the buildcfg
+6: Don't use WADs outside of maps, for other things, like sounds or textures, put them in a zip file, it avoids the problem of me needing to open a WAD in SLADE and move them to the deutex tree.
 
-7: Don't use nonfree assets, i intend for this project to be 100% free for commercial use and public domain, and i can't use assets such 
-as assets grabbed from commercial products and non-commercial assets in a project of this type
+7: Please put sprite offsets in a text file instead of putting them directly on the images, it's quite a chore to have to open each individual frame in SLADE and then copy the offsets to the buildcfg.
 
-8: For audio contributions, i encourage that you provide a lossless version of the audio alongside the lossy version, i do plan on using 44khz audio for 
-the eventual GZDoom version of the project, and having lossless versions of the audio already would be great
+8: Don't use nonfree assets, i intend for this project to be 100% free for commercial use and public domain, and i can't use assets such as assets grabbed from commercial products and non-commercial assets in a project of this type.
 
-9: All contributions must have a license attached to them, the exact license doesn't matter, if it's a permissive free license that allows for commercial use, such as 
-the 3 clause BSD license, the public domain, or Creative Commons, i can use it in the project, 
-although use of the public domain is strongly encouraged
+9: For audio contributions, i encourage that you provide a lossless version of the audio alongside the lossy version, i do plan on using 44khz audio for the eventual GZDoom version of the project, and having lossless versions of the audio already would be great.
+
+10: All contributions must have a license attached to them, the exact license doesn't matter, if it's a permissive free license that allows for commercial use, such as the 3 clause BSD license, the public domain through a waiver of your choice, or Creative Commons, i can use it in the project, although use of the public domain is strongly encouraged.
 
 APPROVED TEXTURE LIST:
 
