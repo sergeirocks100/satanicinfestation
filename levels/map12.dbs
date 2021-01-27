@@ -1,0 +1,59 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "Doom_Doom2Doom.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP12
+	{
+		defaultceiltexture = "CEIL5_1";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "C:\\cygwin64\\home\\sergei\\Github\\freedoom\\wads\\freedoom2.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
+		}
+		overrideceiltexture = false;
+		viewpositionx = 1730.701f;
+		defaulttoptexture = "STARTAN1";
+		overrideceilheight = false;
+		useresourcesinreadonlymode = false;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 4;
+			background = "";
+			backoffsety = 0;
+		}
+		overridebottomtexture = false;
+		defaultbottomtexture = "STARTAN1";
+		defaultfloortexture = "CEIL3_5";
+		viewpositiony = -212.8106f;
+		defaultwalltexture = "STARTAN1";
+		overridetoptexture = false;
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 0.1762434f;
+	}
+}
